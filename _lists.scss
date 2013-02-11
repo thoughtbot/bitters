@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Base List Styles
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: $base-line-height * .5;
+  padding-left: $base-line-height * .5;
+
+  li {
+    line-height: $base-line-height;
+
+    ul, ol {
+      padding-left: $base-line-height * .5;
+      margin-bottom: 0;
+    }
+  }
+}
+
+dl {
+  line-height: $base-line-height;
+  margin-bottom: $base-line-height * .5;
+
+  dt {
+    font-weight: bold;
+    margin-top: $base-line-height * .25;
+  }
+
+  dd {
+    margin-bottom: 0;
+    margin-left: $base-line-height * .5;
+  }
+}

@@ -1,0 +1,143 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Base Typographic Styles
+//
+///////////////////////////////////////////////////////////////////////////////
+
+// Font Stack
+$sans-serif: $helvetica;
+$serif: $georgia;
+
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1rem; // this isn't supported in IE8
+$base-line-height: $base-font-size * 1.375;
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-size: em(44);
+  line-height: $base-line-height * 2;
+  margin: $base-line-height 0;
+}
+
+h2 {
+  font-size: em(32);
+  line-height: $base-line-height * 1.75;
+  margin: ($base-line-height * .75) 0;
+}
+
+h3 {
+  font-size: em(28);
+  line-height: $base-line-height * 1.5;
+  margin: ($base-line-height * .5) 0;
+}
+
+h4 {
+  font-size: em(24);
+  line-height: $base-line-height * 1.25;
+  margin: ($base-line-height * .25) 0;
+}
+
+h5 {
+  font-size: em(20);
+  line-height: $base-line-height;
+  margin: 0;
+}
+
+h6 {
+  font-size: $base-font-size;
+  line-height: lh();
+  margin: 0;
+}
+
+p {
+  font-size: $base-font-size;
+  font-weight: 400;
+  margin: 0 0 ($base-line-height * .5);
+}
+
+a:link, a:visited {
+  color: $base-link-color;
+  text-decoration: underline;
+  @include transition(color, 0.1s linear);
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+  }
+}
+
+hr {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: $base-line-height 0;
+  border-bottom: 1px solid $base-border-color;
+}
+
+img {
+  margin: 0;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $base-border-color;
+  cursor: help;
+}
+
+address {
+  display: block;
+  margin: 0 0 ($base-line-height * .5);
+}
+
+hgroup {
+  margin-bottom: $base-line-height * .5;
+}
+
+del {
+  color: lighten($base-font-color, 15%);
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15%);
+  font-style: italic;
+  margin: $base-line-height 0;
+  padding-left: $base-line-height * .5;
+}
+
+cite {
+  font-style: italic;
+  font-size: smaller;
+  color: lighten($base-font-color, 25%);
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+strong {
+  font-weight: bolder;
+}
+
+pre, code {
+  font-family: 'andale mono', 'monotype.com', 'lucida console', monospace, serif;
+  line-height: $base-line-height;
+  margin: ($base-line-height * .5) 0;
+}

@@ -1,0 +1,37 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Base Table Styles
+//
+///////////////////////////////////////////////////////////////////////////////
+
+table {
+  margin: ($base-line-height * .5) 0;
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid darken($base-border-color, 15%);
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid $base-border-color;
+}
+
+caption, th, td {
+  padding: $base-line-height * .5;
+}
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: $base-line-height * .5;
+  padding: ($base-line-height * .5) 0;
+}
+
+tr, td, th {
+  vertical-align: middle;
+}

@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Base Flash Styles for Rails Projects
+//
+///////////////////////////////////////////////////////////////////////////////
+
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success, #flash_failure, #flash_success, #flash_notice {
+  margin-bottom: .75em;
+  margin-bottom: .75rem;
+  padding: .75em;
+  padding: .75rem;
+}
+
+div.error, #flash_failure {
+  background: $error-color;
+  color: darken($error-color, 60%);
+}
+
+div.error a, #flash_failure a {
+  color: darken($error-color, 60%);
+}
+
+div.notice, #flash_notice {
+  background: $notice-color;
+  color: darken($notice-color, 60%);
+}
+
+div.notice a, #flash_notice a {
+  color: darken($notice-color, 60%);
+}
+
+div.success, #flash_success {
+  background: $success-color;
+  color: darken($success-color, 50%);
+}
+
+div.success a, #flash_success a {
+  color: darken($success-color, 50%);
+}
