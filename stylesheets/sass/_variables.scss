@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Global Variables
+//
+///////////////////////////////////////////////////////////////////////////////
+
+$gw-column: 60px;
+$gw-gutter: 25px;
+
+$base-font-color-light: rgb(110,110,110);
+$base-font-color-light-alt: rgb(160,160,160);
+
+$fg-column: $gw-column;
+$fg-gutter: $gw-gutter;
+$fg-max-columns: 12;
+
+//  Font Stacks
+$sans-serif: 'Lato', $helvetica;
+$serif: 'Old Standard TT', 'Gentium Book Basic', 'Time New Roman', $georgia;

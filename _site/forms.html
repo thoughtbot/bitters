@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bourbon Smash</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <section class="playground forms">
+  <section class="base-form-elements">
+      <section class="panel">
+        <input type="Search" placeholder="Search" autocomplete="on"/>
+
+        <input type="text" placeholder="Text"/>
+
+        <input type="email" placeholder="Email"/>
+
+        <input type="password" placeholder="Password"/>
+
+        <input type="url" placeholder="URL"/>
+
+        <input type="number" placeholder="Number"/>
+
+        <textarea></textarea>
+        <input type="date" />
+
+        <input type="datetime" placeholder="Datetime"/>
+
+        <input type="time" placeholder="Time"/>
+
+        <input type="week" placeholder="Week"/>
+
+        <input type="month" placeholder="Month"/>
+
+        <input type="tel" placeholder="Telephone"/>
+
+      </section>
+
+      <section class="panel">
+        <label class="required">Required Label</label>
+        <input type="text" />
+        <br>
+
+        <select>
+          <option>Option #1</option>
+          <option>Option #1</option>
+        </select>
+
+        <label for="radio1"><input type="radio" name="radio-group" value="" id="radio1" />Yes</label>
+        <label for="radio2"><input type="radio" name="radio-group" value="" id="radio2" />No</label>
+
+        <br>
+
+        <label for="checkbox1"><input type="checkbox" name="" value="" id="checkbox1" />Checkbox</label>
+
+        <br>
+
+      </section>
+      <section class="panel">
+        <label for="">Range</label>
+        <input type="range" name="" value="" id="" />
+        <br>
+
+        <label for="">Color</label>
+        <input type="color" name="" value="#B7C5CF" id="" />
+        <br>
+        <input type="file" />
+        <br>
+        <input type="submit" value="Submit Button" />
+      </section>
+  </section>
+</section>
+
+<section class="component-desc">
+  <header>
+    <a href="index.html" class="home" >&larr;</a>
+    <h1>Forms</h1>
+    <a href="https://github.com/thoughtbot/bourbon_ui_smash/blob/master/ui-base/_forms.scss" class="source" >view source<span> &rarr;</span></a>
+  </header>
+
+<div class="highlight"><pre><code class="scss"><span class="k">@import</span> <span class="s2">&quot;bourbon-ui-forms&quot;</span><span class="p">;</span>
+</code></pre>
+</div>
+
+
+<hr />
+
+<p>Add the following variables to your base variables stylesheet and customize to your liking:</p>
+<div class="highlight"><pre><code class="scss"><span class="na">$form-border-color</span><span class="o">:</span>       <span class="mh">#ccc</span><span class="p">;</span>
+<span class="na">$form-border-color-focus</span><span class="o">:</span> <span class="mh">#56B4EF</span><span class="p">;</span> <span class="c1">//blue</span>
+<span class="na">$form-border-color-hover</span><span class="o">:</span> <span class="mh">#aaa</span><span class="p">;</span>
+<span class="na">$form-border-radius</span><span class="o">:</span>      <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+<span class="na">$form-box-shadow-focus</span><span class="o">:</span>   <span class="nf">darken</span><span class="p">(</span><span class="nv">$form-border-color-focus</span><span class="o">,</span> <span class="mi">5</span><span class="kt">%</span><span class="p">);</span>
+<span class="na">$form-font-family</span><span class="o">:</span>        <span class="nv">$lucida-grande</span><span class="p">;</span>
+<span class="na">$form-font-size</span><span class="o">:</span>          <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+</code></pre>
+</div>
+
+</section>
+
+
+    <script type="text/javascript" src="javascripts/popover.js"></script>
+    <script type="text/javascript" src="javascripts/dropdown.js"></script>
+    <script type="text/javascript" src="javascripts/modal.js"></script>
+    <script type="text/javascript" src="javascripts/modal-dialog.js"></script>
+  </body>
+</html>

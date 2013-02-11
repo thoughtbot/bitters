@@ -1,0 +1,20 @@
+table.one {
+}
+
+table.two {
+  @extend .table-bordered;
+}
+
+table.three {
+  @extend .table-striped;
+}
+
+table.four {
+  @extend .table-hover;
+}
+
+table.five {
+  @extend .table-bordered;
+  @extend .table-hover;
+  @extend .table-rounded-border;
+}

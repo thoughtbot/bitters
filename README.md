@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Bitters
 ===
 Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
