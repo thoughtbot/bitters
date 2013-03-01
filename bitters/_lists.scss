@@ -5,9 +5,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 ul, ol {
-  list-style-position: inside;
+  list-style-position: outside;
   margin-bottom: $base-line-height * .5;
-  padding-left: $base-line-height * .5;
+  padding-left: $base-line-height;
 
   li {
     line-height: $base-line-height;
