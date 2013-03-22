@@ -1,17 +1,9 @@
-///////////////////////////////////////////////////////////////////////////////
-//
-//  Base Form Styles
-//
-///////////////////////////////////////////////////////////////////////////////
-
 $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10%);
-$form-border-color-focus: $blue; //blue default
+$form-border-color-focus: $base-link-color; //blue default
 $form-border-radius: 3px;
 $form-box-shadow-focus: darken($form-border-color-focus, 5%);
-$form-font-size: $base-font-size;
-$form-font-family: $lucida-grande;
-$form-width: em(300);
+$form-width: 100%;
 
 fieldset {
   background: #f1f1f1;
@@ -24,8 +16,8 @@ input,
 label,
 select {
   display: block;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 label {
@@ -48,8 +40,8 @@ textarea,
   border-radius: $form-border-radius;
   box-shadow: inset 0px 1px 3px hsla(0, 0%, 0%, 0.06);
   @include box-sizing(border-box);
-  font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
   margin-bottom: $base-line-height * .5;
   padding: ($base-line-height * .5) ($base-line-height * .5);
   @include transition(border-color);
@@ -90,13 +82,8 @@ select {
   margin-bottom: $base-line-height * 1.5;
 }
 
+%button,
 button,
 input[type="submit"] {
   @include button(simple, #fafafa);
-
-  // Button Overrides
-  border-color: #BBB;
-  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.06);
-  font-size: $form-font-size;
-  padding: 0.7em 1.9em;
 }

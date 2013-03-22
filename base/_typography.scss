@@ -1,26 +1,8 @@
-///////////////////////////////////////////////////////////////////////////////
-//
-//  Base Typographic Styles
-//
-///////////////////////////////////////////////////////////////////////////////
-
-// Font Stack
-$sans-serif: $helvetica;
-$serif: $georgia;
-
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
-
-// Font Sizes
-$base-font-size: 1rem; // this isn't supported in IE8
-$base-line-height: $base-font-size * 1.375;
-
 body {
+  color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $base-font-color;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,66 +12,60 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: em(44);
-  line-height: $base-line-height * 2;
-  margin: $base-line-height 0;
+  line-height: em(44, 44);
+  margin: em(22, 44) 0;
 }
 
 h2 {
   font-size: em(32);
-  line-height: $base-line-height * 1.75;
-  margin: ($base-line-height * .75) 0;
+  line-height: em(44, 32);
+  margin: em(11, 32) 0;
 }
 
 h3 {
   font-size: em(28);
-  line-height: $base-line-height * 1.5;
-  margin: ($base-line-height * .5) 0;
+  line-height: em(33, 28);
+  margin: em(11, 28) 0 0;
 }
 
 h4 {
   font-size: em(24);
-  line-height: $base-line-height * 1.25;
-  margin: ($base-line-height * .25) 0;
+  line-height: em(33, 24);
+  margin: em(11, 28) 0 0;
 }
 
-h5 {
+h5, h6 {
   font-size: em(20);
   line-height: $base-line-height;
   margin: 0;
 }
 
-h6 {
-  font-size: $base-font-size;
-  line-height: lh();
-  margin: 0;
-}
-
 p {
   font-size: $base-font-size;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0 0 ($base-line-height * .5);
 }
 
 a:link, a:visited {
   color: $base-link-color;
-  text-decoration: underline;
-  @include transition(color, 0.1s linear);
+  text-decoration: none;
+  @include transition;
 
-  &:hover {
+  &:hover, &:active, &:focus {
     color: $hover-link-color;
   }
 
-  &:active, &:focus {
-    color: $hover-link-color;
+  &:visited {
+    color: darken($hover-link-color, 15);
   }
 }
 
 hr {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin: $base-line-height 0;
   border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
 }
 
 img {
@@ -112,6 +88,7 @@ hgroup {
 
 del {
   color: lighten($base-font-color, 15%);
+  text-decoration: line-through;
 }
 
 blockquote {
@@ -123,21 +100,16 @@ blockquote {
 }
 
 cite {
-  font-style: italic;
-  font-size: smaller;
   color: lighten($base-font-color, 25%);
+  font-size: smaller;
+  font-style: italic;
 
   &:before {
     content: '\2014 \00A0';
   }
 }
 
-strong {
-  font-weight: bolder;
-}
-
 pre, code {
-  font-family: 'andale mono', 'monotype.com', 'lucida console', monospace, serif;
   line-height: $base-line-height;
   margin: ($base-line-height * .5) 0;
 }
