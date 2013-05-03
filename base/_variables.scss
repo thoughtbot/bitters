@@ -1,0 +1,35 @@
+// All global variables -- Any variable used in more than one file
+
+// Font Stack
+$sans-serif: $helvetica;
+$serif: $georgia;
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+$base-line-height: em(22);
+
+// Colors
+$blue: #477DCA;
+$dark-gray: #333;
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+//  Font Colors
+$base-color: $dark-gray;
+$base-accent: $blue;
+
+//  Text Link Colors
+$base-link-color: $base-accent;
+$base-hover-color: darken($base-accent, 15);
+
+// Border color
+$base-border-color: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;

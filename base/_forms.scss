@@ -1,0 +1,82 @@
+fieldset {
+  background: lighten($base-border-color, 10);
+  border: 1px solid $base-border-color;
+  margin: 0 0 $base-line-height 0;
+  padding: $base-line-height $base-line-height ($base-line-height * .75) $base-line-height;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $base-line-height * .25;
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+#{$all-text-inputs} {
+  background-color: white;
+  border: 1px solid $base-border-color;
+  box-shadow: inset 0px 1px 3px hsla(0, 0%, 0%, 0.06);
+  @include box-sizing(border-box);
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: $base-line-height * .5;
+  padding: ($base-line-height * .5) ($base-line-height * .5);
+  @include transition(border-color);
+  width: 100%;
+
+  &:hover {
+    border-color: darken($base-border-color, 10%);
+  }
+
+  &:focus {
+    border-color: $base-accent;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 0 5px rgba(darken($base-accent, 5%), 0.7);
+    outline: none;
+  }
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="color"] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  height: $base-line-height * 3;
+  padding: 0;
+  position: relative;
+  width: $base-line-height * 5;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: $base-line-height * .5;
+}
+
+select {
+  width: 100%;
+  margin-bottom: $base-line-height * 1.5;
+}
+
+button,
+input[type="submit"] {
+  @include button(simple, $base-accent);
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+}

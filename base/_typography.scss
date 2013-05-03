@@ -1,0 +1,114 @@
+body {
+  color: $base-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+hgroup {
+  margin-bottom: $base-line-height * .5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-size: em(36); // = 36px
+  line-height: em(44, 36); // 44px = $base-line-height @ 2x
+  margin: .5em 0; // 22px = $base-line-height
+}
+
+h2 {
+  font-size: em(32); // = 32px
+  line-height: $base-line-height; // = 44px = $base-line-height @ 2x
+  margin: .25em 0; // = 11px = 1/2 $base-line-height
+}
+
+h3 {
+  font-size: em(28); // = 28px
+  line-height: em(33, 28); // = 33px = $base-line-height * .75
+  margin: em(11, 28) 0 0; // = 11px = $base-line-height / 2
+}
+
+h4 {
+  font-size: em(24); // = 24px
+  line-height: $base-line-height; // = 33px = $base-line-height * .75
+  margin: .5em 0 0; // = 11px = $base-line-height / 2
+}
+
+h5, h6 {
+  font-size: em(20); // = 20px
+  line-height: $base-line-height; // = 22px
+  margin: 0;
+}
+
+p {
+  font-size: $base-font-size;
+  font-weight: normal;
+  margin: 0 0 ($base-line-height / 2);
+}
+
+a:link, a:visited {
+  color: $base-link-color;
+  text-decoration: none;
+  @include transition;
+
+  &:hover, &:active, &:focus {
+    color: $base-hover-color;
+  }
+
+  &:visited {
+    color: darken($base-hover-color, 15);
+  }
+}
+
+hr {
+  border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $base-border-color;
+  cursor: help;
+}
+
+address {
+  display: block;
+  margin: 0 0 ($base-line-height * .5);
+}
+
+del {
+  color: lighten($base-color, 15%);
+  text-decoration: line-through;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-color, 15%);
+  font-style: italic;
+  margin: $base-line-height 0;
+  padding-left: $base-line-height * .5;
+}
+
+cite {
+  color: lighten($base-color, 25%);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+pre, code {
+  line-height: $base-line-height;
+  margin: ($base-line-height * .5) 0;
+}
