@@ -17,7 +17,7 @@ td {
 }
 
 caption, th, td {
-  padding: $base-line-height * .5;
+  padding: ($base-line-height * .5) ($base-line-height * .5) ($base-line-height * .5) 0;
 }
 
 caption {

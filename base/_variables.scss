@@ -20,11 +20,11 @@ $light-green: #E6EFC2;
 
 //  Font Colors
 $base-color: $dark-gray;
-$base-highlight: $blue;
+$base-accent: $blue;
 
 //  Text Link Colors
-$base-link-color: $base-highlight;
-$base-hover-color: darken($highlight, 15);
+$base-link-color: $base-accent;
+$base-hover-color: darken($base-accent, 15);
 
 // Border color
 $base-border-color: $light-gray;

@@ -1,49 +1,52 @@
 body {
-  color: $base-font-color;
+  color: $base-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
 
+hgroup {
+  margin-bottom: $base-line-height * .5;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
 h1 {
-  font-size: em(44);
-  line-height: em(44, 44);
-  margin: em(22, 44) 0;
+  font-size: em(36); // = 36px
+  line-height: em(44, 36); // 44px = $base-line-height @ 2x
+  margin: .5em 0; // 22px = $base-line-height
 }
 
 h2 {
-  font-size: em(32);
-  line-height: em(44, 32);
-  margin: em(11, 32) 0;
+  font-size: em(32); // = 32px
+  line-height: $base-line-height; // = 44px = $base-line-height @ 2x
+  margin: .25em 0; // = 11px = 1/2 $base-line-height
 }
 
 h3 {
-  font-size: em(28);
-  line-height: em(33, 28);
-  margin: em(11, 28) 0 0;
+  font-size: em(28); // = 28px
+  line-height: em(33, 28); // = 33px = $base-line-height * .75
+  margin: em(11, 28) 0 0; // = 11px = $base-line-height / 2
 }
 
 h4 {
-  font-size: em(24);
-  line-height: em(33, 24);
-  margin: em(11, 28) 0 0;
+  font-size: em(24); // = 24px
+  line-height: $base-line-height; // = 33px = $base-line-height * .75
+  margin: .5em 0 0; // = 11px = $base-line-height / 2
 }
 
 h5, h6 {
-  font-size: em(20);
-  line-height: $base-line-height;
+  font-size: em(20); // = 20px
+  line-height: $base-line-height; // = 22px
   margin: 0;
 }
 
 p {
   font-size: $base-font-size;
   font-weight: normal;
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-line-height / 2);
 }
 
 a:link, a:visited {
@@ -52,11 +55,11 @@ a:link, a:visited {
   @include transition;
 
   &:hover, &:active, &:focus {
-    color: $hover-link-color;
+    color: $base-hover-color;
   }
 
   &:visited {
-    color: darken($hover-link-color, 15);
+    color: darken($base-hover-color, 15);
   }
 }
 
@@ -70,6 +73,7 @@ hr {
 
 img {
   margin: 0;
+  max-width: 100%;
 }
 
 abbr, acronym {
@@ -82,26 +86,21 @@ address {
   margin: 0 0 ($base-line-height * .5);
 }
 
-hgroup {
-  margin-bottom: $base-line-height * .5;
-}
-
 del {
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-color, 15%);
   text-decoration: line-through;
 }
 
 blockquote {
   border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-color, 15%);
   font-style: italic;
   margin: $base-line-height 0;
   padding-left: $base-line-height * .5;
 }
 
 cite {
-  color: lighten($base-font-color, 25%);
-  font-size: smaller;
+  color: lighten($base-color, 25%);
   font-style: italic;
 
   &:before {
