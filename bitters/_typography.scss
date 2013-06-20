@@ -81,6 +81,7 @@ a:link, a:visited {
 
   &:active, &:focus {
     color: $hover-link-color;
+    outline: none;
   }
 }
 
