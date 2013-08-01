@@ -1,60 +1,43 @@
-$sans-serif: $helvetica;
-$serif: $georgia;
-
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
-
-// Font Sizes
-$base-font-size: 1rem; // this isn't supported in IE8
-$base-line-height: $base-font-size * 1.375;
-
 body {
+  color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $base-font-color;
   -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
 }
 
 h1 {
   font-size: em(44);
-  line-height: $base-line-height * 2;
-  margin: $base-line-height 0;
+  line-height: 1em;
 }
 
 h2 {
   font-size: em(32);
   line-height: $base-line-height * 1.75;
-  margin: ($base-line-height * .75) 0;
 }
 
 h3 {
   font-size: em(28);
   line-height: $base-line-height * 1.5;
-  margin: ($base-line-height * .5) 0;
 }
 
 h4 {
   font-size: em(24);
   line-height: $base-line-height * 1.25;
-  margin: ($base-line-height * .25) 0;
 }
 
 h5 {
   font-size: em(20);
   line-height: $base-line-height;
-  margin: 0;
 }
 
 h6 {
   font-size: $base-font-size;
   line-height: lh();
-  margin: 0;
 }
 
 p {
@@ -117,9 +100,9 @@ blockquote {
 }
 
 cite {
-  font-style: italic;
-  font-size: smaller;
   color: lighten($base-font-color, 25%);
+  font-size: smaller;
+  font-style: italic;
 
   &:before {
     content: '\2014 \00A0';
