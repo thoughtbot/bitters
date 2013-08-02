@@ -1,29 +1,34 @@
 ul, ol {
-  list-style-position: outside;
-  margin-bottom: $base-line-height * .5;
-  padding-left: $base-line-height;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  li {
-    line-height: $base-line-height;
+  &%default {
+    list-style-position: outside;
+    margin-bottom: $base-line-height / 2;
+    padding-left: $base-line-height;
 
-    ul, ol {
-      padding-left: $base-line-height * .5;
-      margin-bottom: 0;
+    li {
+      line-height: $base-line-height;
+
+      ul, ol {
+        padding-left: $base-line-height / 2;
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 dl {
   line-height: $base-line-height;
-  margin-bottom: $base-line-height * .5;
+  margin-bottom: $base-line-height / 2;
 
   dt {
     font-weight: bold;
-    margin-top: $base-line-height * .25;
+    margin-top: $base-line-height / 2;
   }
 
   dd {
-    margin-bottom: 0;
-    margin-left: $base-line-height * .5;
+    margin: 0;
   }
 }

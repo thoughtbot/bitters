@@ -8,36 +8,31 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; // Fix the character spacing for headings
+  margin: 0;
 }
 
 h1 {
-  font-size: em(44);
-  line-height: 1em;
+  font-size: em(42);
 }
 
 h2 {
-  font-size: em(32);
-  line-height: $base-line-height * 1.75;
+  font-size: em(36);
 }
 
 h3 {
-  font-size: em(28);
-  line-height: $base-line-height * 1.5;
+  font-size: em(32);
 }
 
 h4 {
   font-size: em(24);
-  line-height: $base-line-height * 1.25;
 }
 
 h5 {
-  font-size: em(20);
-  line-height: $base-line-height;
+  font-size: em(18);
 }
 
 h6 {
   font-size: $base-font-size;
-  line-height: lh();
 }
 
 p {
@@ -62,11 +57,11 @@ a:link, a:visited {
 }
 
 hr {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin: $base-line-height 0;
   border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
 }
 
 img {
@@ -80,41 +75,31 @@ abbr, acronym {
 
 address {
   display: block;
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-line-height / 2);
 }
 
 hgroup {
-  margin-bottom: $base-line-height * .5;
+  margin-bottom: $base-line-height / 2;
 }
 
 del {
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-font-color, 15);
 }
 
 blockquote {
   border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-font-color, 15);
   font-style: italic;
   margin: $base-line-height 0;
-  padding-left: $base-line-height * .5;
+  padding-left: $base-line-height / 2;
 }
 
 cite {
-  color: lighten($base-font-color, 25%);
+  color: lighten($base-font-color, 25);
   font-size: smaller;
   font-style: italic;
 
   &:before {
     content: '\2014 \00A0';
   }
-}
-
-strong {
-  font-weight: bolder;
-}
-
-pre, code {
-  font-family: 'andale mono', 'monotype.com', 'lucida console', monospace, serif;
-  line-height: $base-line-height;
-  margin: ($base-line-height * .5) 0;
 }

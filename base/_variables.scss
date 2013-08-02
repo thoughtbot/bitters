@@ -1,3 +1,4 @@
+
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
 $sans-serif: $helvetica;
@@ -6,10 +7,11 @@ $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
-// Font Sizes
-$base-font-size: 1rem; // this isn't supported in IE8
-$base-line-height: $base-font-size * 1.375;
-
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-scale: 1.5;
+$base-font-size: 1em;
+$base-line-height: $base-font-size * $base-scale;
 $base-border-radius: 3px;
 
 // Colors
