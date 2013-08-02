@@ -1,29 +1,18 @@
 table {
-  margin: ($base-line-height * .5) 0;
+  margin: ($base-line-height / 2) 0;
   width: 100%;
 }
 
-thead {
-  border-bottom: 1px solid darken($base-border-color, 15%);
-}
-
 th {
+  border-bottom: 1px solid darken($base-border-color, 15%);
   font-weight: bold;
+  padding: ($base-line-height / 2) 0;
   text-align: left;
 }
 
 td {
   border-bottom: 1px solid $base-border-color;
-}
-
-caption, th, td {
-  padding: $base-line-height * .5;
-}
-
-caption {
-  background: #f1f1f1;
-  margin-bottom: $base-line-height * .5;
-  padding: ($base-line-height * .5) 0;
+  padding: ($base-line-height / 2) 0;
 }
 
 tr, td, th {

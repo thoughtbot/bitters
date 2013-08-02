@@ -1,60 +1,38 @@
-$sans-serif: $helvetica;
-$serif: $georgia;
-
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
-
-// Font Sizes
-$base-font-size: 1rem; // this isn't supported in IE8
-$base-line-height: $base-font-size * 1.375;
-
 body {
+  color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $base-font-color;
   -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
+  margin: 0;
 }
 
 h1 {
-  font-size: em(44);
-  line-height: $base-line-height * 2;
-  margin: $base-line-height 0;
+  font-size: em(42);
 }
 
 h2 {
-  font-size: em(32);
-  line-height: $base-line-height * 1.75;
-  margin: ($base-line-height * .75) 0;
+  font-size: em(36);
 }
 
 h3 {
-  font-size: em(28);
-  line-height: $base-line-height * 1.5;
-  margin: ($base-line-height * .5) 0;
+  font-size: em(32);
 }
 
 h4 {
   font-size: em(24);
-  line-height: $base-line-height * 1.25;
-  margin: ($base-line-height * .25) 0;
 }
 
 h5 {
-  font-size: em(20);
-  line-height: $base-line-height;
-  margin: 0;
+  font-size: em(18);
 }
 
 h6 {
   font-size: $base-font-size;
-  line-height: lh();
-  margin: 0;
 }
 
 p {
@@ -79,11 +57,11 @@ a:link, a:visited {
 }
 
 hr {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin: $base-line-height 0;
   border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
 }
 
 img {
@@ -97,41 +75,31 @@ abbr, acronym {
 
 address {
   display: block;
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-line-height / 2);
 }
 
 hgroup {
-  margin-bottom: $base-line-height * .5;
+  margin-bottom: $base-line-height / 2;
 }
 
 del {
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-font-color, 15);
 }
 
 blockquote {
   border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15%);
+  color: lighten($base-font-color, 15);
   font-style: italic;
   margin: $base-line-height 0;
-  padding-left: $base-line-height * .5;
+  padding-left: $base-line-height / 2;
 }
 
 cite {
-  font-style: italic;
+  color: lighten($base-font-color, 25);
   font-size: smaller;
-  color: lighten($base-font-color, 25%);
+  font-style: italic;
 
   &:before {
     content: '\2014 \00A0';
   }
-}
-
-strong {
-  font-weight: bolder;
-}
-
-pre, code {
-  font-family: 'andale mono', 'monotype.com', 'lucida console', monospace, serif;
-  line-height: $base-line-height;
-  margin: ($base-line-height * .5) 0;
 }
