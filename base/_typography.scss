@@ -9,6 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   margin: 0;
+  line-height: 1.3em;
 }
 
 h1 {
