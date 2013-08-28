@@ -38,13 +38,12 @@ h6 {
 
 p {
   font-size: $base-font-size;
-  font-weight: 400;
   margin: 0 0 ($base-line-height * .5);
 }
 
 a:link, a:visited {
   color: $base-link-color;
-  text-decoration: underline;
+  text-decoration: none;
   @include transition(color 0.1s linear);
 
   &:hover {

@@ -2,25 +2,26 @@
 %flash {
   margin-bottom: $base-line-height / 2;
   padding: $base-line-height / 2;
+  font-weight: bold;
 }
 
 .error, #flash_failure {
   @extend %flash;
   background: $error-color;
-  color: darken($error-color, 60%);
+  color: darken($error-color, 60);
 
   a {
-    color: darken($error-color, 60%);
+    color: darken($error-color, 70);
   }
 }
 
 .notice, #flash_notice {
   @extend %flash;
   background: $notice-color;
-  color: darken($notice-color, 60%);
+  color: darken($notice-color, 60);
 
   a {
-    color: darken($notice-color, 60%);
+    color: darken($notice-color, 70);
   }
 }
 
@@ -28,10 +29,10 @@
 .success, #flash_success {
   @extend %flash;
   background: $success-color;
-  color: darken($success-color, 50%);
+  color: darken($success-color, 60);
 
   a {
-    color: darken($success-color, 50%);
+    color: darken($success-color, 70);
   }
 }
 

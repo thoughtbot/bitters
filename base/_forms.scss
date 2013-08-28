@@ -66,11 +66,11 @@ input[type="search"] {
 
 input[type="checkbox"], input[type="radio"] {
   display: inline;
-  margin-right: $base-line-height / 2;
+  margin-right: $base-line-height / 4;
 }
 
 select {
-  width: $form-width;
+  width: auto;
   margin-bottom: $base-line-height;
 }
 
