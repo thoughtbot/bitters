@@ -1,21 +1,18 @@
 ul, ol {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 
-  &%default {
-    list-style-position: outside;
+  &%default-ul {
+    list-style-type: disc;
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
+  }
 
-    li {
-      line-height: $base-line-height;
-
-      ul, ol {
-        padding-left: $base-line-height / 2;
-        margin-bottom: 0;
-      }
-    }
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $base-line-height / 2;
+    padding-left: $base-line-height;
   }
 }
 

@@ -12,6 +12,10 @@
 
   a {
     color: darken($error-color, 70);
+
+    &:hover {
+      color: darken($error-color, 90);
+    }
   }
 }
 
@@ -22,6 +26,10 @@
 
   a {
     color: darken($notice-color, 70);
+
+    &:hover {
+      color: darken($notice-color, 90);
+    }
   }
 }
 
@@ -33,6 +41,10 @@
 
   a {
     color: darken($success-color, 70);
+
+    &:hover {
+      color: darken($success-color, 90);
+    }
   }
 }
 

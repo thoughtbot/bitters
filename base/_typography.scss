@@ -9,27 +9,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   margin: 0;
-  line-height: 1.3em;
+  line-height: 1.25em;
 }
 
 h1 {
-  font-size: em(42);
+  font-size: $base-font-size * 2.25;
 }
 
 h2 {
-  font-size: em(36);
+  font-size: $base-font-size * 2;
 }
 
 h3 {
-  font-size: em(32);
+  font-size: $base-font-size * 1.75;
 }
 
 h4 {
-  font-size: em(24);
+  font-size: $base-font-size * 1.5;
 }
 
 h5 {
-  font-size: em(18);
+  font-size: $base-font-size * 1.25;
 }
 
 h6 {
@@ -37,14 +37,15 @@ h6 {
 }
 
 p {
-  font-size: $base-font-size;
   margin: 0 0 ($base-line-height * .5);
 }
 
-a:link, a:visited {
-  color: $base-link-color;
-  text-decoration: none;
-  @include transition(color 0.1s linear);
+a {
+  &:link, &:visited {
+    color: $base-link-color;
+    text-decoration: none;
+    @include transition(color 0.1s linear);
+  }
 
   &:hover {
     color: $hover-link-color;
@@ -66,6 +67,7 @@ hr {
 
 img {
   margin: 0;
+  max-width: 100%;
 }
 
 abbr, acronym {
@@ -89,14 +91,12 @@ del {
 blockquote {
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
-  font-style: italic;
   margin: $base-line-height 0;
   padding-left: $base-line-height / 2;
 }
 
 cite {
   color: lighten($base-font-color, 25);
-  font-size: smaller;
   font-style: italic;
 
   &:before {

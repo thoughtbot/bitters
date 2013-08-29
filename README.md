@@ -1,29 +1,48 @@
 Bitters
 ===
-Add a dash of predefined style to your [Bourbon](http://bourbon.io) stylesheets.
+Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
 
-Bitters is meant to help designers get projects started faster. It adds enough predefined structure and style to get started quickly but not enough to dictate any style.
+Bitters is meant to help designers get projects started faster. It adds enough predefined structure and style to get started quickly but not enough to dictate style moving forward.
 
 Install Instructions
 ===
-Throw the base folder into your projects stylesheets and edit it to your sites design. Remove the parts you don't need and refactor those that don't fit your sites design.
+Copy the Bitters base folder into your projects stylesheets and edit, delete or and refactor styles that don't fit your sites design. To include Bitters add `@include "base/base";` after a reset, we suggest [Normalize](http://necolas.github.io/normalize.css/), Bourbon and Neat.
 
-It is recommended that you use Bitters with a reset like Normalize.
+```
+@import "normalize";
+@import "bourbon";
+@import "neat";
+@import "base/base";
+
+// All other imports
+```
+
+If you are using Neat overrides, `_grid-settings.scss` `@import "base/grid-settings"` between Bourbon and Neat.
+
+```
+@import "normalize";
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
+
+// All other imports
+```
 
 ## Variables
-This houses all variables that are used or will be used in more than one file. For varaible names we try to use the most semantic name possible in our Scss.
+This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss. If using Neat overrides `@import` this file before Neat.
 
 ## Typography
-Typography is all based on calculations of `$base-scale` and `$base-font-size`.
-
-## Forms
-Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
+All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `25`.
 
 ## Lists
 All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default;` to the `<ul>` or `<ol>`.
 
+## Forms
+Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
+
 ## Flashes
-Made for rails but can be used for any error, warning or success messages.
+Made for rails notices but can be used for any error, warning or success messages in applications or forms.
 
 Requirements
 ===
