@@ -6,7 +6,7 @@ Bitters is meant to help designers get projects started on new projects faster. 
 
 Install Instructions
 ===
-Copy the Bitters base folder into your projects stylesheets and edit, delete or and refactor styles that don't fit your sites design. To include Bitters add `@include "base/base";` after a reset, we suggest [Normalize](http://necolas.github.io/normalize.css/), Bourbon and Neat.
+Copy the Bitters base folder into your projects stylesheets and edit, delete or and refactor styles that don't fit your sites design. To include Bitters add `@include "base/base";` after a reset, we suggest [Normalize](http://necolas.github.io/normalize.css/), Bourbon and [Neat](http://neat.bourbon.io).
 
 ```scss
 @import "normalize";
@@ -17,7 +17,7 @@ Copy the Bitters base folder into your projects stylesheets and edit, delete or 
 // All other imports
 ```
 
-If you are using Neat overrides, `_grid-settings.scss` `@import "base/grid-settings"` between Bourbon and Neat.
+If you are using Neat overrides, `_grid-settings.scss` `@import "base/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
 
 ```scss
 @import "normalize";

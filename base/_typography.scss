@@ -7,29 +7,29 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
   margin: 0;
   line-height: 1.25em;
 }
 
 h1 {
-  font-size: $base-font-size * 2.25;
+  font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
 }
 
 h2 {
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 2; // 16 * 2 = 32px
 }
 
 h3 {
-  font-size: $base-font-size * 1.75;
+  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
 }
 
 h4 {
-  font-size: $base-font-size * 1.5;
+  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
 }
 
 h5 {
-  font-size: $base-font-size * 1.25;
+  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
 }
 
 h6 {
@@ -41,11 +41,9 @@ p {
 }
 
 a {
-  &:link, &:visited {
-    color: $base-link-color;
-    text-decoration: none;
-    @include transition(color 0.1s linear);
-  }
+  color: $base-link-color;
+  text-decoration: none;
+  @include transition(color 0.1s linear);
 
   &:hover {
     color: $hover-link-color;
