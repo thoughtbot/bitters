@@ -74,8 +74,12 @@ select {
   margin-bottom: $base-line-height;
 }
 
-button:not(.reset-style), // Add class of 'reset-style' to prevent a button from being styled
-input[type="submit"]:not(.reset-style) {
-  @include button(simple, $base-accent-color);
-  font-size: $form-font-size;
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
