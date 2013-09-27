@@ -1,3 +1,3 @@
 module Bitters
-  VERSION = "0.0.2"
+  VERSION = "0.9.0.beta.1"
 end

@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "bitters"
+require File.dirname(__FILE__) + '/../lib/bitters.rb'
 
-Bitters::Generator.new(ARGV).run
+Bitters::Generator.start

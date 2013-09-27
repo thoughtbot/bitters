@@ -1,21 +1,24 @@
-require "fileutils"
+require 'bitters/version'
+require 'fileutils'
+require 'thor'
 
 module Bitters
-  class Generator
-    def initialize(arguments)
-      @subcommand = arguments.first
-    end
+  class Generator < Thor
+    map ['-v', '--version'] => :version
+    map ['scaffold'] => :install
+    map ['delete'] => :remove
 
-    def run
-      if @subcommand == "install"
-        install
-      elsif @subcommand == "update"
-        update
-      elsif @subcommand == "remove"
-        remove
+    desc 'install', 'Install Bitters into your project'
+    def install
+      if bitters_files_already_exist?
+        puts "Bitters files already installed, doing nothing."
+      else
+        install_files
+        puts "Bitters files installed to /base"
       end
     end
 
+    desc 'update', 'Update Bitters'
     def update
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -26,15 +29,7 @@ module Bitters
       end
     end
 
-    def install
-      if bitters_files_already_exist?
-        puts "Bitters files already installed, doing nothing."
-      else
-        install_files
-        puts "Bitters files installed to /base"
-      end
-    end
-
+    desc 'remove', 'Remove Bitters'
     def remove
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -42,6 +37,11 @@ module Bitters
       else
         puts "No existing Bitters installation. Doing nothing."
       end
+    end
+
+    desc 'version', 'Show Bitters version'
+    def version
+      say "Bitters #{Bitters::VERSION}"
     end
 
     private

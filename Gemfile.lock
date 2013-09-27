@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    bitters (0.0.2)
+    bitters (0.9.0.beta.1)
       bourbon (>= 3.1)
       neat (>= 1.4)
       sass (>= 3.2)
+      thor
 
 GEM
   remote: https://rubygems.org/
