@@ -1,4 +1,4 @@
 %button {
   @include button(simple, $base-accent-color);
-  font-size: $form-font-size;
+  font-size: $base-font-size;
 }
