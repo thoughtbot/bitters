@@ -1,38 +1,71 @@
-#Bourbon UI-Smash
+<<<<<<< HEAD
+Bitters
+===
+Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
 
-A Sass UI Library
+Bitters is meant to help designers get projects started on new projects faster. It adds enough predefined structure and style to get started quickly but bland enough so that it doesn't dictate any style moving forward.
 
-#[Documentation & Demo](http://thoughtbot.github.com/bourbon_ui_smash)
+Install Instructions
+===
+Copy the Bitters base folder into your projects stylesheets and edit, delete or and refactor styles that don't fit your sites design. To include Bitters add `@include "base/base";` after a reset, we suggest [Normalize](http://necolas.github.io/normalize.css/), Bourbon and [Neat](http://neat.bourbon.io).
 
-##Requirements
+```scss
+@import "normalize";
+@import "bourbon";
+@import "neat";
+@import "base/base";
 
-* [Bourbon](http://thoughtbot.com/bourbon)
-* [Normalize](http://necolas.github.com/normalize.css/2.0.1/normalize.css) (suggested)
+// All other imports
+```
 
-Alpha v0.0.2
+If you are using Neat overrides, `_grid-settings.scss` `@import "base/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
 
-## UI Base
-This folder is meant to be a set of base-styles which you can customize specifically for your project. It is a starting point for new projects.
+```scss
+@import "normalize";
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
 
-To use the **UI Base** folder, drop the folder into your Sass directory and `@import 'ui-base/base';` after your Bourbon import.
+// All other imports
+```
 
-It is suggested that you use **ui-base** with [Normalize](http://necolas.github.com/normalize.css/2.0.1/normalize.css).  
-Note: `@import "normalize";` before **ui-base**.
+Getting Started
+===
 
-## UI Components
-These components are a set of reusable UI elements which can be `@extended` or `@included` in your sass files. They are meant to be pulled into your project and customized to your needs.
+### Sass structure & default style
+The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add any code that might be reused throughout the entire site. For example add an `_extends.scss` file or extends directory to contain your site wide extends.
 
-To use the **UI Components** folder, drop the folder into your Sass directory and `@import 'ui-components/base';` after your Bourbon import.
+The default style is meant to get out of the way and give you a good starting place for new projects. It shouldn't dictate any design decisions, only make the styles not look terrible from the start.
 
-## GH-Pages Branch
+### Variables
+This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss. If using Neat overrides `@import` this file before Neat.
 
-**Do not force push unless necessary. Do the following if your push is rejected:**
+### Typography
+All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `.25`.
 
-To pull in the latest changes on from origin/gh-pages branch:
+### Lists
+All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default;` to the `<ul>` or `<ol>`.
 
-    git pull --rebase origin gh-pages
+### Forms
+Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
 
-To merge in the latest changes from master, you must fetch and merge master into gh-pages:
+### Flashes
+Made for rails notices but can be used for any error, warning or success messages in applications or forms.
 
-    git fetch origin master && git merge master
+Requirements
+===
+- Sass 3.0+
+- Bourbon 2.0+
 
+Credits
+===
+
+![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+
+Bourbon is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community). Tweet your questions or suggestions at [@kylefiedler](https://twitter.com/kylefiedler).
+
+License
+===
+
+Bitters is Copyright © 2013 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.

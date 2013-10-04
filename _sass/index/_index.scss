@@ -1,0 +1,117 @@
+@import "variables";
+@import "extends";
+
+header.main {
+  @include outer-container;
+  @include row;
+  padding: 3em 0;
+
+  h1 {
+    float: left;
+  }
+
+  nav {
+    float: right;
+
+    a {
+      @include inline-block;
+      padding: 1em;
+      width: em(154, 14);
+      background: $blue;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+      border-radius: $base-border-radius * 2;
+      font-size: em(14);
+    }
+  }
+}
+
+.wrapper {
+  @include outer-container;
+}
+
+.index {
+  font-family: $index-font-family;
+
+  h2 {
+    font-size: em(24);
+  }
+
+  p {
+    color: lighten($base-font-color, 25);
+  }
+
+  .hero {
+    background-color: $green;
+    color: #fff;
+    padding: 4em 0 0;
+
+    h1 {
+      text-align: center;
+
+      &:after {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: em(270, 36);
+        background-color: #FFF;
+        margin-top: 1em;
+        border-top: 22px solid $base-border-color;
+      }
+    }
+  }
+
+  .about {
+    @include row;
+    background-color: lighten($yellow, 10);
+
+    h2 {
+      color: darken($yellow, 50);
+      margin-bottom: .5em;
+    }
+
+    p {
+      color: darken($yellow, 40);
+    }
+
+    article {
+      @include span-columns(4, table);
+      padding: 3em 2em;
+
+      &:last-child {
+        background-color: lighten($yellow, 5);
+      }
+    }
+  }
+
+  .getting-started {
+    margin-top: 4em;
+    @include outer-container;
+
+    article {
+      margin-bottom: 5em;
+
+      &:nth-child(odd) {
+        padding-left: flex-grid(6) + flex-gutter();
+      }
+
+      &:nth-child(even) {
+        padding-right: flex-grid(6) + flex-gutter();
+      }
+    }
+  }
+}
+
+footer.main {
+  @include outer-container;
+  opacity: .6;
+  text-align: center;
+  padding: 3em 0;
+
+  p {
+    margin-bottom: 0;
+  }
+}

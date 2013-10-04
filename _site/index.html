@@ -2,34 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Bourbon Smash</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
+    <title>Bitters - predefined style for Bourbon</title>
     <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
+
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/foy0lqb.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
-  <body>
+
+  <body class="index">
+    <header class="main">
+      <h1>Bitters</h1>
+      <nav>
+        <a href="/example.html">Example</a>
+        <a href="#">Github</a>
+      </nav>
+    </header>
 
     <section class="container">
+      <section class="hero">
+  <div class="wrapper">
+    <h1>A dash of predefined style for your Bourbon stylesheets.</h1>
+  </div>
+</section>
 
-      <header class="home">
-  <h1><p>&#9813;</p>Bitters</h1>
-</header>
+  <section class="about">
+    <div class="wrapper">
+      <article>
+        <h2>Built for speed</h2>
+        <p>Bitters is meant to help designers get projects started on new projects faster. </p>
+      </article>
+      <article>
+        <h2>Made for change</h2>
+        <p>Enough predefined style so that a new project doens&rsquo;t look terrible but bland enough to not dictate any style moving forward.</p>
+      </article>
+      <article>
+        <h2>Easy to install</h2>
+        <p>First <code>$gem install bitters</code>. Then cd to your Sass directory and <code>$bitters install</code>. Or simply just copy and paste the <a href="#">base folder</a>.</p>
+      </article>
+    </div>
+  </section>
 
-<nav class="bourbon-ui">
-  <article>
-    <a href="forms.html">Forms</a>
-    <a href="flashes.html">Flashes</a>
-    <a href="typography.html">Typography</a>
-    <a href="lists.html">Lists</a>
-    <a href="tables.html">Tables</a>
-  </article>
-</nav>
+  <section class="getting-started">
+    <article>
+      <h2>Sass Structure</h2>
+      <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add any code that might be reused throughout the entire site. For example add an <code>_mixins.scss</code> that contains custom site mixins.</p>
+      <img src="" alt="" />
+    </article>
+
+    <article>
+      <h2>Variables</h2>
+      <p>This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss.</p>
+    </article>
+
+    <article>
+      <h2>Grid Settings</h2>
+      <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a>. These need to be imported separately from the rest fo your base file because the need to be above Neat in your main stylesheet.</p>
+    </article>
+
+    <article>
+      <h2>Typography</h2>
+      <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
+    </article>
+
+    <article>
+      <h2>Lists</h2>
+      <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ul;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
+    </article>
+
+    <article>
+      <h2>Forms</h2>
+      <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
+    </article>
+
+    <article>
+      <h2>Flashes</h2>
+      <p>Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.</p>
+    </article>
+
+    <hr />
+  </section>
 
 
     </section>
 
+    <footer class="main">
+      <p>Bitters is maintained and funded by <a href="http://www.thoughtbot.com">thoughtbot</a>. Questions? Tweet <a href="http://www.twitter.com/kylefiedler">@kylefiedler</a>.</p>
+      <p>Bitters is Copyright © 2013 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.</p>
+      <nav>
+        <a href="/example.html">Example</a>
+        <a href="#">Github</a>
+      </nav>
+    </footer>
   </body>
 </html>
