@@ -1,0 +1,8 @@
+.wrapper {
+  @include outer-container;
+  padding: 0 2em;
+
+  @include media($max-width + 4em) {
+    padding: 0;
+  };
+}

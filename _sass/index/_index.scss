@@ -1,37 +1,6 @@
 @import "variables";
 @import "extends";
-
-header.main {
-  @include outer-container;
-  @include row;
-  padding: 3em 0;
-
-  h1 {
-    float: left;
-  }
-
-  nav {
-    float: right;
-
-    a {
-      @include inline-block;
-      padding: 1em;
-      width: em(154, 14);
-      background: $blue;
-      font-weight: bold;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      text-align: center;
-      border-radius: $base-border-radius * 2;
-      font-size: em(14);
-    }
-  }
-}
-
-.wrapper {
-  @include outer-container;
-}
+@import "animations";
 
 .index {
   font-family: $index-font-family;
@@ -44,6 +13,11 @@ header.main {
     color: lighten($base-font-color, 25);
   }
 
+  img {
+    border: 1px solid $base-border-color;
+    border-radius: $base-border-radius;
+  }
+
   .hero {
     background-color: $green;
     color: #fff;
@@ -53,13 +27,18 @@ header.main {
       text-align: center;
 
       &:after {
+        @extend %browser-scroll;
         content: " ";
         display: block;
         width: 100%;
         height: em(270, 36);
         background-color: #FFF;
+        background-image: url('/images/bitters-example.jpg');
+        background-position: center 1em;
+        background-repeat: no-repeat;
+        background-size: 90%;
         margin-top: 1em;
-        border-top: 22px solid $base-border-color;
+        border-top: 28px solid $base-border-color;
       }
     }
   }
@@ -90,28 +69,38 @@ header.main {
   .getting-started {
     margin-top: 4em;
     @include outer-container;
+    padding: 0 2em;
+
+    @include media($max-width + 4em) {
+      padding: 0;
+    };
 
     article {
-      margin-bottom: 5em;
+      margin-bottom: 6em;
+      position: relative;
 
       &:nth-child(odd) {
-        padding-left: flex-grid(6) + flex-gutter();
+        @include media($medium-screen){
+          padding-left: flex-grid(6) + flex-gutter();
+
+          img {
+            @include position(absolute, -.5em 0 0 flex-gutter());
+            width: flex-grid(5);
+          }
+        }
       }
 
       &:nth-child(even) {
-        padding-right: flex-grid(6) + flex-gutter();
+        @include media($medium-screen){
+          padding-right: flex-grid(6) + flex-gutter();
+
+          img {
+            @include position(absolute, -.5em flex-gutter() 0 0);
+            width: flex-grid(5);
+          }
+        };
       }
     }
   }
 }
 
-footer.main {
-  @include outer-container;
-  opacity: .6;
-  text-align: center;
-  padding: 3em 0;
-
-  p {
-    margin-bottom: 0;
-  }
-}

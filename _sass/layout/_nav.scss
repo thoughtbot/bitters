@@ -1,0 +1,16 @@
+nav.actions {
+  a {
+    @include inline-block;
+    padding: 1em;
+    width: em(154, 14);
+    background: $blue;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: $base-border-radius * 2;
+    font-size: em(14);
+  }
+}
+

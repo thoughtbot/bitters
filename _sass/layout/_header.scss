@@ -1,0 +1,25 @@
+header.main {
+  @include outer-container;
+  @include row;
+  font-family: $index-font-family;
+  padding: 3em 2em;
+
+  @include media($max-width + 4em){
+    padding: 3em 0;
+  }
+
+  h1 {
+    float: left;
+    @include hide-text();
+    background: url('/images/bitters-logo.svg') no-repeat center;
+    background-size: contain;
+    @include size(258px 85px);
+    margin-top: -16px;
+    margin-bottom: -20px;
+  }
+
+  nav {
+    float: right;
+  }
+}
+

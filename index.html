@@ -17,7 +17,7 @@ class: index
         <p>Bitters is meant to help designers get projects started on new projects faster. </p>
       </article>
       <article>
-        <h2>Made for change</h2>
+        <h2>Made to change</h2>
         <p>Enough predefined style so that a new project doens&rsquo;t look terrible but bland enough to not dictate any style moving forward.</p>
       </article>
       <article>
@@ -31,39 +31,44 @@ class: index
     <article>
       <h2>Sass Structure</h2>
       <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add any code that might be reused throughout the entire site. For example add an <code>_mixins.scss</code> that contains custom site mixins.</p>
-      <img src="" alt="" />
+      <img src="/images/structure.jpg" alt="" />
     </article>
 
     <article>
       <h2>Variables</h2>
       <p>This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss.</p>
+      <img src="/images/variables.jpg" alt="" />
     </article>
 
     <article>
       <h2>Grid Settings</h2>
       <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a>. These need to be imported separately from the rest fo your base file because the need to be above Neat in your main stylesheet.</p>
+      <img src="/images/grid-settings.jpg" alt="" />
     </article>
 
     <article>
       <h2>Typography</h2>
       <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
+      <img src="/images/typography.jpg" alt="" />
     </article>
 
     <article>
       <h2>Lists</h2>
       <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ul;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
+      <img src="/images/lists.jpg" alt="" />
     </article>
 
     <article>
       <h2>Forms</h2>
       <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
+      <img src="/images/forms.jpg" alt="" />
     </article>
 
     <article>
       <h2>Flashes</h2>
       <p>Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.</p>
+      <img src="/images/flashes.jpg" alt="" />
     </article>
 
     <hr />
   </section>
-

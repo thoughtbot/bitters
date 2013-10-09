@@ -1,0 +1,21 @@
+@include keyframes(browser-scroll) {
+  0% {
+    background-position: center 1em;
+  }
+
+  90% {
+    background-position: center bottom;
+  }
+
+  100% {
+    background-position: center 1em;
+  }
+}
+
+%browser-scroll {
+  @include animation-delay(1s);
+  @include animation-duration(20s);
+  @include animation-name(browser-scroll);
+  @include animation-timing-function($ease-out-sine);
+  @include animation-iteration-count(infinite);
+}

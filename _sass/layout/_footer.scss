@@ -1,0 +1,21 @@
+footer.main {
+  @include outer-container;
+  font-family: $index-font-family;
+  color: rgba($base-font-color, .6);
+  padding: 3em 2em;
+  text-align: center;
+
+  @include media($max-width + 4em){
+    padding: 3em 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 2em;
+  }
+}
+

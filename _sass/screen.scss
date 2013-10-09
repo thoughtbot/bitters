@@ -5,7 +5,9 @@
 
 // Base Styles
 @import "../base/base";
+@import "components/wrapper";
 
 @import "index/index";
+@import "layout/layout";
 @import "example";
 
