@@ -11,6 +11,10 @@ nav.actions {
     text-align: center;
     border-radius: $base-border-radius * 2;
     font-size: em(14);
+
+    &:hover {
+      background: darken($blue, 15);
+    }
   }
 }
 

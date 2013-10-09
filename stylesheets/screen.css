@@ -668,12 +668,12 @@ input[type="submit"] {
     background-position: center 1em; } }
 
 .index .hero h1:after {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-duration: 20s;
-  -moz-animation-duration: 20s;
-  animation-duration: 20s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  -webkit-animation-duration: 40s;
+  -moz-animation-duration: 40s;
+  animation-duration: 40s;
   -webkit-animation-name: browser-scroll;
   -moz-animation-name: browser-scroll;
   animation-name: browser-scroll;
@@ -696,7 +696,7 @@ input[type="submit"] {
   .index .hero {
     background-color: #aab971;
     color: #fff;
-    padding: 4em 0 0; }
+    padding: 3.5em 0 0; }
     .index .hero h1 {
       text-align: center; }
       .index .hero h1:after {
@@ -710,31 +710,41 @@ input[type="submit"] {
         background-repeat: no-repeat;
         background-size: 90%;
         margin-top: 1em;
-        border-top: 28px solid #dddddd; }
+        border-top: 25px solid #dddddd;
+        border-radius: 0.1875em 0.1875em 0 0; }
   .index .about {
     *zoom: 1;
     display: block;
-    background-color: #fed484; }
+    background-color: #fed484;
+    padding: 1.5em 0 0; }
     .index .about:before, .index .about:after {
       content: " ";
       display: table; }
     .index .about:after {
       clear: both; }
+    @media screen and (min-width: 47.5em) {
+      .index .about {
+        padding: 0; } }
     .index .about h2 {
-      color: #503500;
+      color: #825601;
       margin-bottom: .5em; }
     .index .about p {
-      color: #825601; }
+      color: #b57801;
+      margin-bottom: 0; }
     .index .about article {
-      display: table-cell;
-      padding-right: 2.35765%;
-      width: 34.11922%;
-      padding: 3em 2em; }
+      padding: 1.5em 2em; }
+      @media screen and (min-width: 50em) {
+        .index .about article {
+          display: table-cell;
+          padding-right: 2.35765%;
+          width: 34.11922%;
+          padding: 2em 2em; }
+          .index .about article:last-child {
+            width: 31.76157%;
+            padding-right: 0; } }
       .index .about article:last-child {
-        width: 31.76157%;
-        padding-right: 0; }
-      .index .about article:last-child {
-        background-color: #fecc6a; }
+        background-color: #fecc6a;
+        padding-right: 2em; }
   .index .getting-started {
     margin-top: 4em;
     *zoom: 1;
@@ -747,28 +757,31 @@ input[type="submit"] {
       display: table; }
     .index .getting-started:after {
       clear: both; }
-    @media screen and (min-width: 64em) {
-      .index .getting-started {
-        padding: 0; } }
+    .index .getting-started h2 {
+      margin-bottom: .5em; }
     .index .getting-started article {
-      margin-bottom: 6em;
-      position: relative; }
+      position: relative;
+      margin-bottom: 3em; }
+      @media screen and (min-width: 47.5em) {
+        .index .getting-started article {
+          margin-bottom: 6em;
+          min-height: 150px; } }
       @media screen and (min-width: 47.5em) {
         .index .getting-started article:nth-child(odd) {
           padding-left: 51.17883%; }
           .index .getting-started article:nth-child(odd) img {
             position: absolute;
             top: -0.5em;
-            left: 2.35765%;
-            width: 40.29137%; } }
+            left: 0px;
+            width: 44.55627%; } }
       @media screen and (min-width: 47.5em) {
         .index .getting-started article:nth-child(even) {
           padding-right: 51.17883%; }
           .index .getting-started article:nth-child(even) img {
             position: absolute;
             top: -0.5em;
-            right: 2.35765%;
-            width: 40.29137%; } }
+            right: 0px;
+            width: 44.55627%; } }
 
 header.main {
   *zoom: 1;
@@ -792,7 +805,7 @@ header.main {
   @media screen and (min-width: 64em) {
     header.main {
       padding: 3em 0; } }
-  header.main h1 {
+  header.main h1 a {
     float: left;
     color: transparent;
     font: 0/0 a;
@@ -845,3 +858,8 @@ nav.actions a {
   text-align: center;
   border-radius: 0.375em;
   font-size: 0.875em; }
+  nav.actions a:hover {
+    background: #426b73; }
+
+h1[id] {
+  margin-bottom: .5em; }

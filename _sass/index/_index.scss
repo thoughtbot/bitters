@@ -21,7 +21,7 @@
   .hero {
     background-color: $green;
     color: #fff;
-    padding: 4em 0 0;
+    padding: 3.5em 0 0;
 
     h1 {
       text-align: center;
@@ -38,7 +38,8 @@
         background-repeat: no-repeat;
         background-size: 90%;
         margin-top: 1em;
-        border-top: 28px solid $base-border-color;
+        border-top: 25px solid $base-border-color;
+        border-radius: $base-border-radius $base-border-radius 0 0;
       }
     }
   }
@@ -46,22 +47,33 @@
   .about {
     @include row;
     background-color: lighten($yellow, 10);
+    padding: 1.5em 0 0;
+
+    @include media($medium-screen) {
+      padding: 0;
+    };
 
     h2 {
-      color: darken($yellow, 50);
+      color: darken($yellow, 40);
       margin-bottom: .5em;
     }
 
     p {
-      color: darken($yellow, 40);
+      color: darken($yellow, 30);
+      margin-bottom: 0;
     }
 
     article {
-      @include span-columns(4, table);
-      padding: 3em 2em;
+      padding: 1.5em 2em;
+
+      @include media(em(800)) {
+        @include span-columns(4, table);
+        padding: 2em 2em;
+      };
 
       &:last-child {
         background-color: lighten($yellow, 5);
+        padding-right: 2em;
       }
     }
   }
@@ -71,21 +83,26 @@
     @include outer-container;
     padding: 0 2em;
 
-    @include media($max-width + 4em) {
-      padding: 0;
-    };
+    h2 {
+      margin-bottom: .5em;
+    }
 
     article {
-      margin-bottom: 6em;
       position: relative;
+      margin-bottom: 3em;
+
+      @include media($medium-screen) {
+        margin-bottom: 6em;
+        min-height: 150px;
+      };
 
       &:nth-child(odd) {
         @include media($medium-screen){
           padding-left: flex-grid(6) + flex-gutter();
 
           img {
-            @include position(absolute, -.5em 0 0 flex-gutter());
-            width: flex-grid(5);
+            @include position(absolute, -.5em 0 0 0px);
+            width: flex-grid(5.5);
           }
         }
       }
@@ -95,8 +112,8 @@
           padding-right: flex-grid(6) + flex-gutter();
 
           img {
-            @include position(absolute, -.5em flex-gutter() 0 0);
-            width: flex-grid(5);
+            @include position(absolute, -.5em 0px 0 0);
+            width: flex-grid(5.5);
           }
         };
       }

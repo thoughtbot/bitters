@@ -22,7 +22,7 @@ class: index
       </article>
       <article>
         <h2>Easy to install</h2>
-        <p>First <code>$gem install bitters</code>. Then cd to your Sass directory and <code>$bitters install</code>. Or simply just copy and paste the <a href="#">base folder</a>.</p>
+        <p>First <code>$gem install bitters</code>. Then cd to your Sass directory and <code>$bitters install</code>. Then put <code>@import "base/base";</code> right below <a href="http://bourbon.com">Bourbon</a> and <a href="http://neat.bourbon.com">Neat</a>.</p>
       </article>
     </div>
   </section>
@@ -30,19 +30,19 @@ class: index
   <section class="getting-started">
     <article>
       <h2>Sass Structure</h2>
-      <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add any code that might be reused throughout the entire site. For example add an <code>_mixins.scss</code> that contains custom site mixins.</p>
+      <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site. </p>
       <img src="/images/structure.jpg" alt="" />
     </article>
 
     <article>
       <h2>Variables</h2>
-      <p>This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss.</p>
+      <p>This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.</p>
       <img src="/images/variables.jpg" alt="" />
     </article>
 
     <article>
       <h2>Grid Settings</h2>
-      <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a>. These need to be imported separately from the rest fo your base file because the need to be above Neat in your main stylesheet.</p>
+      <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
       <img src="/images/grid-settings.jpg" alt="" />
     </article>
 

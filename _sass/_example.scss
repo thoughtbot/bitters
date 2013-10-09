@@ -1,3 +1,7 @@
+h1[id] {
+  margin-bottom: .5em;
+}
+
 ul.default {
   @extend %default-ul;
 }

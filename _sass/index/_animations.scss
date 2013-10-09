@@ -13,8 +13,8 @@
 }
 
 %browser-scroll {
-  @include animation-delay(1s);
-  @include animation-duration(20s);
+  @include animation-delay(.75s);
+  @include animation-duration(40s);
   @include animation-name(browser-scroll);
   @include animation-timing-function($ease-out-sine);
   @include animation-iteration-count(infinite);
