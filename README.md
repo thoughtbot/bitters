@@ -33,24 +33,27 @@ Getting Started
 ===
 
 ### Sass structure & default style
-The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add any code that might be reused throughout the entire site. For example add an `_extends.scss` file or extends directory to contain your site wide extends.
+The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site.
 
 The default style is meant to get out of the way and give you a good starting place for new projects. It shouldn't dictate any design decisions, only make the styles not look terrible from the start.
 
 ### Variables
-This houses all variables that are used or will be used in more than one file. For variable names we try to use the most semantic name possible in our Scss. If using Neat overrides `@import` this file before Neat.
+This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.
+
+### Grid settings
+Variables specifically created for Neat resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
 
 ### Typography
 All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `.25`.
 
 ### Lists
-All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default;` to the `<ul>` or `<ol>`.
+All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default-ul;` or `@extend %default-ol;` to the `<ul>` or `<ol>` respectively..
 
 ### Forms
 Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
 
 ### Flashes
-Made for rails notices but can be used for any error, warning or success messages in applications or forms.
+Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.
 
 Requirements
 ===
