@@ -18,6 +18,17 @@ module Bitters
       end
     end
 
+    desc 'reset', 'Reset Bitters'
+    def update
+      if bitters_files_already_exist?
+        remove_bitters_directory
+        install_files
+        puts "Bitters files updated."
+      else
+        puts "No existing Bitters installation. Doing nothing."
+      end
+    end
+
     desc 'remove', 'Remove Bitters'
     def remove
       if bitters_files_already_exist?
