@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["support@thoughtbot.com"]
   spec.description   = "Base styles for Web design"
   spec.summary       = "Base styles for Web design"
-  spec.homepage      = "http://github.com/kaishin/biters"
+  spec.homepage      = "http://github.com/thoughtbot/biters"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -22,7 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
 
   spec.add_dependency 'bourbon', '>= 3.1'
-  spec.add_dependency 'neat', '>= 1.4'
   spec.add_dependency 'sass', '>= 3.2'
   spec.add_dependency 'thor'
 end

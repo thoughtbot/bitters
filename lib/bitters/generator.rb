@@ -14,18 +14,7 @@ module Bitters
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to /base"
-      end
-    end
-
-    desc 'update', 'Update Bitters'
-    def update
-      if bitters_files_already_exist?
-        remove_bitters_directory
-        install_files
-        puts "Bitters files updated."
-      else
-        puts "No existing Bitters installation. Doing nothing."
+        puts "Bitters files installed to /bitters"
       end
     end
 
@@ -47,16 +36,16 @@ module Bitters
     private
 
     def bitters_files_already_exist?
-      File.directory?("base")
+      File.directory?("bitters")
     end
 
     def install_files
-      FileUtils.mkdir_p("base")
-      FileUtils.cp_r(all_stylesheets, "base/")
+      FileUtils.mkdir_p("bitters")
+      FileUtils.cp_r(all_stylesheets, "bitters/")
     end
 
     def remove_bitters_directory
-      FileUtils.rm_rf("base")
+      FileUtils.rm_rf("bitters")
     end
 
     def all_stylesheets

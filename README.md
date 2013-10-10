@@ -6,25 +6,42 @@ Bitters is meant to help designers get projects started on new projects faster. 
 
 Install Instructions
 ===
-Copy the Bitters base folder into your projects stylesheets and edit, delete or and refactor styles that don't fit your sites design. To include Bitters add `@include "base/base";` after a reset, we suggest [Normalize](http://necolas.github.io/normalize.css/), Bourbon and [Neat](http://neat.bourbon.io).
+Install Bitters:
+
+```bash
+gem install Bitters
+```
+
+Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
+
+Then `cd` to your Sass directory and run:
+
+```bash
+bitters install
+```
+
+The generated folder will contain all Bitters files.
+
+Import Bitters after Bourbon and Neat in your `application.css.scss`. All additional stylesheets should be imported below Bitters:
 
 ```scss
-@import "normalize";
 @import "bourbon";
 @import "neat";
-@import "base/base";
+@import "bitters/bitters";
 
 // All other imports
 ```
 
-If you are using Neat overrides, `_grid-settings.scss` `@import "base/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
+We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
+
+If you are using the Neat overrides found in `_grid-settings.scss`, `@import "bitters/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
 
 ```scss
 @import "normalize";
 @import "bourbon";
-@import "base/grid-settings";
+@import "bitters/grid-settings";
 @import "neat";
-@import "base/base";
+@import "bitters/bitters";
 
 // All other imports
 ```
