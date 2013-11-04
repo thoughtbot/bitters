@@ -3,3 +3,4 @@
 *.scssc
 /stylesheets/.sass-cache/
 pkg
+Gemfile.lock
