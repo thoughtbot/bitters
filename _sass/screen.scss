@@ -4,10 +4,9 @@
 @import "neat/neat";
 
 // Base Styles
-@import "../base/base";
-@import "components/wrapper";
+@import "bitters/bitters";
+@import "components/components";
 
 @import "index/index";
 @import "layout/layout";
 @import "example";
-

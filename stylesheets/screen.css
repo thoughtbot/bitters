@@ -464,7 +464,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   -moz-transition: border-color;
   transition: border-color;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   border: 1px solid #dddddd;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -592,6 +592,59 @@ dl {
     .wrapper {
       padding: 0; } }
 
+@font-face {
+  font-family: Fontello;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/fontello.eot");
+  src: url("/fonts/fontello.eot?#iefix") format("embedded-opentype"), url("/fonts/fontello.woff") format("woff"), url("/fonts/fontello.ttf") format("truetype"), url("/fonts/fontello.svg#Fontello") format("svg"); }
+
+.index .getting-started article.structure h2:before, .index .getting-started article.variables h2:before, .index .getting-started article.grid h2:before, .index .getting-started article.type h2:before, .index .getting-started article.lists h2:before, .index .getting-started article.forms h2:before, .index .getting-started article.flashes h2:before {
+  color: #999999;
+  display: block;
+  font-family: "fontello";
+  font-size: .75em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  position: absolute;
+  top: 0px;
+  left: 0em; }
+
+.index .about article.speed:before {
+  content: '\e80d'; }
+
+.index .about article.install:before {
+  content: '\e80b'; }
+
+.index .about article.change:before {
+  content: '\e804'; }
+
+.index .getting-started article.structure h2:before {
+  content: '\e801'; }
+
+.index .getting-started article.flashes h2:before {
+  content: '\e800'; }
+
+.index .getting-started article.grid h2:before {
+  content: '\e808'; }
+
+.index .getting-started article.type h2:before {
+  content: '\e803'; }
+
+.index .getting-started article.lists h2:before {
+  content: '\e805'; }
+
+.index .getting-started article.forms h2:before {
+  content: '\e802'; }
+
+.index .getting-started article.variables h2:before {
+  content: '\e80a'; }
+
 button,
 input[type="submit"] {
   border: 1px solid #2459a6;
@@ -687,7 +740,7 @@ input[type="submit"] {
 .index {
   font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .index h2 {
-    font-size: 1.5em; }
+    font-size: 1.375em; }
   .index p {
     color: #737373; }
   .index img {
@@ -716,7 +769,7 @@ input[type="submit"] {
     *zoom: 1;
     display: block;
     background-color: #fed484;
-    padding: 1.5em 0 0; }
+    overflow: hidden; }
     .index .about:before, .index .about:after {
       content: " ";
       display: table; }
@@ -727,10 +780,15 @@ input[type="submit"] {
         padding: 0; } }
     .index .about h2 {
       color: #825601;
-      margin-bottom: .5em; }
+      margin-bottom: .5em;
+      text-align: center; }
     .index .about p {
       color: #b57801;
       margin-bottom: 0; }
+      .index .about p a {
+        color: #825601; }
+        .index .about p a:hover {
+          color: #fff7e9; }
     .index .about article {
       padding: 1.5em 2em; }
       @media screen and (min-width: 50em) {
@@ -745,13 +803,29 @@ input[type="submit"] {
       .index .about article:last-child {
         background-color: #fecc6a;
         padding-right: 2em; }
+      .index .about article:before {
+        width: 1.85em;
+        height: 1.85em;
+        background: #ffe9c1;
+        border-radius: 50%;
+        color: #fed484;
+        display: block;
+        font-family: "fontello";
+        font-size: 4em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1.95em;
+        margin: -.95em auto .25em;
+        speak: none;
+        text-align: center;
+        text-decoration: inherit; }
   .index .getting-started {
     margin-top: 4em;
     *zoom: 1;
     max-width: 60em;
     margin-left: auto;
-    margin-right: auto;
-    padding: 0 2em; }
+    margin-right: auto; }
     .index .getting-started:before, .index .getting-started:after {
       content: " ";
       display: table; }
@@ -761,27 +835,52 @@ input[type="submit"] {
       margin-bottom: .5em; }
     .index .getting-started article {
       position: relative;
-      margin-bottom: 3em; }
-      @media screen and (min-width: 47.5em) {
+      padding: 0 2em 2em; }
+      @media screen and (min-width: 50em) {
         .index .getting-started article {
-          margin-bottom: 6em;
-          min-height: 150px; } }
-      @media screen and (min-width: 47.5em) {
-        .index .getting-started article:nth-child(odd) {
-          padding-left: 51.17883%; }
-          .index .getting-started article:nth-child(odd) img {
-            position: absolute;
-            top: -0.5em;
-            left: 0px;
-            width: 44.55627%; } }
-      @media screen and (min-width: 47.5em) {
-        .index .getting-started article:nth-child(even) {
-          padding-right: 51.17883%; }
-          .index .getting-started article:nth-child(even) img {
-            position: absolute;
-            top: -0.5em;
-            right: 0px;
-            width: 44.55627%; } }
+          display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .index .getting-started article:last-child {
+            margin-right: 0; }
+          .index .getting-started article:nth-child(3n) {
+            margin-right: 0; }
+          .index .getting-started article:nth-child(3n+1) {
+            clear: left; }
+          .index .getting-started article:last-child {
+            margin-left: 34.11922%; } }
+  .index .instructions {
+    background: #5e98a3;
+    text-align: center;
+    padding: 3em 0; }
+    .index .instructions h1 {
+      color: #fff;
+      margin-bottom: 1em;
+      margin-top: 0; }
+    .index .instructions ol {
+      max-width: 25em;
+      margin: 0 auto; }
+      .index .instructions ol p {
+        color: #d0e1e4; }
+      .index .instructions ol code {
+        display: block;
+        font-weight: bold;
+        color: #f0f5f6; }
+    .index .instructions a {
+      padding: .5em 1em;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      margin-top: 1.5em;
+      color: #bfd6db;
+      border: 1px solid #9fc2c8;
+      border-radius: 0.1875em; }
+      .index .instructions a:hover {
+        color: #fff;
+        border-color: #fff; }
 
 header.main {
   *zoom: 1;
@@ -812,8 +911,8 @@ header.main {
     text-shadow: none;
     background: url("/images/bitters-logo.svg") no-repeat center;
     background-size: contain;
-    width: 258px;
-    height: 85px;
+    width: 240px;
+    height: 78px;
     margin-top: -16px;
     margin-bottom: -20px; }
   header.main nav {
@@ -850,16 +949,19 @@ nav.actions a {
   *vertical-align: auto;
   padding: 1em;
   width: 11em;
-  background: #5e98a3;
+  background: #f05f5c;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   border-radius: 0.375em;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0; }
   nav.actions a:hover {
-    background: #426b73; }
+    background: #cc504e; }
 
 h1[id] {
   margin-bottom: .5em; }

@@ -1,0 +1,56 @@
+@include font-face(Fontello, /fonts/fontello);
+
+%icon:before {
+  color: lighten($base-font-color, 40);
+  display: block;
+  font-family: "fontello";
+  font-size: .75em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  @include position(absolute,  0px 0 0 0em);
+}
+
+%speed:before {
+  content: '\e80d';
+}
+
+%install:before {
+  content: '\e80b';
+}
+
+%change:before {
+  content: '\e804';
+}
+
+%structure:before {
+  content: '\e801';
+}
+
+%flashes:before {
+  content: '\e800';
+}
+
+%grid:before {
+  content: '\e808';
+}
+
+%type:before {
+  content: '\e803';
+}
+
+%lists:before {
+  content: '\e805';
+}
+
+%forms:before {
+  content: '\e802';
+}
+
+%variables:before {
+  content: '\e80a';
+}

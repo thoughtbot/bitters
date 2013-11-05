@@ -13,7 +13,7 @@ header.main {
     @include hide-text();
     background: url('/images/bitters-logo.svg') no-repeat center;
     background-size: contain;
-    @include size(258px 85px);
+    @include size(240px 78px);
     margin-top: -16px;
     margin-bottom: -20px;
   }

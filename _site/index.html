@@ -29,68 +29,75 @@
   </div>
 </section>
 
-  <section class="about">
-    <div class="wrapper">
-      <article>
-        <h2>Built for speed</h2>
-        <p>Bitters is meant to help designers get projects started on new projects faster. </p>
-      </article>
-      <article>
-        <h2>Made to change</h2>
-        <p>Enough predefined style so that a new project doens&rsquo;t look terrible but bland enough to not dictate any style moving forward.</p>
-      </article>
-      <article>
-        <h2>Easy to install</h2>
-        <p>First <code>$gem install bitters</code>. Then cd to your Sass directory and <code>$bitters install</code>. Then put <code>@import "base/base";</code> right below <a href="http://bourbon.com">Bourbon</a> and <a href="http://neat.bourbon.com">Neat</a>.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="getting-started">
-    <article>
-      <h2>Sass Structure</h2>
-      <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site. </p>
-      <img src="/images/structure.jpg" alt="" />
+<section class="about">
+  <div class="wrapper">
+    <article class="speed">
+      <h2>Built for speed</h2>
+      <p>Bitters is meant to help designers get projects started on new projects faster. </p>
     </article>
-
-    <article>
-      <h2>Variables</h2>
-      <p>This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.</p>
-      <img src="/images/variables.jpg" alt="" />
+    <article class="change">
+      <h2>Made to change</h2>
+      <p>Enough predefined style so that a new project doens&rsquo;t look terrible but bland enough to not dictate any style moving forward.</p>
     </article>
-
-    <article>
-      <h2>Grid Settings</h2>
-      <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
-      <img src="/images/grid-settings.jpg" alt="" />
+    <article class="install">
+      <h2>Easy to install</h2>
+      <p>Just a few easy steps to get Bitters in your next project. Just follow our simple <a href="#install">install instructions below</a>.</p>
     </article>
+  </div>
+</section>
 
-    <article>
-      <h2>Typography</h2>
-      <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
-      <img src="/images/typography.jpg" alt="" />
-    </article>
+<section class="getting-started">
+  <article class="structure">
+    <h2>Sass Structure</h2>
+    <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site. </p>
+  </article>
 
-    <article>
-      <h2>Lists</h2>
-      <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ul;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
-      <img src="/images/lists.jpg" alt="" />
-    </article>
+  <article class="variables">
+    <h2>Variables</h2>
+    <p>This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.</p>
+  </article>
 
-    <article>
-      <h2>Forms</h2>
-      <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
-      <img src="/images/forms.jpg" alt="" />
-    </article>
+  <article class="grid">
+    <h2>Grid Settings</h2>
+    <p>Variables specifically created for <a href="http://neat.bourbon.com">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
+  </article>
 
-    <article>
-      <h2>Flashes</h2>
-      <p>Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.</p>
-      <img src="/images/flashes.jpg" alt="" />
-    </article>
+  <article class="type">
+    <h2>Typography</h2>
+    <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
+  </article>
 
-    <hr />
-  </section>
+  <article class="lists">
+    <h2>Lists</h2>
+    <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ul;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
+  </article>
+
+  <article class="forms">
+    <h2>Forms</h2>
+    <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
+  </article>
+
+  <article class="flashes">
+    <h2>Flashes</h2>
+    <p>Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.</p>
+  </article>
+</section>
+
+<section id="install" class="instructions">
+  <h1>Install Instructions</h1>
+  <ol>
+    <li>
+      <p>Install Bitters: <code>gem install bitters</code></p>
+    </li>
+    <li>
+      <p>Install Bourbon and Neat (optional). Then cd to your Sass directory and run: <code>bitters install</code></p>
+    </li>
+    <li>
+      <p>The generated folder will contain all Bitters files. Import Bitters after Bourbon and Neat in your application.css.scss: <code>@import "bitters/bitters";</code></p>
+    </li>
+  </ol>
+  <a href="https://github.com/thoughtbot/bitters#install-instructions">In-depth instructions on Github</a>
+</section>
 
     </section>
 

@@ -6,7 +6,7 @@
   font-family: $index-font-family;
 
   h2 {
-    font-size: em(24);
+    font-size: em(22);
   }
 
   p {
@@ -47,7 +47,7 @@
   .about {
     @include row;
     background-color: lighten($yellow, 10);
-    padding: 1.5em 0 0;
+    overflow: hidden;
 
     @include media($medium-screen) {
       padding: 0;
@@ -56,11 +56,22 @@
     h2 {
       color: darken($yellow, 40);
       margin-bottom: .5em;
+      text-align: center;
+
+
     }
 
     p {
       color: darken($yellow, 30);
       margin-bottom: 0;
+
+      a {
+        color: darken($yellow, 40);
+
+        &:hover {
+          color: lighten($yellow, 30);
+        }
+      }
     }
 
     article {
@@ -75,13 +86,40 @@
         background-color: lighten($yellow, 5);
         padding-right: 2em;
       }
+
+      &:before {
+        // content: " ";
+        // padding: .75em 0;
+        @include size(1.85em);
+        background: lighten($yellow, 22);
+        border-radius: 50%;
+        color: lighten($yellow, 10);
+        display: block;
+        font-family: "fontello";
+        font-size: 4em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1.95em;
+        margin: -.95em auto .25em;
+        speak: none;
+        text-align: center;
+        text-decoration: inherit;
+      }
+
+      $highlight-list: speed, change, install;
+
+      @each $highlight in $highlight-list {
+        &.#{$highlight} {
+          @extend %#{$highlight};
+        }
+      }
     }
   }
 
   .getting-started {
     margin-top: 4em;
     @include outer-container;
-    padding: 0 2em;
 
     h2 {
       margin-bottom: .5em;
@@ -89,33 +127,65 @@
 
     article {
       position: relative;
-      margin-bottom: 3em;
+      padding: 0 2em 2em;
 
-      @include media($medium-screen) {
-        margin-bottom: 6em;
-        min-height: 150px;
+      @include media(em(800)) {
+        @include span-columns(4);
+        @include omega(3n);
+
+        &:last-child {
+          @include shift(4);
+        }
       };
 
-      &:nth-child(odd) {
-        @include media($medium-screen){
-          padding-left: flex-grid(6) + flex-gutter();
+      $feature-list: structure, variables, grid, type, lists, forms, flashes;
 
-          img {
-            @include position(absolute, -.5em 0 0 0px);
-            width: flex-grid(5.5);
-          }
+      @each $feature in $feature-list {
+        &.#{$feature} h2 {
+          @extend %icon;
+          @extend %#{$feature};
         }
       }
+    }
+  }
 
-      &:nth-child(even) {
-        @include media($medium-screen){
-          padding-right: flex-grid(6) + flex-gutter();
+  .instructions {
+    background: $blue;
+    text-align: center;
+    padding: 3em 0;
 
-          img {
-            @include position(absolute, -.5em 0px 0 0);
-            width: flex-grid(5.5);
-          }
-        };
+    h1 {
+      color: #fff;
+      margin-bottom: 1em;
+      margin-top: 0;
+    }
+
+    ol {
+      max-width: em(400);
+      margin: 0 auto;
+
+      p {
+        color: lighten($blue, 35);
+      }
+
+      code {
+        display: block;
+        font-weight: bold;
+        color: lighten($blue, 45);
+      }
+    }
+
+    a {
+      padding: .5em 1em;
+      @include inline-block;
+      margin-top: 1.5em;
+      color: lighten($blue, 30);
+      border: 1px solid lighten($blue, 20);
+      border-radius: $base-border-radius;
+
+      &:hover {
+        color: #fff;
+        border-color: #fff;
       }
     }
   }
