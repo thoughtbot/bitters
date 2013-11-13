@@ -1,21 +1,28 @@
 nav.actions {
   a {
     @include inline-block;
-    padding: 1em;
-    width: em(154, 14);
-    background: $red;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    border-radius: $base-border-radius * 2;
-    font-size: em(14);
     @include transition();
+    background: $red;
+    border-radius: $base-border-radius * 2;
+    color: #fff;
+    display: block;
+    font-size: em(14);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media($min-small-screen) {
+      @include inline-block;
+      width: em(154, 14);
+      margin: 0;
+    };
 
     &:hover {
-      background: shade($red, 15);
       @include transition();
+      background: shade($red, 15);
     }
   }
 }

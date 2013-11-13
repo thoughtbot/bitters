@@ -21,25 +21,32 @@
   .hero {
     background-color: $green;
     color: #fff;
-    padding: 3.5em 0 0;
+    padding: 3.5em 0;
+
+    @include media($min-small-screen){
+      padding: 3.5em 0 0;
+    }
 
     h1 {
       text-align: center;
 
       &:after {
         @extend %browser-scroll;
-        content: " ";
-        display: block;
-        width: 100%;
-        height: em(270, 36);
-        background-color: #FFF;
-        background-image: url('/images/bitters-example.jpg');
-        background-position: center 1em;
-        background-repeat: no-repeat;
-        background-size: 90%;
-        margin-top: 1em;
-        border-top: 25px solid $base-border-color;
-        border-radius: $base-border-radius $base-border-radius 0 0;
+
+        @include media($min-small-screen){
+          content: " ";
+          display: block;
+          width: 100%;
+          height: em(270, 36);
+          background-color: #FFF;
+          background-image: url('/images/bitters-example.jpg');
+          background-position: center 1em;
+          background-repeat: no-repeat;
+          background-size: 90%;
+          margin-top: 1em;
+          border-top: 25px solid $base-border-color;
+          border-radius: $base-border-radius $base-border-radius 0 0;
+        }
       }
     }
   }
@@ -56,9 +63,10 @@
     h2 {
       color: darken($yellow, 40);
       margin-bottom: .5em;
-      text-align: center;
 
-
+      @include media($min-medium-screen){
+        text-align: center;
+      }
     }
 
     p {
@@ -77,34 +85,49 @@
     article {
       padding: 1.5em 2em;
 
-      @include media(em(800)) {
+      @include media($min-medium-screen) {
         @include span-columns(4, table);
         padding: 2em 2em;
       };
 
       &:last-child {
         background-color: lighten($yellow, 5);
-        padding-right: 2em;
+        margin: 0 -2em;
+        padding: 2em 4em;
+
+        @include media($min-medium-screen) {
+          padding: 2em;
+          margin: 0;
+        };
       }
 
       &:before {
-        // content: " ";
-        // padding: .75em 0;
         @include size(1.85em);
         background: lighten($yellow, 22);
         border-radius: 50%;
+        margin-right: .5em;
         color: lighten($yellow, 10);
         display: block;
+        float: left;
         font-family: "fontello";
-        font-size: 4em;
+        font-size: 2em;
         font-style: normal;
         font-variant: normal;
         font-weight: normal;
         line-height: 1.95em;
-        margin: -.95em auto .25em;
         speak: none;
         text-align: center;
         text-decoration: inherit;
+
+        @include media($min-small-screen) {
+          font-size: 3em;
+        };
+
+        @include media($min-medium-screen) {
+          font-size: 4em;
+          margin: -.95em auto .25em;
+          float: none;
+        };
       }
 
       $highlight-list: speed, change, install;
@@ -120,6 +143,11 @@
   .getting-started {
     margin-top: 4em;
     @include outer-container;
+    padding: 0 2em;
+
+    @include media($max-width + 4em) {
+      padding: 0;
+    };
 
     h2 {
       margin-bottom: .5em;
@@ -129,7 +157,7 @@
       position: relative;
       padding: 0 2em 2em;
 
-      @include media(em(800)) {
+      @include media($min-medium-screen) {
         @include span-columns(4);
         @include omega(3n);
 
@@ -152,7 +180,11 @@
   .instructions {
     background: $blue;
     text-align: center;
-    padding: 3em 0;
+    padding: 3em 2em;
+
+    @include media($max-width + 4em) {
+      padding: 3em 0;
+    };
 
     h1 {
       color: #fff;

@@ -749,22 +749,26 @@ input[type="submit"] {
   .index .hero {
     background-color: #aab971;
     color: #fff;
-    padding: 3.5em 0 0; }
+    padding: 3.5em 0; }
+    @media screen and (min-width: 38.75em) {
+      .index .hero {
+        padding: 3.5em 0 0; } }
     .index .hero h1 {
       text-align: center; }
-      .index .hero h1:after {
-        content: " ";
-        display: block;
-        width: 100%;
-        height: 7.5em;
-        background-color: #FFF;
-        background-image: url("/images/bitters-example.jpg");
-        background-position: center 1em;
-        background-repeat: no-repeat;
-        background-size: 90%;
-        margin-top: 1em;
-        border-top: 25px solid #dddddd;
-        border-radius: 0.1875em 0.1875em 0 0; }
+      @media screen and (min-width: 38.75em) {
+        .index .hero h1:after {
+          content: " ";
+          display: block;
+          width: 100%;
+          height: 7.5em;
+          background-color: #FFF;
+          background-image: url("/images/bitters-example.jpg");
+          background-position: center 1em;
+          background-repeat: no-repeat;
+          background-size: 90%;
+          margin-top: 1em;
+          border-top: 25px solid #dddddd;
+          border-radius: 0.1875em 0.1875em 0 0; } }
   .index .about {
     *zoom: 1;
     display: block;
@@ -780,8 +784,10 @@ input[type="submit"] {
         padding: 0; } }
     .index .about h2 {
       color: #825601;
-      margin-bottom: .5em;
-      text-align: center; }
+      margin-bottom: .5em; }
+      @media screen and (min-width: 46.25em) {
+        .index .about h2 {
+          text-align: center; } }
     .index .about p {
       color: #b57801;
       margin-bottom: 0; }
@@ -791,7 +797,7 @@ input[type="submit"] {
           color: #fff7e9; }
     .index .about article {
       padding: 1.5em 2em; }
-      @media screen and (min-width: 50em) {
+      @media screen and (min-width: 46.25em) {
         .index .about article {
           display: table-cell;
           padding-right: 2.35765%;
@@ -802,41 +808,59 @@ input[type="submit"] {
             padding-right: 0; } }
       .index .about article:last-child {
         background-color: #fecc6a;
-        padding-right: 2em; }
+        margin: 0 -2em;
+        padding: 2em 4em; }
+        @media screen and (min-width: 46.25em) {
+          .index .about article:last-child {
+            padding: 2em;
+            margin: 0; } }
       .index .about article:before {
         width: 1.85em;
         height: 1.85em;
         background: #ffe9c1;
         border-radius: 50%;
+        margin-right: .5em;
         color: #fed484;
         display: block;
+        float: left;
         font-family: "fontello";
-        font-size: 4em;
+        font-size: 2em;
         font-style: normal;
         font-variant: normal;
         font-weight: normal;
         line-height: 1.95em;
-        margin: -.95em auto .25em;
         speak: none;
         text-align: center;
         text-decoration: inherit; }
+        @media screen and (min-width: 38.75em) {
+          .index .about article:before {
+            font-size: 3em; } }
+        @media screen and (min-width: 46.25em) {
+          .index .about article:before {
+            font-size: 4em;
+            margin: -.95em auto .25em;
+            float: none; } }
   .index .getting-started {
     margin-top: 4em;
     *zoom: 1;
     max-width: 60em;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0 2em; }
     .index .getting-started:before, .index .getting-started:after {
       content: " ";
       display: table; }
     .index .getting-started:after {
       clear: both; }
+    @media screen and (min-width: 64em) {
+      .index .getting-started {
+        padding: 0; } }
     .index .getting-started h2 {
       margin-bottom: .5em; }
     .index .getting-started article {
       position: relative;
       padding: 0 2em 2em; }
-      @media screen and (min-width: 50em) {
+      @media screen and (min-width: 46.25em) {
         .index .getting-started article {
           display: block;
           float: left;
@@ -853,7 +877,10 @@ input[type="submit"] {
   .index .instructions {
     background: #5e98a3;
     text-align: center;
-    padding: 3em 0; }
+    padding: 3em 2em; }
+    @media screen and (min-width: 64em) {
+      .index .instructions {
+        padding: 3em 0; } }
     .index .instructions h1 {
       color: #fff;
       margin-bottom: 1em;
@@ -890,7 +917,7 @@ header.main {
   *zoom: 1;
   display: block;
   font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 3em 2em; }
+  padding: 1em 2em; }
   header.main:before, header.main:after {
     content: " ";
     display: table; }
@@ -905,18 +932,23 @@ header.main {
     header.main {
       padding: 3em 0; } }
   header.main h1 a {
-    float: left;
     color: transparent;
     font: 0/0 a;
     text-shadow: none;
     background: url("/images/bitters-logo.svg") no-repeat center;
     background-size: contain;
+    display: block;
+    margin-bottom: 18px;
     width: 240px;
-    height: 78px;
-    margin-top: -16px;
-    margin-bottom: -20px; }
-  header.main nav {
-    float: right; }
+    height: 78px; }
+    @media screen and (min-width: 38.75em) {
+      header.main h1 a {
+        float: left;
+        margin-top: -16px;
+        margin-bottom: -20px; } }
+  @media screen and (min-width: 38.75em) {
+    header.main nav {
+      float: right; } }
 
 footer.main {
   *zoom: 1;
@@ -947,20 +979,33 @@ nav.actions a {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding: 1em;
-  width: 11em;
-  background: #f05f5c;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  border-radius: 0.375em;
-  font-size: 0.875em;
   -webkit-transition: all 0.15s ease-out 0;
   -moz-transition: all 0.15s ease-out 0;
-  transition: all 0.15s ease-out 0; }
+  transition: all 0.15s ease-out 0;
+  background: #f05f5c;
+  border-radius: 0.375em;
+  color: #fff;
+  display: block;
+  font-size: 0.875em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (min-width: 38.75em) {
+    nav.actions a {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      width: 11em;
+      margin: 0; } }
   nav.actions a:hover {
+    -webkit-transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+    transition: all 0.15s ease-out 0;
     background: #cc504e; }
 
 h1[id] {

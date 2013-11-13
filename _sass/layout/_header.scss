@@ -2,24 +2,31 @@ header.main {
   @include outer-container;
   @include row;
   font-family: $index-font-family;
-  padding: 3em 2em;
+  padding: 1em 2em;
 
   @include media($max-width + 4em){
     padding: 3em 0;
   }
 
   h1 a {
-    float: left;
     @include hide-text();
     background: url('/images/bitters-logo.svg') no-repeat center;
     background-size: contain;
+    display: block;
+    margin-bottom: 18px;
     @include size(240px 78px);
-    margin-top: -16px;
-    margin-bottom: -20px;
+
+    @include media($min-small-screen) {
+      float: left;
+      margin-top: -16px;
+      margin-bottom: -20px;
+    }
   }
 
   nav {
-    float: right;
+    @include media($min-small-screen) {
+      float: right;
+    };
   }
 }
 
