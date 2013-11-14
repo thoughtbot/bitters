@@ -9,7 +9,7 @@ Install Instructions
 Install Bitters:
 
 ```bash
-gem install Bitters
+gem install bitters
 ```
 
 Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
