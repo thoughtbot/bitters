@@ -69,6 +69,10 @@ input[type="checkbox"], input[type="radio"] {
   margin-right: $base-line-height / 4;
 }
 
+input[type="file"] {
+  width: 100%;
+}
+
 select {
   width: auto;
   margin-bottom: $base-line-height;
