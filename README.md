@@ -2,7 +2,7 @@ Bitters
 ===
 Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
 
-Bitters is meant to help designers get projects started on new projects faster. It adds enough predefined structure and style to get started quickly but bland enough so that it doesn't dictate any style moving forward.
+Bitters is meant to help designers get projects started on new projects faster. It adds enough predefined structure and style to get started quickly but bland enough so that it doesn't dictate any style moving forward. Bitters should live in your projects sass root folder and be **modified** and extended while you design your project.
 
 Install Instructions
 ===
@@ -22,29 +22,19 @@ bitters install
 
 The generated folder will contain all Bitters files.
 
-Import Bitters after Bourbon and Neat in your `application.css.scss`. All additional stylesheets should be imported below Bitters:
+Import Bitters after Bourbon in your `application.css.scss`. If you are using the Neat overrides found in `_grid-settings.scss`, be sure to `@import "bitters/bitters"` between Bourbon and Neat. Be sure to not include any of Neat's mixins or functions in the Bitters files when modifying Bitters. All additional stylesheets should be imported below Bitters:
 
 ```scss
 @import "bourbon";
-@import "neat";
 @import "bitters/bitters";
+@import "neat";
 
 // All other imports
 ```
+
 
 We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
 
-If you are using the Neat overrides found in `_grid-settings.scss`, `@import "bitters/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
-
-```scss
-@import "normalize";
-@import "bourbon";
-@import "bitters/grid-settings";
-@import "neat";
-@import "bitters/bitters";
-
-// All other imports
-```
 
 Getting Started
 ===
