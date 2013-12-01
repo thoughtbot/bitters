@@ -12,7 +12,7 @@ Install Bitters:
 gem install bitters
 ```
 
-Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
+Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
 
 Then `cd` to your Sass directory and run:
 
