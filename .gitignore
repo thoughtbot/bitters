@@ -4,3 +4,4 @@
 /stylesheets/.sass-cache/
 pkg
 Gemfile.lock
+bower_components
