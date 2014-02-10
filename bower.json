@@ -1,0 +1,32 @@
+{
+  "name": "bitters",
+  "version": "0.9.2",
+  "homepage": "http://github.com/thoughtbot/biters",
+  "authors": [
+    "Kyle Fiedler",
+    "Reda Lemeden"
+  ],
+  "description": "Base styles for Web design",
+  "main": "app/assets/stylesheets/_bitters.scss",
+  "keywords": [
+    "bourbon",
+    "styles",
+    "sass",
+    "design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bin",
+    "lib",
+    ".gitignore",
+    "Gemfile",
+    "Gemfile.lock",
+    "Rakefile",
+    "bitters.gemspec",
+    "CONTRIBUTING.md",
+    "NEWS.md"
+  ],
+  "dependencies": {
+    "bourbon": "~3.1.8"
+  }
+}
