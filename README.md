@@ -77,4 +77,4 @@ Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/comm
 License
 ===
 
-Bitters is Copyright © 2013 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.
+Bitters is Copyright © 2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.
