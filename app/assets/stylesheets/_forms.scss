@@ -36,7 +36,8 @@ label {
 }
 
 textarea,
-#{$all-text-inputs} {
+#{$all-text-inputs},
+select[multiple=multiple] {
   @include box-sizing(border-box);
   @include transition(border-color);
   background-color: white;
