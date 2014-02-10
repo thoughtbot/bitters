@@ -1,16 +1,16 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: $helvetica;
-$serif: $georgia;
+$sans-serif: $helvetica !default;
+$serif: $georgia !default;
 
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$base-font-family: $sans-serif !default;
+$header-font-family: $base-font-family !default;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
-$base-border-radius: em(3);
+$base-font-size: 1em !default;
+$base-line-height: $base-font-size * 1.5 !default;
+$base-border-radius: em(3) !default;
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
@@ -24,20 +24,20 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Body Color
-$base-body-color: white;
+$base-body-color: white !default;
 
 //  Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $dark-gray !default;
+$base-accent-color: $blue !default;
 
 //  Text Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: $base-accent-color !default;
+$hover-link-color: darken($base-accent-color, 15) !default;
 
 // Border color
-$base-border-color: $light-gray;
+$base-border-color: $light-gray !default;
 
 // Flash Colors
-$error-color: $light-red;
-$notice-color: $light-yellow;
-$success-color: $light-green;
+$error-color: $light-red !default;
+$notice-color: $light-yellow !default;
+$success-color: $light-green !default;
