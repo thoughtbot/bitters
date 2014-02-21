@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Bitters - predefined style for Bourbon
+title: Bitters - Scaffold styles for Bourbon projects
 class: index
 ---
 
 <section class="hero">
   <div class="wrapper">
-    <h1>A dash of predefined style for your Bourbon stylesheets.</h1>
+    <h1>Scaffold styles, variables and structure for <a href="http://bourbon.io/">Bourbon</a> projects.</h1>
   </div>
 </section>
 
@@ -14,11 +14,11 @@ class: index
   <div class="wrapper">
     <article class="speed">
       <h2>Built for speed</h2>
-      <p>Bitters is meant to help designers get projects started on new projects faster. </p>
+      <p>Bitters is meant to help designers get projects started faster by defining a basic set of variables and project structure.</p>
     </article>
     <article class="change">
       <h2>Made to change</h2>
-      <p>Enough predefined style so that a new project doesn&rsquo;t look terrible but bland enough to not dictate any style moving forward.</p>
+      <p> After you have Bitters installed, jump in and start customizing the styles and variables to the design and brand requirements.</p>
     </article>
     <article class="install">
       <h2>Easy to install</h2>
@@ -30,36 +30,36 @@ class: index
 <section class="getting-started">
   <article class="structure">
     <h2>Sass Structure</h2>
-    <p>The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site. </p>
+     <p>The Bitters folder should contain styles for all the basic elements used throughout the sites style. It also contains folders for custom mixins and extends for your site as well. Add code to the existing files or add new files to the folders. Customize Bitters for your site as you see fit.</p>
   </article>
 
   <article class="variables">
-    <h2>Variables</h2>
-    <p>This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.</p>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_variables.scss">Variables</a></h2>
+    <p>This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with <code>$base</code> to indicate that they are the most basic variables.</p>
   </article>
 
   <article class="grid">
-    <h2>Grid Settings</h2>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_grid-settings.scss">Grid Settings</a></h2>
     <p>Variables specifically created for <a href="http://neat.bourbon.io">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
   </article>
 
   <article class="type">
-    <h2>Typography</h2>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_typography.scss">Typography</a></h2>
     <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
   </article>
 
   <article class="lists">
-    <h2>Lists</h2>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_lists.scss">Lists</a></h2>
     <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ul;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
   </article>
 
   <article class="forms">
-    <h2>Forms</h2>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_forms.scss">Forms</a></h2>
     <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
   </article>
 
   <article class="flashes">
-    <h2>Flashes</h2>
+    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_flashes.scss">Flashes</a></h2>
     <p>Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.</p>
   </article>
 </section>
@@ -75,6 +75,9 @@ class: index
     </li>
     <li>
       <p>The generated folder will contain all Bitters files. Import Bitters after Bourbon and Neat in your application.css.scss: <code>@import "bitters/bitters";</code></p>
+    </li>
+    <li>
+      <p>You&rsquo;re all set. Now add to or remove Bitters styles.</p>
     </li>
   </ol>
   <a href="https://github.com/thoughtbot/bitters#install-instructions">In-depth instructions on Github</a>

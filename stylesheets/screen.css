@@ -579,7 +579,7 @@ dl {
 
 .wrapper {
   *zoom: 1;
-  max-width: 60em;
+  max-width: 78.75em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2em; }
@@ -588,7 +588,7 @@ dl {
     display: table; }
   .wrapper:after {
     clear: both; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 82.75em) {
     .wrapper {
       padding: 0; } }
 
@@ -743,9 +743,13 @@ input[type="submit"] {
     font-size: 1.375em; }
   .index p {
     color: #737373; }
+  .index a {
+    color: #5e98a3; }
+    .index a:hover {
+      color: #385c63; }
   .index img {
-    border: 1px solid #dddddd;
-    border-radius: 0.1875em; }
+    border-radius: 0.1875em;
+    border: 1px solid #dddddd; }
   .index .hero {
     background-color: #aab971;
     color: #fff;
@@ -753,22 +757,27 @@ input[type="submit"] {
     @media screen and (min-width: 38.75em) {
       .index .hero {
         padding: 3.5em 0 0; } }
+    .index .hero a {
+      color: #fff;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.6); }
+      .index .hero a:hover {
+        color: rgba(255, 255, 255, 0.6); }
     .index .hero h1 {
       text-align: center; }
       @media screen and (min-width: 38.75em) {
         .index .hero h1:after {
-          content: " ";
-          display: block;
-          width: 100%;
-          height: 7.5em;
           background-color: #FFF;
           background-image: url("/images/bitters-example.jpg");
           background-position: center 1em;
           background-repeat: no-repeat;
           background-size: 90%;
-          margin-top: 1em;
+          border-radius: 0.1875em 0.1875em 0 0;
           border-top: 25px solid #dddddd;
-          border-radius: 0.1875em 0.1875em 0 0; } }
+          content: " ";
+          display: block;
+          height: 7.5em;
+          margin-top: 1em;
+          width: 100%; } }
   .index .about {
     *zoom: 1;
     display: block;
@@ -819,7 +828,6 @@ input[type="submit"] {
         height: 1.85em;
         background: #ffe9c1;
         border-radius: 50%;
-        margin-right: .5em;
         color: #fed484;
         display: block;
         float: left;
@@ -829,6 +837,7 @@ input[type="submit"] {
         font-variant: normal;
         font-weight: normal;
         line-height: 1.95em;
+        margin-right: .5em;
         speak: none;
         text-align: center;
         text-decoration: inherit; }
@@ -837,29 +846,29 @@ input[type="submit"] {
             font-size: 3em; } }
         @media screen and (min-width: 46.25em) {
           .index .about article:before {
+            float: none;
             font-size: 4em;
-            margin: -.95em auto .25em;
-            float: none; } }
+            margin: -.95em auto .25em; } }
   .index .getting-started {
-    margin-top: 4em;
     *zoom: 1;
-    max-width: 60em;
+    max-width: 78.75em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4em;
     padding: 0 2em; }
     .index .getting-started:before, .index .getting-started:after {
       content: " ";
       display: table; }
     .index .getting-started:after {
       clear: both; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 82.75em) {
       .index .getting-started {
         padding: 0; } }
     .index .getting-started h2 {
       margin-bottom: .5em; }
     .index .getting-started article {
-      position: relative;
-      padding: 0 2em 2em; }
+      padding: 0 2em 2em;
+      position: relative; }
       @media screen and (min-width: 46.25em) {
         .index .getting-started article {
           display: block;
@@ -876,9 +885,9 @@ input[type="submit"] {
             margin-left: 34.11922%; } }
   .index .instructions {
     background: #5e98a3;
-    text-align: center;
-    padding: 3em 2em; }
-    @media screen and (min-width: 64em) {
+    padding: 3em 2em;
+    text-align: center; }
+    @media screen and (min-width: 82.75em) {
       .index .instructions {
         padding: 3em 0; } }
     .index .instructions h1 {
@@ -886,32 +895,32 @@ input[type="submit"] {
       margin-bottom: 1em;
       margin-top: 0; }
     .index .instructions ol {
-      max-width: 25em;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 25em; }
       .index .instructions ol p {
         color: #d0e1e4; }
       .index .instructions ol code {
+        color: #f0f5f6;
         display: block;
-        font-weight: bold;
-        color: #f0f5f6; }
+        font-weight: bold; }
     .index .instructions a {
-      padding: .5em 1em;
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
       *display: inline;
       *vertical-align: auto;
-      margin-top: 1.5em;
-      color: #bfd6db;
+      border-radius: 0.1875em;
       border: 1px solid #9fc2c8;
-      border-radius: 0.1875em; }
+      color: #bfd6db;
+      margin-top: 1.5em;
+      padding: .5em 1em; }
       .index .instructions a:hover {
-        color: #fff;
-        border-color: #fff; }
+        border-color: #fff;
+        color: #fff; }
 
 header.main {
   *zoom: 1;
-  max-width: 60em;
+  max-width: 78.75em;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
@@ -928,7 +937,7 @@ header.main {
     display: table; }
   header.main:after {
     clear: both; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 82.75em) {
     header.main {
       padding: 3em 0; } }
   header.main h1 a {
@@ -952,7 +961,7 @@ header.main {
 
 footer.main {
   *zoom: 1;
-  max-width: 60em;
+  max-width: 78.75em;
   margin-left: auto;
   margin-right: auto;
   font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -964,7 +973,7 @@ footer.main {
     display: table; }
   footer.main:after {
     clear: both; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 82.75em) {
     footer.main {
       padding: 3em 0; } }
   footer.main p {
