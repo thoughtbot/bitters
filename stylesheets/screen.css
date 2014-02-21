@@ -766,7 +766,7 @@ input[type="submit"] {
       text-align: center; }
       @media screen and (min-width: 38.75em) {
         .index .hero h1:after {
-          background-color: #FFF;
+          background-color: #fff;
           background-image: url("/images/bitters-example.jpg");
           background-position: center 1em;
           background-repeat: no-repeat;
@@ -788,7 +788,7 @@ input[type="submit"] {
       display: table; }
     .index .about:after {
       clear: both; }
-    @media screen and (min-width: 47.5em) {
+    @media screen and (min-width: 46.25em) {
       .index .about {
         padding: 0; } }
     .index .about h2 {
@@ -830,7 +830,6 @@ input[type="submit"] {
         border-radius: 50%;
         color: #fed484;
         display: block;
-        float: left;
         font-family: "fontello";
         font-size: 2em;
         font-style: normal;
@@ -844,9 +843,11 @@ input[type="submit"] {
         @media screen and (min-width: 38.75em) {
           .index .about article:before {
             font-size: 3em; } }
+        @media screen and (max-width: 46.25em) {
+          .index .about article:before {
+            float: left; } }
         @media screen and (min-width: 46.25em) {
           .index .about article:before {
-            float: none;
             font-size: 4em;
             margin: -.95em auto .25em; } }
   .index .getting-started {
@@ -866,6 +867,12 @@ input[type="submit"] {
         padding: 0; } }
     .index .getting-started h2 {
       margin-bottom: .5em; }
+      .index .getting-started h2 a {
+        color: #333333;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #dddddd; }
+        .index .getting-started h2 a:hover {
+          color: #5e98a3; }
     .index .getting-started article {
       padding: 0 2em 2em;
       position: relative; }

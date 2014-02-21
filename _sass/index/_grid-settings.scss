@@ -6,9 +6,3 @@
 // $gutter: 30px;
 // $grid-columns: 12;
 $max-width: em(1260);
-
-// Neat Breakpoints
-///////////////////////////////////////////////////////////////////////////////
-$small-screen: new-breakpoint(min-width em(540) 2);
-$medium-screen: new-breakpoint(min-width em(760) 4);
-$large-screen: new-breakpoint(min-width em(920) 8);
