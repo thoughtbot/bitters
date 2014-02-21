@@ -1,8 +1,10 @@
 Bitters
 ===
-Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
+Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.
 
-Bitters is meant to help designers get projects started on new projects faster. It adds enough predefined structure and style to get started quickly but bland enough so that it doesn't dictate any style moving forward. Bitters should live in your projects sass root folder and be **modified** and extended while you design your project.
+Bitters is meant to help designers start projects faster by defining a basic set of variables and project structure. After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements.
+
+Bitters should live in your project's sass root folder and be **modified** and extended while you design your project.
 
 Install Instructions
 ===
@@ -40,12 +42,10 @@ Getting Started
 ===
 
 ### Sass structure & default style
-The base folder should contain styles for all the basic elements used throughout the sites style. Feel free to add code to the existing files or add new files to customize Bitters for your site.
-
-The default style is meant to get out of the way and give you a good starting place for new projects. It shouldn't dictate any design decisions, only make the styles not look terrible from the start.
+The Bitters folder should contain styles for all the basic elements used throughout the project. It also contains folders for custom mixins and extends for your site as well. Add code to the existing files or add new files to the folders. Customize Bitters for your site as you see fit.
 
 ### Variables
-This houses all variables that are used, or will be used, in more than one file in your site. For variable names we try to use the most semantic name possible in our Scss.
+This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with $base to indicate that they are the most basic variables.
 
 ### Grid settings
 Variables specifically created for Neat resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
