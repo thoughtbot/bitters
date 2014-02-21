@@ -80,6 +80,7 @@ input[type="file"] {
 
 select {
   width: auto;
+  max-width: 100%;
   margin-bottom: $base-line-height;
 }
 
