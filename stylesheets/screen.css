@@ -598,7 +598,6 @@ dl {
   font-style: normal;
   src: url("/fonts/fontello.eot");
   src: url("/fonts/fontello.eot?#iefix") format("embedded-opentype"), url("/fonts/fontello.woff") format("woff"), url("/fonts/fontello.ttf") format("truetype"), url("/fonts/fontello.svg#Fontello") format("svg"); }
-
 .index .getting-started article.structure h2:before, .index .getting-started article.variables h2:before, .index .getting-started article.grid h2:before, .index .getting-started article.type h2:before, .index .getting-started article.lists h2:before, .index .getting-started article.forms h2:before, .index .getting-started article.flashes h2:before {
   color: #999999;
   display: block;
@@ -689,7 +688,6 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
-
 @-moz-keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -699,7 +697,6 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
-
 @-o-keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -709,7 +706,6 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
-
 @keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -719,7 +715,6 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
-
 .index .hero h1:after {
   -webkit-animation-delay: 0.75s;
   -moz-animation-delay: 0.75s;
@@ -849,7 +844,7 @@ input[type="submit"] {
         @media screen and (min-width: 46.25em) {
           .index .about article:before {
             font-size: 4em;
-            margin: -.95em auto .25em; } }
+            margin: 0 auto .25em; } }
   .index .getting-started {
     *zoom: 1;
     max-width: 78.75em;
