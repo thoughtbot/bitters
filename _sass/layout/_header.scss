@@ -2,7 +2,7 @@ header.main {
   @include outer-container;
   @include row;
   font-family: $index-font-family;
-  padding: 1em 2em;
+  padding: 2em 2em;
 
   @include media($max-width + 4em){
     padding: 3em 0;
