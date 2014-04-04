@@ -598,6 +598,7 @@ dl {
   font-style: normal;
   src: url("/fonts/fontello.eot");
   src: url("/fonts/fontello.eot?#iefix") format("embedded-opentype"), url("/fonts/fontello.woff") format("woff"), url("/fonts/fontello.ttf") format("truetype"), url("/fonts/fontello.svg#Fontello") format("svg"); }
+
 .index .getting-started article.structure h2:before, .index .getting-started article.variables h2:before, .index .getting-started article.grid h2:before, .index .getting-started article.type h2:before, .index .getting-started article.lists h2:before, .index .getting-started article.forms h2:before, .index .getting-started article.flashes h2:before {
   color: #999999;
   display: block;
@@ -645,9 +646,9 @@ dl {
   content: '\e80a'; }
 
 nav.bourbon {
+  *zoom: 1;
   background-color: #5b5e63;
-  padding: 0 2em 0 1em;
-  *zoom: 1; }
+  padding: 0 2em 0 1em; }
   nav.bourbon:before, nav.bourbon:after {
     content: " ";
     display: table; }
@@ -663,11 +664,7 @@ nav.bourbon {
         float: left;
         text-align: left; } }
   nav.bourbon li {
-    display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto; }
+    display: inline-block; }
   nav.bourbon a {
     background-position: 1em center;
     background-repeat: no-repeat;
@@ -720,9 +717,9 @@ nav.bourbon {
         nav.bourbon a.refills {
           background-image: none; } }
   nav.bourbon h1 {
+    color: rgba(255, 255, 255, 0.6);
     float: right;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.6); }
+    font-size: 1em; }
     @media screen and (max-width: 56.25em) {
       nav.bourbon h1 {
         display: none; } }
@@ -773,6 +770,7 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
+
 @-moz-keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -782,6 +780,7 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
+
 @-o-keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -791,6 +790,7 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
+
 @keyframes browser-scroll {
   0% {
     background-position: center 1em; }
@@ -800,6 +800,7 @@ input[type="submit"] {
 
   100% {
     background-position: center 1em; } }
+
 .index .hero h1:after {
   -webkit-animation-delay: 0.75s;
   -moz-animation-delay: 0.75s;
@@ -1013,7 +1014,7 @@ header.main {
   *zoom: 1;
   display: block;
   font-family: "europa", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 1em 2em; }
+  padding: 2em 2em; }
   header.main:before, header.main:after {
     content: " ";
     display: table; }
