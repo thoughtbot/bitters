@@ -680,7 +680,8 @@ nav.bourbon {
       nav.bourbon a {
         display: block; } }
     nav.bourbon a:hover {
-      background-color: #434548; }
+      background-color: #434548;
+      color: #fff; }
     nav.bourbon a.current {
       background-color: #4f5156; }
     nav.bourbon a.bourbon {

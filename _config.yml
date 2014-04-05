@@ -1,1 +1,2 @@
-safe:        false
+safe: false
+markdown: kramdown
