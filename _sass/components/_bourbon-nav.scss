@@ -40,8 +40,7 @@ nav.bourbon {
     };
 
     &:hover {
-      color: rgba(#fff, .6);
-      background-color: darken($bourbon-nav-background-color, 15);
+      background-color: darken($bourbon-nav-background-color, 10);
     }
 
     &.current {
@@ -54,7 +53,7 @@ nav.bourbon {
       &.#{$site} {
         background-image: url('/images/bourbon-nav/#{$site}.png');
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        @include hidpi {
           background-image: url('/images/bourbon-nav/#{$site}@2x.png');
         }
 
@@ -76,6 +75,10 @@ nav.bourbon {
 
     a {
       padding: 1em 0;
+
+      &:hover {
+        background-color: none;
+      }
     }
   }
 }

@@ -680,8 +680,7 @@ nav.bourbon {
       nav.bourbon a {
         display: block; } }
     nav.bourbon a:hover {
-      color: rgba(255, 255, 255, 0.6);
-      background-color: #36383b; }
+      background-color: #434548; }
     nav.bourbon a.current {
       background-color: #4f5156; }
     nav.bourbon a.bourbon {
@@ -725,6 +724,8 @@ nav.bourbon {
         display: none; } }
     nav.bourbon h1 a {
       padding: 1em 0; }
+      nav.bourbon h1 a:hover {
+        background-color: none; }
 
 button,
 input[type="submit"] {
