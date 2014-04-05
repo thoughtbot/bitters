@@ -726,7 +726,7 @@ nav.bourbon {
     nav.bourbon h1 a {
       padding: 1em 0; }
       nav.bourbon h1 a:hover {
-        background-color: none; }
+        background-color: transparent; }
 
 button,
 input[type="submit"] {
