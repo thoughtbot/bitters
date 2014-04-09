@@ -39,7 +39,7 @@ If you are using Neat, import it after Bitters. Be sure to not include any of Ne
 Also, when using Neat, have the following lines in "_bitters.scss" uncommented:
 
 ```scss
-@import "neat-helpers"; // or "neat/neat-helpers" when not in Rails
+@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
 @import "grid-settings";
 ```
 
