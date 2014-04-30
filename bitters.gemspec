@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["support@thoughtbot.com"]
   spec.description   = "Base styles for Web design"
   spec.summary       = "Base styles for Web design"
-  spec.homepage      = "http://github.com/thoughtbot/biters"
+  spec.homepage      = "http://github.com/thoughtbot/bitters"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
