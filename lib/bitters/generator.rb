@@ -1,5 +1,6 @@
 require 'bitters/version'
 require 'fileutils'
+require 'pathname'
 require 'thor'
 
 module Bitters
@@ -9,12 +10,13 @@ module Bitters
     map ['delete'] => :remove
 
     desc 'install', 'Install Bitters into your project'
+    method_options :path => :string
     def install
       if bitters_files_already_exist?
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to /bitters"
+        puts "Bitters files installed to /bitters #{install_path}/"
       end
     end
 
@@ -47,12 +49,20 @@ module Bitters
     private
 
     def bitters_files_already_exist?
-      File.directory?("bitters")
+      File.directory?(install_path)
+    end
+
+    def install_path
+      @install_path ||= if options[:path]
+        Pathname.new(File.join(options[:path], 'bitters'))
+      else
+        Pathname.new('bitters')
+      end
     end
 
     def install_files
-      FileUtils.mkdir_p("bitters")
-      FileUtils.cp_r(all_stylesheets, "bitters/")
+      FileUtils.mkdir_p(install_path)
+      FileUtils.cp_r(all_stylesheets, install_path)
     end
 
     def remove_bitters_directory
