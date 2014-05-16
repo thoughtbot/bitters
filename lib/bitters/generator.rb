@@ -10,13 +10,13 @@ module Bitters
     map ['delete'] => :remove
 
     desc 'install', 'Install Bitters into your project'
-    method_options :path => :string
+    method_options path: :string
     def install
       if bitters_files_already_exist?
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to /bitters #{install_path}/"
+        puts "Bitters files installed to #{install_path}/bitters"
       end
     end
 
@@ -53,11 +53,7 @@ module Bitters
     end
 
     def install_path
-      @install_path ||= if options[:path]
-        Pathname.new(File.join(options[:path], 'bitters'))
-      else
-        Pathname.new('bitters')
-      end
+      Pathname.new(options[:path].to_s).join('bitters')
     end
 
     def install_files
