@@ -6,4 +6,3 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 task :install => :spec
 task :release => :spec
-
