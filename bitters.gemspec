@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
 
-  spec.add_dependency 'bourbon', '>= 4.0'
+  spec.add_dependency 'bourbon', '>= 3.2'
   spec.add_dependency 'sass', '>= 3.2'
   spec.add_dependency 'thor'
 end
