@@ -21,6 +21,10 @@ label {
     content: "*";
   }
 
+  &.error {
+    @include flash($error-color);
+  }
+
   abbr {
     display: none;
   }
