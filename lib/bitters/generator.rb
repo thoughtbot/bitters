@@ -16,7 +16,7 @@ module Bitters
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to #{install_path}/bitters"
+        puts "Bitters files installed to #{install_path}/base"
       end
     end
 
@@ -53,7 +53,7 @@ module Bitters
     end
 
     def install_path
-      Pathname.new(options[:path].to_s).join('bitters')
+      Pathname.new(options[:path].to_s).join('base')
     end
 
     def install_files
@@ -62,7 +62,7 @@ module Bitters
     end
 
     def remove_bitters_directory
-      FileUtils.rm_rf("bitters")
+      FileUtils.rm_rf("base")
     end
 
     def all_stylesheets
