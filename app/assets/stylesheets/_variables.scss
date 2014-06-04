@@ -33,6 +33,8 @@ $base-accent-color: $blue;
 //  Text Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
 
 // Border color
 $base-border-color: $light-gray;
@@ -51,6 +53,3 @@ $form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
-
-// Buttons
-$button-style: simple;

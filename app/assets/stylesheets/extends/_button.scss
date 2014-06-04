@@ -1,7 +1,17 @@
 %button {
-  @include button($button-style, $base-accent-color);
   -webkit-font-smoothing: antialiased;
+  background-color: $base-button-color;
+  border-radius: $base-border-radius;
+  color: white;
+  display: inline-block;
   font-size: $base-font-size;
   font-weight: bold;
   line-height: 1em;
+  padding: .75em 1em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-button-color;
+    color: white;
+  }
 }
