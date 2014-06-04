@@ -1082,7 +1082,7 @@ nav.actions a {
   transition: all 0.15s ease-out 0;
   background: #f05f5c;
   border-radius: 0.375em;
-  color: #fff;
+  color: white;
   display: block;
   font-size: 0.875em;
   font-weight: bold;
@@ -1098,13 +1098,14 @@ nav.actions a {
       zoom: 1;
       *display: inline;
       *vertical-align: auto;
-      width: 11em;
-      margin: 0; } }
+      margin: 0;
+      width: 11em; } }
   nav.actions a:hover {
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.15s ease-out 0;
-    background: #cc504e; }
+    background: #cc504e;
+    color: white; }
 
 h1[id] {
   margin-bottom: .5em; }
