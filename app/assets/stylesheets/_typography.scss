@@ -9,7 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  line-height: 1.25em;
+  line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
@@ -43,9 +43,9 @@ p {
 }
 
 a {
+  @include transition(color 0.1s linear);
   color: $base-link-color;
   text-decoration: none;
-  @include transition(color 0.1s linear);
 
   &:hover {
     color: $hover-link-color;
@@ -68,24 +68,6 @@ hr {
 img {
   margin: 0;
   max-width: 100%;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted $base-border-color;
-  cursor: help;
-}
-
-address {
-  display: block;
-  margin: 0 0 ($base-line-height / 2);
-}
-
-hgroup {
-  margin-bottom: $base-line-height / 2;
-}
-
-del {
-  color: lighten($base-font-color, 15);
 }
 
 blockquote {
