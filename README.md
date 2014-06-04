@@ -22,11 +22,11 @@ Then `cd` to your Sass directory and run:
 bitters install
 ```
 
-The generated folder will contain all Bitters files.
+A `base` directory will be generated which contains all of the Bitters files.
 
 Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
 
-When using Neat, have the following line in "_base.scss" uncommented:
+When using Neat, have the following line in `_base.scss` uncommented:
 
 ```scss
 @import 'grid-settings';
