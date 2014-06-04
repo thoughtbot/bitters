@@ -1,20 +1,16 @@
 // Typography
-///////////////////////////////////////////////////////////////////////////////
 $sans-serif: $helvetica;
 $serif: $georgia;
-
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
-///////////////////////////////////////////////////////////////////////////////
 $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.5;
+$header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
-///////////////////////////////////////////////////////////////////////////////
-
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -26,11 +22,11 @@ $light-green: #E6EFC2;
 // Background Color
 $base-background-color: white;
 
-//  Font Colors
+// Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
 
-//  Text Link Colors
+// Text Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 

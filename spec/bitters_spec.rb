@@ -4,7 +4,7 @@ require 'bourbon'
 
 describe Bitters do
   after do
-    `rm -rf spec/fixtures/bitters`
+    `rm -rf spec/fixtures/base`
   end
 
   it 'compiles to valid css' do
