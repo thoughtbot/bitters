@@ -24,25 +24,34 @@ bitters install
 
 The generated folder will contain all Bitters files.
 
-Import Bitters after Bourbon in your `application.css.scss`. All additional stylesheets should be imported below Bitters.
+Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
 
-If you are using Neat, import it after Bitters. Be sure to not include any of Neat's mixins or functions in the Bitters files when modifying Bitters.
+When using Neat, have the following line in "_base.scss" uncommented:
 
 ```scss
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
+@import 'grid-settings';
+```
+
+If you are using Neat, import it after Bitters.
+
+```scss
+@import 'bourbon';
+@import 'base/base';
+@import 'neat';
 
 // All other imports
 ```
 
-Also, when using Neat, have the following lines in "_bitters.scss" uncommented:
+If you want to use Neat functions in Bitters files you can `@import 'grid-settings';` before Neat, remove `@import 'grid-settings';` from `_base.scss` and import the rest of bitters after. eg:
 
 ```scss
-@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
-@import "grid-settings";
-```
+@import 'bourbon';
+@import 'base/grid-settings';
+@import 'neat';
+@import 'base/base';
 
+// All other imports
+```
 We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
 
 Getting Started
