@@ -4,7 +4,7 @@ nav.actions {
     @include transition();
     background: $red;
     border-radius: $base-border-radius * 2;
-    color: #fff;
+    color: white;
     display: block;
     font-size: em(14);
     font-weight: bold;
@@ -16,13 +16,14 @@ nav.actions {
 
     @include media($min-small-screen) {
       @include inline-block;
-      width: em(154, 14);
       margin: 0;
+      width: em(154, 14);
     };
 
     &:hover {
       @include transition();
       background: shade($red, 15);
+      color: white;
     }
   }
 }
