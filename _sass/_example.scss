@@ -9,3 +9,23 @@ ul.default {
 ol.default {
   @extend %default-ol;
 }
+
+.button {
+  @extend %button;
+}
+
+.success {
+  @extend %flash-success;
+}
+
+.error {
+  @extend %flash-error;
+}
+
+.notice {
+  @extend %flash-notice;
+}
+
+.alert {
+  @extend %flash-alert;
+}
