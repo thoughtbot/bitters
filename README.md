@@ -8,11 +8,15 @@ Bitters should live in your project's sass root folder and be **modified** and e
 
 Install Instructions
 ===
+:warning: **Ruby 1.9.3 or higher** is required to install Bitters from the command line.
+
 Install Bitters:
 
 ```bash
 gem install bitters
 ```
+
+(If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.)
 
 Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
 
@@ -85,6 +89,7 @@ Requirements
 ===
 - Sass 3.0+
 - Bourbon 2.0+
+- Ruby 1.9.3+
 
 Credits
 ===
