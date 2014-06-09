@@ -67,12 +67,12 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="file"] {
   margin-bottom: $base-line-height / 2;
-  padding-bottom: ($base-line-height / 3);
+  padding-bottom: $base-line-height / 3;
   width: 100%;
 }
 
 select {
-  width: auto;
-  max-width: 100%;
   margin-bottom: $base-line-height;
+  max-width: 100%;
+  width: auto;
 }
