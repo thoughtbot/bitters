@@ -1,5 +1,7 @@
 table {
+  border-collapse: collapse;
   margin: ($base-line-height / 2) 0;
+  table-layout: fixed;
   width: 100%;
 }
 
