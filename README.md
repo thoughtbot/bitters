@@ -89,6 +89,7 @@ Requirements
 ===
 - Sass 3.0+
 - Bourbon 2.0+
+- Ruby 1.9.3+
 
 Credits
 ===
