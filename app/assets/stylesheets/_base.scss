@@ -15,10 +15,13 @@
 @import 'extends/clearfix';
 @import 'extends/hide-text';
 
+// Components - extends that rely on HTML and possibly javascript
+@import 'components/tooltip';
+
 // Typography and Elements
 @import 'typography';
 @import 'forms';
 @import 'tables';
 @import 'lists';
-@import 'flashes';
 @import 'buttons';
+@import 'flashes';

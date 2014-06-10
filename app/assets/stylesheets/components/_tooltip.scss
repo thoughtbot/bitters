@@ -1,0 +1,70 @@
+// CSS Only Hover Tooltip
+//
+// To use:
+// .tooltip-label {
+//   @extend %tooltip-label;
+//
+//   .tooltip {
+//    @extend %tooltip-content;
+//   }
+// }
+//
+// HTML structure
+//
+//<div class="tooltip-label">
+//  Hover for Tooltip
+//  <div class="tooltip">
+//    <p>Tooltip text Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+//  </div>
+//</div>
+
+%tooltip-label {
+  $tooltip-arrow-width: 8px;
+  $tooltip-background: transparentize($dark-gray, 0.1);
+  $tooltip-color: white;
+  $tooltip-width: 16em;
+
+  border: 1px solid $base-border-color;
+  border-radius: $base-border-radius;
+  margin-bottom: $base-line-height;
+  padding: .5em 1em;
+  position: relative;
+
+  &:hover %tooltip-content {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  %tooltip-content {
+    @include box-sizing(border-box);
+    @include position(absolute, 0 0 0 50%);
+    @include transition (all 0.2s ease-in-out);
+    background-color: $tooltip-background;
+    border-radius: $base-border-radius;
+    bottom: 130%;
+    color: $tooltip-color;
+    font-size: .9em;
+    line-height: 1.5em;
+    margin-left: -($tooltip-width/2);
+    min-width: $tooltip-width;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    visibility: hidden;
+    z-index: 10;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      @include position(absolute, 0 0 0 50%);
+      margin-left: -$tooltip-arrow-width;
+      border: $tooltip-arrow-width solid transparent;
+      border-top-color: $tooltip-background;
+      content: '';
+      pointer-events: none;
+      bottom: -$tooltip-arrow-width*2;
+    }
+  }
+}
