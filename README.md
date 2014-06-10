@@ -2,9 +2,11 @@ Bitters
 ===
 Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.
 
-Bitters is meant to help designers start projects faster by defining a basic set of variables and project structure. After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements.
+Bitters is meant to help designers start projects faster by defining a basic set of variables and project structure. After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements. Bitters has been designed for use in web applications.
 
-Bitters should live in your project's sass root folder and be **modified** and extended while you design your project.
+Bitters should live in your project's sass root folder and be **modified and extended** while you design your project.
+
+We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
 
 Install Instructions
 ===
@@ -56,7 +58,6 @@ If you want to use Neat functions in Bitters files you can `@import 'grid-settin
 
 // All other imports
 ```
-We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
 
 Getting Started
 ===
