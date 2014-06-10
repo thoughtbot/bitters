@@ -39,7 +39,7 @@ $base-border-color: $light-gray;
 // Flash Colors
 $alert-color: $light-yellow;
 $error-color: $light-red;
-$notice-color: $light-yellow;
+$notice-color: lighten($base-accent-color, 40);
 $success-color: $light-green;
 
 // Forms
