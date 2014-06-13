@@ -1,81 +1,83 @@
-Bitters
-===
-Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.
+# Bitters
 
-Bitters is meant to help designers start projects faster by defining a basic set of variables and project structure. After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements. Bitters has been designed for use in web applications.
+**Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.**
 
-Bitters should live in your project's sass root folder and be **modified and extended** while you design your project.
+Bitters helps designers start projects faster by defining a basic set of Sass variables, default element style and project structure. It’s been specifically designed for use within web applications. Bitters should live in your project’s root Sass directory and we *encourage* you to modify and extend it to meet your design and brand requirements.
 
-We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
+Bitters is made to work alongside a CSS reset and not replace it. Our suggested reset is [Normalize](http://necolas.github.io/normalize.css).
 
-Install Instructions
-===
+## Installation
+
 :warning: **Ruby 1.9.3 or higher** is required to install Bitters from the command line.
 
-Install Bitters:
+1. Install Bitters:
 
-```bash
-gem install bitters
-```
+  ```bash
+  gem install bitters
+  ```
 
-(If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.)
+  *If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.*
 
-Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
+2. Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
 
-Then `cd` to your Sass directory and run:
+3. `cd` to your Sass directory and run:
 
-```bash
-bitters install
-```
+  ```bash
+  bitters install
+  ```
 
-A `base` directory will be generated which contains all of the Bitters files.
+  A `base` directory will be generated which contains all of the Bitters files.
 
-Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
+4. Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
 
-When using Neat, have the following line in `_base.scss` uncommented:
+  ```bash
+  @import 'bourbon';
+  @import 'base/base';
+  ```
 
-```scss
-@import 'grid-settings';
-```
+5. When using Neat, uncomment the following line in `_base.scss`:
 
-If you are using Neat, import it after Bitters.
+  ```scss
+  @import 'grid-settings';
+  ```
 
-```scss
-@import 'bourbon';
-@import 'base/base';
-@import 'neat';
+  And import Neat after Bitters:
 
-// All other imports
-```
+  ```scss
+  @import 'bourbon';
+  @import 'base/base';
+  @import 'neat';
 
-If you want to use Neat functions in Bitters files you can `@import 'grid-settings';` before Neat, remove `@import 'grid-settings';` from `_base.scss` and import the rest of bitters after. eg:
+  // All other imports
+  ```
 
-```scss
-@import 'bourbon';
-@import 'base/grid-settings';
-@import 'neat';
-@import 'base/base';
+  If you want to use Neat functions in Bitters, you can `@import 'grid-settings';` before Neat, remove `@import 'grid-settings';` from `_base.scss` and import the rest of bitters after. For example:
 
-// All other imports
-```
+  ```scss
+  @import 'bourbon';
+  @import 'base/grid-settings';
+  @import 'neat';
+  @import 'base/base';
 
-Getting Started
-===
+  // All other imports
+  ```
+
+## Using Bitters
 
 ### Sass structure & default style
-The Bitters folder should contain styles for all the basic elements used throughout the project. It also contains folders for custom mixins and extends for your site as well. Add code to the existing files or add new files to the folders. Customize Bitters for your site as you see fit.
+The Bitters directory should contain styles for all the basic elements used throughout the project. It also contains directories for custom mixins and extends for your site as well. Add code to the existing files or add new files to the directories. Customize Bitters for your site as you see fit.
 
 ### Variables
-This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with $base to indicate that they are the most basic variables.
+This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with `$base` to indicate that they are the most basic variables.
 
 ### Grid settings
-Variables specifically created for Neat resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
+Variables specifically created for [Neat](http://neat.bourbon.io) resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
 
 ### Typography
 All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `.25`.
 
 ### Lists
-All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default-ul;` or `@extend %default-ol;` to the `<ul>` or `<ol>` respectively..
+All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default-ul;` or `@extend %default-ol;` to the `<ul>` or `<ol>` respectively.
 
 ### Forms
 Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
@@ -84,22 +86,27 @@ Adds basic styles all form elements. The variables at the top of the file all in
 Basic style for `button` and `input[type="submit"]`. Button style can be changed by setting the `$button-style` variable to one of the [Bourbon](http://bourbon.io) button style [options](http://bourbon.io/docs/#buttons).
 
 ### Flashes
-Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.
+Used for any error, warning or success messages in applications or forms. Specifically made for [Rails](http://rubyonrails.org) application notices.
 
-Requirements
-===
+## Requirements
+
 - Sass 3.0+
 - Bourbon 2.0+
 - Ruby 1.9.3+
 
-Credits
-===
+## The Bourbon family
+
+- [Bourbon](http://bourbon.io) provides Sass mixins and eliminates vendor prefixes, for faster CSS coding.
+- [Neat](http://neat.bourbon.io) provides a lightweight grid framework.
+- [Bitters](http://bitters.bourbon.io) provides basic variables and structure to a Bourbon/Neat project.
+- [Refills](http://refills.bourbon.io) provides “copy-paste” components and patterns based on Bourbon, Neat and Bitters.
+
+## Credits
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community). Tweet your questions or suggestions at [@kylefiedler](https://twitter.com/kylefiedler).
+Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community). Tweet your questions or suggestions to [@kylefiedler](https://twitter.com/kylefiedler).
 
-License
-===
+## License
 
-Bitters is Copyright © 2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.
+Bitters is Copyright © 2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.txt) file.
