@@ -58,7 +58,7 @@ a {
 }
 
 hr {
-  border-bottom: 1px solid $base-border-color;
+  border-bottom: $base-border;
   border-left: none;
   border-right: none;
   border-top: none;

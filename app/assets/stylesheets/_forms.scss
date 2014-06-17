@@ -1,6 +1,6 @@
 fieldset {
   background: lighten($base-border-color, 10);
-  border: 1px solid $base-border-color;
+  border: $base-border;
   margin: 0 0 ($base-line-height / 2) 0;
   padding: $base-line-height;
 }
