@@ -4,20 +4,25 @@ $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
-// Sizes
+// Font Sizes
 $base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
-$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
-$header-line-height: $base-font-size * 1.25;
-$base-border-radius: em(3);
-$base-vertical-spacing: 0.5em;
-
 $h1-font-size: $base-font-size * 2.25;
 $h2-font-size: $base-font-size * 2;
 $h3-font-size: $base-font-size * 1.75;
 $h4-font-size: $base-font-size * 1.5;
 $h5-font-size: $base-font-size * 1.25;
 $h6-font-size: $base-font-size;
+
+// Line height
+$base-line-height: $base-font-size * 1.5;
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-line-height: $base-font-size * 1.25;
+$unitless-header-line-height: $header-line-height / ($header-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+
+// Other Sizes
+$base-border-radius: em(3);
+$base-vertical-spacing: 0.5em;
+$base-z-index: 0;
 
 // Colors
 $blue: #477DCA;
