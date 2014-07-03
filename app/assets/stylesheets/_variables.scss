@@ -14,14 +14,12 @@ $h5-font-size: $base-font-size * 1.25;
 $h6-font-size: $base-font-size;
 
 // Line height
-$base-line-height: $base-font-size * 1.5;
-$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
-$header-line-height: $base-font-size * 1.25;
-$unitless-header-line-height: $header-line-height / ($header-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$base-line-height: 1.5;
+$header-line-height: 1.25;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-vertical-spacing: 0.5em;
+$base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors

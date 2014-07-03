@@ -4,12 +4,12 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $unitless-line-height;
+  line-height: $base-line-height;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  line-height: $unitless-header-line-height;
+  line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
@@ -39,7 +39,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 ($base-line-height * .5);
+  margin: 0 0 ($base-spacing / 2);
 }
 
 a {
@@ -62,7 +62,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $base-line-height 0;
+  margin: $base-spacing 0;
 }
 
 img {
@@ -73,8 +73,8 @@ img {
 blockquote {
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
-  padding-left: $base-line-height / 2;
+  margin: $base-spacing 0;
+  padding-left: $base-spacing / 2;
 }
 
 cite {
