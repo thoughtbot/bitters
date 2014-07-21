@@ -6,6 +6,12 @@ Bitters helps designers start projects faster by defining a basic set of Sass va
 
 Bitters is made to work alongside a CSS reset and not replace it. Our suggested reset is [Normalize](http://necolas.github.io/normalize.css).
 
+## Requirements
+
+- Sass 3.0+
+- Bourbon 2.0+
+- Ruby 1.9.3+
+
 ## Installation
 
 :warning: **Ruby 1.9.3 or higher** is required to install Bitters from the command line.
@@ -18,7 +24,7 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 
   *If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.*
 
-2. Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
+2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
 
 3. `cd` to your Sass directory and run:
 
@@ -31,33 +37,33 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 4. Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
 
   ```bash
-  @import 'bourbon';
-  @import 'base/base';
+  @import "bourbon";
+  @import "base/base";
   ```
 
 5. When using Neat, uncomment the following line in `_base.scss`:
 
   ```scss
-  @import 'grid-settings';
+  @import "grid-settings";
   ```
 
   And import Neat after Bitters:
 
   ```scss
-  @import 'bourbon';
-  @import 'base/base';
-  @import 'neat';
+  @import "bourbon";
+  @import "base/base";
+  @import "neat";
 
   // All other imports
   ```
 
-  If you want to use Neat functions in Bitters, you can `@import 'grid-settings';` before Neat, remove `@import 'grid-settings';` from `_base.scss` and import the rest of bitters after. For example:
+  If you want to use Neat functions in Bitters, you can `@import "grid-settings";` before Neat, remove `@import "grid-settings";` from `_base.scss` and import the rest of bitters after. For example:
 
   ```scss
-  @import 'bourbon';
-  @import 'base/grid-settings';
-  @import 'neat';
-  @import 'base/base';
+  @import "bourbon";
+  @import "base/grid-settings";
+  @import "neat";
+  @import "base/base";
 
   // All other imports
   ```
@@ -88,25 +94,19 @@ Basic style for `button` and `input[type="submit"]`. Button style can be changed
 ### Flashes
 Used for any error, warning or success messages in applications or forms. Specifically made for [Rails](http://rubyonrails.org) application notices.
 
-## Requirements
-
-- Sass 3.0+
-- Bourbon 2.0+
-- Ruby 1.9.3+
-
 ## The Bourbon family
 
-- [Bourbon](http://bourbon.io) provides Sass mixins and eliminates vendor prefixes, for faster CSS coding.
-- [Neat](http://neat.bourbon.io) provides a lightweight grid framework.
-- [Bitters](http://bitters.bourbon.io) provides basic variables and structure to a Bourbon/Neat project.
-- [Refills](http://refills.bourbon.io) provides “copy-paste” components and patterns based on Bourbon, Neat and Bitters.
+- [Bourbon](http://bourbon.io): A simple and lightweight mixin library for Sass
+- [Neat](http://neat.bourbon.io): A lightweight semantic grid framework for Sass and Bourbon
+- [Bitters](http://bitters.bourbon.io): Scaffold styles, variables and structure for Bourbon projects
+- [Refills](http://refills.bourbon.io): Prepackaged patterns and components, built on top of Bourbon, Bitters & Neat
 
 ## Credits
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community). Tweet your questions or suggestions to [@kylefiedler](https://twitter.com/kylefiedler).
+Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tweet your questions or suggestions to [@kylefiedler](https://twitter.com/kylefiedler) or [@thoughtbot](https://twitter.com/thoughtbot).
 
 ## License
 
-Bitters is Copyright © 2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.txt) file.
+Bitters is Copyright © 2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
