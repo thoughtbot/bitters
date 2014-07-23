@@ -7,7 +7,12 @@ body {
   line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
   margin: 0;
@@ -65,7 +70,8 @@ hr {
   margin: $base-spacing 0;
 }
 
-img {
+img,
+picture {
   margin: 0;
   max-width: 100%;
 }
@@ -82,6 +88,6 @@ cite {
   font-style: italic;
 
   &:before {
-    content: '\2014 \00A0';
+    content: "\2014 \00A0";
   }
 }
