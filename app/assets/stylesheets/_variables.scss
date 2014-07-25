@@ -39,6 +39,7 @@ $base-font-color: $dark-gray !default;
 $base-accent-color: $blue !default;
 
 // Link Colors
+$base-link-transition: color 0.1s linear;
 $base-link-color: $base-accent-color !default;
 $hover-link-color: darken($base-accent-color, 15) !default;
 $base-button-color: $base-link-color !default;
