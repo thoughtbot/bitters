@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Bitters - predefined style for Bourbon</title>
-    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <link rel="stylesheet" href="stylesheets/screen.css">
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <script type="text/javascript" src="//use.typekit.net/foy0lqb.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="//use.typekit.net/foy0lqb.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
-
   <body class="{{ page.class }}">
     <nav class="bourbon">
       <ul>
-        <li><a href="http://bourbon.io" class="bourbon">Bourbon</a></li>
-        <li><a href="http://neat.bourbon.io" class="neat">Neat</a></li>
-        <li><a href="http://bitters.bourbon.io" class="bitters current">Bitters</a></li>
-        <li><a href="http://refills.bourbon.io" class="refills">Refills</a></li>
+        <li><a href="//bourbon.io" class="bourbon">Bourbon</a></li>
+        <li><a href="//neat.bourbon.io" class="neat">Neat</a></li>
+        <li><a href="//bitters.bourbon.io" class="bitters current">Bitters</a></li>
+        <li><a href="//refills.bourbon.io" class="refills">Refills</a></li>
       </ul>
-      <h1>Maintained by the design team at <a href="http://thoughtbot.com">thoughtbot</a></h1>
+      <h1>Maintained by the design team at <a href="//thoughtbot.com">thoughtbot</a></h1>
     </nav>
 
     <header class="main">
       <h1><a href="/">Bitters</a></h1>
       <nav class="actions">
         <a href="/example.html">Example</a>
-        <a href="https://github.com/thoughtbot/bitters">Github</a>
+        <a href="//github.com/thoughtbot/bitters">GitHub</a>
       </nav>
     </header>
 
@@ -39,11 +37,11 @@
     </section>
 
     <footer class="main">
-      <p>Bitters is maintained and funded by <a href="http://www.thoughtbot.com">thoughtbot</a>. Questions? Tweet <a href="http://www.twitter.com/kylefiedler">@kylefiedler</a>.</p>
-      <p>Bitters is Copyright © 2013 thoughtbot. It is free software, and may be redistributed under the terms specified in the LICENSE file.</p>
+      <p>Bitters is maintained and funded by <a href="//thoughtbot.com">thoughtbot, inc</a>. Tweet your questions or suggestions to <a href="//twitter.com/kylefiedler">@kylefiedler</a> or <a href="//twitter.com/thoughtbot">@thoughtbot</a>.</p>
+      <p>Copyright &copy; 2013–2014 <a href="//thoughtbot.com">thoughtbot, inc</a>. Bitters is free software, and may be redistributed under the terms specified in the <a href="//github.com/thoughtbot/bourbon/blob/master/LICENSE.md">license</a>.</p>
       <nav class="actions">
         <a href="/example.html">Example</a>
-        <a href="https://github.com/thoughtbot/bitters">Github</a>
+        <a href="//github.com/thoughtbot/bitters">GitHub</a>
       </nav>
     </footer>
   </body>

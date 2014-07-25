@@ -1,5 +1,4 @@
-_site/
-.sass-cache/
-Gemfile.lock
-pkg/
+_site
 .DS_store
+.sass-cache
+pkg

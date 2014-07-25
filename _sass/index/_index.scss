@@ -4,6 +4,10 @@
 .index {
   font-family: $index-font-family;
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $index-font-family;
+  }
+
   h2 {
     font-size: em(22);
   }

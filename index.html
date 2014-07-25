@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Bitters - Scaffold styles for Bourbon projects
+title: Predefined Styles for Bourbon
 class: index
 ---
 
 <section class="hero">
   <div class="wrapper">
-    <h1>Scaffold styles, variables and structure for <a href="http://bourbon.io/">Bourbon</a> projects.</h1>
+    <h1>Scaffold styles, variables and structure for <a href="//bourbon.io">Bourbon</a> projects.</h1>
   </div>
 </section>
 
@@ -14,15 +14,15 @@ class: index
   <div class="wrapper">
     <article class="speed">
       <h2>Built for speed</h2>
-      <p>Bitters is meant to help designers start projects faster by defining a basic set of variables and project structure.</p>
+      <p>Bitters helps designers start projects faster by defining a basic set of Sass variables, default element style and project structure.</p>
     </article>
     <article class="change">
       <h2>Made to change</h2>
-      <p> After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements.</p>
+      <p>After you have Bitters installed, jump in and start customizing the styles and variables to your design and brand requirements.</p>
     </article>
     <article class="install">
       <h2>Easy to install</h2>
-      <p>Just a few easy steps to get Bitters in your next project. Just follow our simple <a href="#install">install instructions below</a>.</p>
+      <p>Just a few easy steps to get Bitters in your next project. Just follow our simple <a href="#install">installation instructions below</a>.</p>
     </article>
   </div>
 </section>
@@ -30,37 +30,37 @@ class: index
 <section class="getting-started">
   <article class="structure">
     <h2>Sass Structure</h2>
-     <p>The Bitters folder should contain styles for all the basic elements used throughout the site&rsquo;s style. It also contains folders for custom mixins and extends for your site as well. Add code to the existing files or add new files to the folders. Customize Bitters for your site as you see fit.</p>
+     <p>The Bitters folder should contain styles for all the basic elements used throughout the site&rsquo;s style. Add code to the existing files or add new files to the folders. Customize Bitters for your site as you see fit.</p>
   </article>
 
   <article class="variables">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_variables.scss">Variables</a></h2>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_variables.scss">Variables</a></h2>
     <p>This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with <code>$base</code> to indicate that they are the most basic variables.</p>
   </article>
 
   <article class="grid">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_grid-settings.scss">Grid Settings</a></h2>
-    <p>Variables specifically created for <a href="http://neat.bourbon.io">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_grid-settings.scss">Grid Settings</a></h2>
+    <p>Variables specifically created for <a href="//neat.bourbon.io">Neat</a> resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.</p>
   </article>
 
   <article class="type">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_typography.scss">Typography</a></h2>
-    <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> to keep a semi-baseline grid. All sizes are scaled up or down by a factor of .25. </p>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_typography.scss">Typography</a></h2>
+    <p>All type is based on <code>$base-font-size</code> which is set to 1em (16px) by default. The spacing around type is based on <code>$base-line-height</code> to keep a semi-baseline grid. All sizes are scaled up or down by a factor of 0.25.</p>
   </article>
 
   <article class="lists">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_lists.scss">Lists</a></h2>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_lists.scss">Lists</a></h2>
     <p>All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add <code>@extend %default-ul;</code> or <code>@extend %default-ol;</code> to the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> respectively.</p>
   </article>
 
   <article class="forms">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_forms.scss">Forms</a></h2>
-    <p>Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.</p>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/_forms.scss">Forms</a></h2>
+    <p>Adds basic styles all form elements. Form-specific variables make it really easy to be overridden.</p>
   </article>
 
   <article class="flashes">
-    <h2><a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/extends/_flashes.scss">Flashes</a> &amp; <a href="https://github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/extends/_errors.scss">Errors</a></h2>
-    <p>Used for any flash messages for applications. Specifically made for rails application notices. Error styles made for styling labels with errors or warnings.</p>
+    <h2><a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/extends/_flashes.scss">Flashes</a> &amp; <a href="//github.com/thoughtbot/bitters/blob/master/app/assets/stylesheets/extends/_errors.scss">Errors</a></h2>
+    <p>Used for any flash messages for applications. Specifically made for Rails application notices. Error styles made for styling labels with errors or warnings.</p>
   </article>
 </section>
 
@@ -74,11 +74,11 @@ class: index
       <p>Install Bourbon and Neat (optional). Then cd to your Sass directory and run: <code>bitters install</code></p>
     </li>
     <li>
-      <p>The generated folder will contain all Bitters files. Import Bitters after Bourbon and Neat in your application.css.scss: <code>@import 'base/base';</code></p>
+      <p>The generated folder will contain all Bitters files. Import Bitters after Bourbon and Neat in your application.css.scss: <code>@import "base/base";</code></p>
     </li>
     <li>
       <p>You&rsquo;re all set. Now add to or remove Bitters styles.</p>
     </li>
   </ol>
-  <a href="https://github.com/thoughtbot/bitters#installation">In-depth instructions on Github</a>
+  <a href="//github.com/thoughtbot/bitters#installation">In-depth instructions on GitHub</a>
 </section>

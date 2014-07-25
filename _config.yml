@@ -1,5 +1,11 @@
-safe: false
+# Site settings
+title: Bitters
+description: "Scaffold styles, variables and structure for Bourbon projects."
+
+# Build settings
+exclude: [README.md]
 markdown: kramdown
+safe: false
 sass:
   sass_dir: _sass
   style: :compressed
