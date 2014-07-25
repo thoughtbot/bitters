@@ -56,6 +56,12 @@ textarea {
   resize: vertical;
 }
 
+input {
+  @include placeholder {
+    color: $form-placeholder-color;
+  }
+}
+
 input[type="search"] {
   @include appearance(none);
 }

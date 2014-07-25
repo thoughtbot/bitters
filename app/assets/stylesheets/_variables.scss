@@ -1,65 +1,67 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$sans-serif: $helvetica !default;
+$serif: $georgia !default;
+$base-font-family: $sans-serif !default;
+$header-font-family: $base-font-family !default;
 
 // Font Sizes
-$base-font-size: 1em;
-$h1-font-size: $base-font-size * 2.25;
-$h2-font-size: $base-font-size * 2;
-$h3-font-size: $base-font-size * 1.75;
-$h4-font-size: $base-font-size * 1.5;
-$h5-font-size: $base-font-size * 1.25;
-$h6-font-size: $base-font-size;
+$base-font-size: 1em !default;
+$h1-font-size: $base-font-size * 2.25 !default;
+$h2-font-size: $base-font-size * 2 !default;
+$h3-font-size: $base-font-size * 1.75 !default;
+$h4-font-size: $base-font-size * 1.5 !default;
+$h5-font-size: $base-font-size * 1.25 !default;
+$h6-font-size: $base-font-size !default;
 
 // Line height
-$base-line-height: 1.5;
-$header-line-height: 1.25;
+$base-line-height: 1.5 !default;
+$header-line-height: 1.25 !default;
 
 // Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$base-z-index: 0;
+$base-border-radius: 3px !default;
+$base-spacing: $base-line-height * 1em !default;
+$base-z-index: 0 !default;
 
 // Colors
-$blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+$blue: #477DCA !default;
+$dark-gray: #333 !default;
+$medium-gray: #999 !default;
+$light-gray: #DDD !default;
+$light-red: #FBE3E4 !default;
+$light-yellow: #FFF6BF !default;
+$light-green: #E6EFC2 !default;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: white !default;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $dark-gray !default;
+$base-accent-color: $blue !default;
 
 // Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
-$base-button-color: $base-link-color;
-$hover-button-color: $hover-link-color;
+$base-link-transition: color 0.1s linear;
+$base-link-color: $base-accent-color !default;
+$hover-link-color: darken($base-accent-color, 15) !default;
+$base-button-color: $base-link-color !default;
+$hover-button-color: $hover-link-color !default;
 
 // Flash Colors
-$alert-color: $light-yellow;
-$error-color: $light-red;
-$notice-color: lighten($base-accent-color, 40);
-$success-color: $light-green;
+$alert-color: $light-yellow !default;
+$error-color: $light-red !default;
+$notice-color: lighten($base-accent-color, 40) !default;
+$success-color: $light-green !default;
 
 // Border color
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+$base-border-color: $light-gray !default;
+$base-border: 1px solid $base-border-color !default;
 
 // Forms
-$form-border-color: $base-border-color;
-$form-border-color-hover: darken($base-border-color, 10);
-$form-border-color-focus: $base-accent-color;
-$form-border-radius: $base-border-radius;
-$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
-$form-font-size: $base-font-size;
-$form-font-family: $base-font-family;
+$form-border-color: $base-border-color !default;
+$form-border-color-hover: darken($base-border-color, 10) !default;
+$form-border-color-focus: $base-accent-color !default;
+$form-border-radius: $base-border-radius !default;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06) !default;
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7) !default;
+$form-font-size: $base-font-size !default;
+$form-font-family: $base-font-family !default;
+$form-placeholder-color: $medium-gray !default;
