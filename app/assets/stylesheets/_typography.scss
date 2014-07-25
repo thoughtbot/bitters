@@ -48,7 +48,7 @@ p {
 }
 
 a {
-  @include transition( $base-link-transition );
+  @include transition($base-link-transition);
   color: $base-link-color;
   text-decoration: none;
 
