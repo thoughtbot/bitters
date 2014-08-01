@@ -1,6 +1,6 @@
+_site
 .DS_store
-.sass-cache/
-*.scssc
-/stylesheets/.sass-cache/
-pkg
+.sass-cache
+*gem
+*swp
 Gemfile.lock
