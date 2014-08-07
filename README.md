@@ -105,7 +105,8 @@ Used for any error, warning or success messages in applications or forms. Specif
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tweet your questions or suggestions to [@kylefiedler](https://twitter.com/kylefiedler) or [@thoughtbot](https://twitter.com/thoughtbot).
+Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com).
+Tweet your questions or suggestions to [@bourbonsass](https://twitter.com/bourbonsass) and while you’re at it follow us too.
 
 ## License
 
