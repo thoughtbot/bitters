@@ -1,4 +1,5 @@
 table {
+  @include font-feature-settings("kern","liga","tnum");
   border-collapse: collapse;
   margin: ($base-spacing / 2) 0;
   table-layout: fixed;
