@@ -1,4 +1,4 @@
-# Bitters
+# Bitters [![Gem Version](http://img.shields.io/gem/v/bitters.svg?style=flat)](https://rubygems.org/gems/bitters)
 
 **Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.**
 
