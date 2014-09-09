@@ -89,7 +89,7 @@ All lists have stripped out styles. No bullets, no left padding. To add back the
 Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
 
 ### Buttons
-Basic style for `button` and `input[type="submit"]`. Button style can be changed by setting the `$button-style` variable to one of the [Bourbon](http://bourbon.io) button style [options](http://bourbon.io/docs/#buttons).
+Basic style for `button` and `input[type="submit"]`. Base button styles can be changed by modifying the `%button` extend in `base/extends/_button.scss`.
 
 ### Flashes
 Used for any error, warning or success messages in applications or forms. Specifically made for [Rails](http://rubyonrails.org) application notices.
