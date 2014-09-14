@@ -1,6 +1,10 @@
-# Bitters [![Gem Version](http://img.shields.io/gem/v/bitters.svg?style=flat)](https://rubygems.org/gems/bitters)
+# Bitters
 
-**Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.**
+[![Gem Version](http://img.shields.io/gem/v/bitters.svg?style=flat)](https://rubygems.org/gems/bitters)
+
+***
+
+## Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.
 
 Bitters helps designers start projects faster by defining a basic set of Sass variables, default element style and project structure. It’s been specifically designed for use within web applications. Bitters should live in your project’s root Sass directory and we *encourage* you to modify and extend it to meet your design and brand requirements.
 
@@ -8,15 +12,17 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 
 ## Requirements
 
-- Sass 3.0+
-- Bourbon 2.0+
-- Ruby 1.9.3+
+- [Sass](https://github.com/sass/sass) 3.0+
+- [Bourbon](https://github.com/thoughtbot/bourbon) 2.0+
+- Ruby 1.9.3+ (required to install Bitters from the command line)
 
 ## Installation
 
-:warning: **Ruby 1.9.3 or higher** is required to install Bitters from the command line.
+Bitters uses the [RubyGems](https://rubygems.org) package manager to easily generate a `base` directory with all of the necessary files.
 
-1. Install Bitters:
+For command line help, use `bitters help` or visit the [Command Line Interface Wiki](https://github.com/thoughtbot/bitters/wiki/Command-Line-Interface).
+
+1. Install the Bitters gem:
 
   ```bash
   gem install bitters
@@ -24,9 +30,9 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 
   *If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.*
 
-2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation-for-rails-31) (required) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
+2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation) (required) and [Neat](https://github.com/thoughtbot/neat#installation) (optional).
 
-3. `cd` to your Sass directory and run:
+3. Install the Bitters library into the current directory:
 
   ```bash
   bitters install
@@ -92,7 +98,7 @@ Adds basic styles all form elements. The variables at the top of the file all in
 Basic style for `button` and `input[type="submit"]`. Button style can be changed by setting the `$button-style` variable to one of the [Bourbon](http://bourbon.io) button style [options](http://bourbon.io/docs/#buttons).
 
 ### Flashes
-Used for any error, warning or success messages in applications or forms. Specifically made for [Rails](http://rubyonrails.org) application notices.
+Used for any error, warning or success messages in applications or forms. Specifically made for [Ruby on Rails](http://rubyonrails.org) application notices.
 
 ## The Bourbon family
 
@@ -105,9 +111,8 @@ Used for any error, warning or success messages in applications or forms. Specif
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 
-Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com).
-Tweet your questions or suggestions to [@bourbonsass](https://twitter.com/bourbonsass) and while you’re at it follow us too.
+Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tweet your questions or suggestions to [@bourbonsass](https://twitter.com/bourbonsass) and while you’re at it follow us too.
 
 ## License
 
-Bitters is Copyright © 2013–2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
+Copyright © 2013–2014 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
