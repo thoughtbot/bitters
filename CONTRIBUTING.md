@@ -32,4 +32,3 @@ Some things that will increase the chance that your pull request is accepted:
 * Declarations within a block should be ordered alphabetically.
 * Blank lines between rules.
 * No trailing whitespace. Blank lines should not have any space.
-
