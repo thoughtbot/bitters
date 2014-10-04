@@ -27,9 +27,6 @@ $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
 
 // Background Color
 $base-background-color: white;
@@ -43,12 +40,6 @@ $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
-
-// Flash Colors
-$alert-color: $light-yellow;
-$error-color: $light-red;
-$notice-color: lighten($base-accent-color, 40);
-$success-color: $light-green;
 
 // Border color
 $base-border-color: $light-gray;
