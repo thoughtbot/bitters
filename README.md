@@ -53,7 +53,7 @@ For command line help, use `bitters help` or visit the [Command Line Interface W
   @import "grid-settings";
   ```
 
-  And import Neat after Bitters:
+  And import Neat after Bitters in your `application.css.scss` or main manifest file:
 
   ```scss
   @import "bourbon";
