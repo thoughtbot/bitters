@@ -88,7 +88,7 @@ This houses all variables that are used, or will be used, in more than one file 
 Variables specifically created for [Neat](http://neat.bourbon.io) resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
 
 ### Typography
-All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `.25`.
+All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `0.25`.
 
 ### Lists
 All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default-ul;` or `@extend %default-ol;` to the `<ul>` or `<ol>` respectively.
@@ -98,9 +98,6 @@ Adds basic styles all form elements. The variables at the top of the file all in
 
 ### Buttons
 Basic style for `button` and `input[type="submit"]`. Base button styles can be changed by modifying the `%button` extend in `base/extends/_button.scss`.
-
-### Flashes
-Used for any error, warning or success messages in applications or forms. Specifically made for [Ruby on Rails](http://rubyonrails.org) application notices.
 
 ## The Bourbon family
 

@@ -1,5 +1,5 @@
 {
   "name": "Bitters",
   "description": "Scaffold styles, variables and structure for Bourbon projects",
-  "tags": ["structure", "variables", "forms", "buttons", "typography", "flashes"]
+  "tags": ["buttons", "forms", "structure", "typography", "variables"]
 }
