@@ -63,6 +63,8 @@ For command line help, use `bitters help` or visit the [Command Line Interface W
   // All other imports
   ```
 
+  **Note:** If you are using Bitters and Neat without Ruby on Rails, you need to change the import for `neat-helpers` inside `_grid-settings.scss` to `"../neat/neat-helpers"`.
+
   If you want to use Neat functions in Bitters, you can `@import "grid-settings";` before Neat, remove `@import "grid-settings";` from `_base.scss` and import the rest of bitters after. For example:
 
   ```scss
