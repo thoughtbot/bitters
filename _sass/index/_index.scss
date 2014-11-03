@@ -192,13 +192,9 @@
       @include media($min-medium-screen) {
         @include span-columns(4);
         @include omega(3n);
-
-        &:last-child {
-          @include shift(4);
-        }
       };
 
-      $feature-list: structure, variables, grid, type, lists, forms, flashes;
+      $feature-list: structure, variables, grid, type, lists, forms;
 
       @each $feature in $feature-list {
         &.#{$feature} h2 {
