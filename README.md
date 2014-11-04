@@ -47,7 +47,7 @@ For command line help, use `bitters help` or visit the [Command Line Interface W
   @import "base/base";
   ```
 
-5. When using Neat, uncomment the following line in `_base.scss`:
+5. When using Neat, uncomment the following line in `_bitters.scss`:
 
   ```scss
   @import "grid-settings";
