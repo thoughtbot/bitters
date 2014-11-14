@@ -16,9 +16,7 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 
 ## Installation
 
-Bitters uses the [RubyGems](https://rubygems.org) package manager to easily generate a `base` directory with all of the necessary files.
-
-For command line help, use `bitters help` or visit the [Command Line Interface Wiki](https://github.com/thoughtbot/bitters/wiki/Command-Line-Interface).
+For command line help, run `bitters help` or visit the [Command Line Interface Wiki](https://github.com/thoughtbot/bitters/wiki/Command-Line-Interface).
 
 1. Install the Bitters gem:
 
@@ -30,7 +28,9 @@ For command line help, use `bitters help` or visit the [Command Line Interface W
 
 2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation) (required) and [Neat](https://github.com/thoughtbot/neat#installation) (optional).
 
-3. Install the Bitters library into the current directory:
+3. Install the Bitters library into the current directory by running the
+   following command at the command-line. If you're using Rails, run the command
+   in `app/assets/stylesheets`:
 
   ```bash
   bitters install
