@@ -2,8 +2,6 @@
 
 [![Gem Version](http://img.shields.io/gem/v/bitters.svg?style=flat)](https://rubygems.org/gems/bitters)
 
-***
-
 ## Scaffold styles, variables and structure for [Bourbon](http://bourbon.io) projects.
 
 Bitters helps designers start projects faster by defining a basic set of Sass variables, default element style and project structure. It’s been specifically designed for use within web applications. Bitters should live in your project’s root Sass directory and we *encourage* you to modify and extend it to meet your design and brand requirements.
