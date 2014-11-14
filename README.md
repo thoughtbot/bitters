@@ -16,9 +16,9 @@ Bitters is made to work alongside a CSS reset and not replace it. Our suggested 
 
 ## Installation
 
-For command line help, run `bitters help` or visit the [Command Line Interface Wiki](https://github.com/thoughtbot/bitters/wiki/Command-Line-Interface).
+For command line help, use `bitters help` or visit the [Command Line Interface Wiki](https://github.com/thoughtbot/bitters/wiki/Command-Line-Interface).
 
-1. Install the Bitters gem:
+1. Install the Bitters gem using the [RubyGems](https://rubygems.org) package manager:
 
   ```bash
   gem install bitters
