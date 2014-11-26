@@ -91,3 +91,16 @@ cite {
     content: "\2014 \00A0";
   }
 }
+
+code {
+  font-family: $monospace-font-family;
+}
+
+pre {
+  background-color: rgba($base-font-color,0.1);
+  border-radius: $base-border-radius;
+  border: $base-border;
+  font-family: $monospace-font-family;
+  overflow-x: scroll;
+  padding: $base-spacing / 2;
+}
