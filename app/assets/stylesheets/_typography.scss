@@ -1,11 +1,16 @@
+
+
 body {
   @include font-feature-settings("kern","liga","frac", "pnum");
-  -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
 }
 
 h1,
