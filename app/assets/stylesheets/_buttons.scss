@@ -4,6 +4,7 @@ input[type="submit"] {
   @include appearance(none);
   border: none;
   cursor: pointer;
+  font-family: $base-font-family;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
