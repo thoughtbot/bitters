@@ -1,0 +1,25 @@
+$base-background-color: #FFF;
+
+// Font Colors
+$base-font-color: #333;
+$base-light-text: $base-background-color;
+$base-accent-color: #DCC855;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Buttons
+$base-button-color: $base-link-color;
+$base-button-text-color: $base-light-text;
+$hover-button-color: $hover-link-color;
+$hover-button-text-color: $base-light-text;
+
+// Border color
+$base-border-color: #DDD;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
