@@ -3,5 +3,5 @@
 To run Jekyll server:
 
 ```bash
-jekyll serve -w`
+jekyll serve
 ```
