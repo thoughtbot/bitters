@@ -1,6 +1,4 @@
-%button,
-button,
-input[type="submit"] {
+#{$all-button-inputs} {
   -webkit-font-smoothing: antialiased;
   @include appearance(none);
   background-color: $base-button-color;
