@@ -70,6 +70,7 @@ nav.bourbon {
     color: rgba(#fff, .6);
     float: right;
     font-size: 1em;
+    margin-bottom: 0;
 
     @include media(max-width em(900)){
       display: none;

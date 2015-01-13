@@ -1,0 +1,28 @@
+.index {
+  font-family: $index-font-family;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $index-font-family;
+  }
+
+  h2 {
+    font-size: em(22);
+  }
+
+  p {
+    color: lighten($base-font-color, 25);
+  }
+
+  a {
+    color: $blue;
+
+    &:hover {
+      color: darken($blue, 20);
+    }
+  }
+
+  img {
+    border-radius: $base-border-radius;
+    border: 1px solid $base-border-color;
+  }
+}

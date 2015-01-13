@@ -1,0 +1,45 @@
+.instructions {
+  background: $blue;
+  padding: 3em 2em;
+  text-align: center;
+
+  @include media($max-width + 4em) {
+    padding: 3em 0;
+  };
+
+  h1 {
+    color: #fff;
+    margin-bottom: 1em;
+    margin-top: 0;
+    font-size: em(36);
+  }
+
+  ol {
+    margin: 0 auto;
+    max-width: em(400);
+
+    p {
+      color: lighten($blue, 35);
+    }
+
+    code {
+      color: lighten($blue, 45);
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  a {
+    @include inline-block;
+    border-radius: $base-border-radius;
+    border: 1px solid lighten($blue, 20);
+    color: lighten($blue, 30);
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+}

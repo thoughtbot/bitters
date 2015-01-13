@@ -1,21 +1,21 @@
 fieldset {
   background: lighten($base-border-color, 10);
-  border: 1px solid $base-border-color;
-  margin: 0 0 ($base-line-height / 2) 0;
-  padding: $base-line-height;
+  border: $base-border;
+  margin: 0 0 $small-spacing;
+  padding: $base-spacing;
 }
 
 input,
 label,
 select {
   display: block;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 label {
   font-weight: bold;
-  margin-bottom: $base-line-height / 4;
+  margin-bottom: $base-spacing / 4;
 
   &.required:after {
     content: "*";
@@ -32,21 +32,21 @@ select[multiple=multiple] {
   @include box-sizing(border-box);
   @include transition(border-color);
   background-color: white;
-  border-radius: $form-border-radius;
-  border: 1px solid $form-border-color;
+  border-radius: $base-border-radius;
+  border: $base-border;
   box-shadow: $form-box-shadow;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
-  margin-bottom: $base-line-height / 2;
-  padding: ($base-line-height / 3) ($base-line-height / 3);
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: $base-spacing / 2;
+  padding: ($base-spacing / 3) ($base-spacing / 3);
   width: 100%;
 
   &:hover {
-    border-color: $form-border-color-hover;
+    border-color: darken($base-border-color, 10);
   }
 
   &:focus {
-    border-color: $form-border-color-focus;
+    border-color: $action-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
@@ -60,19 +60,19 @@ input[type="search"] {
   @include appearance(none);
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: inline;
-  margin-right: $base-line-height / 4;
+  margin-right: $base-spacing / 4;
 }
 
 input[type="file"] {
-  margin-bottom: $base-line-height / 2;
-  padding-bottom: ($base-line-height / 3);
+  padding-bottom: $small-spacing;
   width: 100%;
 }
 
 select {
-  width: auto;
+  margin-bottom: $base-spacing;
   max-width: 100%;
-  margin-bottom: $base-line-height;
+  width: auto;
 }

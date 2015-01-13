@@ -1,0 +1,42 @@
+.getting-started {
+  @include outer-container;
+  margin-top: 4em;
+  padding: 0 2em;
+
+  @include media($max-width + 4em) {
+    padding: 0;
+  };
+
+  h2 {
+    margin-bottom: 0.5em;
+
+    a {
+      border-bottom: 1px solid $base-border-color;
+      color: $base-font-color;
+      padding-bottom: 2px;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  article {
+    padding: 0 2em 2em;
+    position: relative;
+
+    @include media($min-medium-screen) {
+      @include span-columns(4);
+      @include omega(3n);
+    };
+
+    $feature-list: structure, variables, grid, type, lists, forms;
+
+    @each $feature in $feature-list {
+      &.#{$feature} h2 {
+        @extend %icon;
+        @extend %#{$feature};
+      }
+    }
+  }
+}

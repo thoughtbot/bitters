@@ -1,0 +1,90 @@
+.about {
+  @include row;
+  background-color: lighten($yellow, 10);
+  overflow: hidden;
+
+  @include media($min-medium-screen) {
+    padding: 0;
+  };
+
+  h2 {
+    color: darken($yellow, 40);
+    margin-bottom: 0.5em;
+
+    @include media($min-medium-screen){
+      text-align: center;
+    }
+  }
+
+  p {
+    color: darken($yellow, 30);
+    margin-bottom: 0;
+
+    a {
+      color: darken($yellow, 40);
+
+      &:hover {
+        color: lighten($yellow, 30);
+      }
+    }
+  }
+
+  article {
+    padding: 1.5em 2em;
+
+    @include media($min-medium-screen) {
+      @include span-columns(4, table);
+      padding: 2em 2em;
+    };
+
+    &:last-child {
+      background-color: lighten($yellow, 5);
+      margin: 0 -2em;
+      padding: 2em 4em;
+
+      @include media($min-medium-screen) {
+        padding: 2em;
+        margin: 0;
+      };
+    }
+
+    &:before {
+      @include size(1.85em);
+      background: lighten($yellow, 22);
+      border-radius: 50%;
+      color: lighten($yellow, 10);
+      display: block;
+      font-family: "fontello";
+      font-size: 2em;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1.95em;
+      margin-right: .5em;
+      speak: none;
+      text-align: center;
+      text-decoration: inherit;
+
+      @include media($min-small-screen) {
+        font-size: 3em;
+      };
+
+      @include media(max-width $min-medium-screen) {
+        float: left;
+      };
+
+      @include media($min-medium-screen) {
+        font-size: 4em;
+        margin: 0 auto 0.25em;
+      };
+    }
+
+    $highlight-list: speed, change, install;
+
+    @each $highlight in $highlight-list {
+      &.#{$highlight} {
+        @extend %#{$highlight};
+      }
+    }
+  }
+}

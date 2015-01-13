@@ -1,27 +1,28 @@
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   &%default-ul {
     list-style-type: disc;
-    margin-bottom: $base-line-height / 2;
-    padding-left: $base-line-height;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
   }
 
   &%default-ol {
     list-style-type: decimal;
-    margin-bottom: $base-line-height / 2;
-    padding-left: $base-line-height;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
   }
 }
 
 dl {
-  margin-bottom: $base-line-height / 2;
+  margin-bottom: $small-spacing;
 
   dt {
     font-weight: bold;
-    margin-top: $base-line-height / 2;
+    margin-top: $small-spacing;
   }
 
   dd {
