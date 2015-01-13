@@ -1,0 +1,43 @@
+.hero {
+  background-color: $green;
+  color: #fff;
+  padding: 3.5em 0;
+
+  @include media($min-small-screen){
+    padding: 3.5em 0 0;
+  }
+
+  a {
+    color: #fff;
+    border-bottom: 3px solid rgba(#fff, 0.6);
+
+    &:hover {
+      color: rgba(#fff, 0.6);
+    }
+  }
+
+  h1 {
+    font-size: em(36);
+    text-align: center;
+    margin-bottom: 0;
+
+    &:after {
+      @extend %browser-scroll;
+
+      @include media($min-small-screen){
+        background-color: #fff;
+        background-image: url('/images/bitters-example.jpg');
+        background-position: center 1em;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        border-radius: $base-border-radius $base-border-radius 0 0;
+        border-top: 25px solid $base-border-color;
+        content: " ";
+        display: block;
+        height: em(320, 36);
+        margin-top: 1em;
+        width: 100%;
+      }
+    }
+  }
+}

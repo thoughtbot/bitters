@@ -1,10 +1,11 @@
 @include font-face(Fontello, /fonts/fontello);
 
 %icon:before {
+  @include position(absolute,  3px null null 0em);
   color: lighten($base-font-color, 40);
   display: block;
   font-family: "fontello";
-  font-size: .75em;
+  font-size: 0.75em;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -12,7 +13,6 @@
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  @include position(absolute,  0px 0 0 0em);
 }
 
 %speed:before {

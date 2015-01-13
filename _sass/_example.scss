@@ -1,5 +1,6 @@
 h1[id] {
   margin-bottom: .5em;
+  font-size: em(24);
 }
 
 ul.default {
@@ -8,24 +9,4 @@ ul.default {
 
 ol.default {
   @extend %default-ol;
-}
-
-.button {
-  @extend %button;
-}
-
-.success {
-  @extend %flash-success;
-}
-
-.error {
-  @extend %flash-error;
-}
-
-.notice {
-  @extend %flash-notice;
-}
-
-.alert {
-  @extend %flash-alert;
 }
