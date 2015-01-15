@@ -15,49 +15,28 @@ h4,
 h5,
 h6 {
   font-family: $header-font-family;
+  font-size: $base-font-size;
   line-height: $header-line-height;
-  margin: 0;
-}
-
-h1 {
-  font-size: $h1-font-size;
-}
-
-h2 {
-  font-size: $h2-font-size;
-}
-
-h3 {
-  font-size: $h3-font-size;
-}
-
-h4 {
-  font-size: $h4-font-size;
-}
-
-h5 {
-  font-size: $h5-font-size;
-}
-
-h6 {
-  font-size: $h6-font-size;
+  margin: 0 0 $small-spacing;
 }
 
 p {
-  margin: 0 0 ($base-spacing / 2);
+  margin: 0 0 $small-spacing;
 }
 
 a {
   @include transition(color 0.1s linear);
-  color: $base-link-color;
+  color: $action-color;
   text-decoration: none;
 
+  &:active,
+  &:focus,
   &:hover {
-    color: $hover-link-color;
+    color: darken($action-color, 15);
   }
 
-  &:active, &:focus {
-    color: $hover-link-color;
+  &:active,
+  &:focus {
     outline: none;
   }
 }
@@ -74,20 +53,4 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
-}
-
-blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-spacing 0;
-  padding-left: $base-spacing / 2;
-}
-
-cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
-
-  &:before {
-    content: "\2014 \00A0";
-  }
 }
