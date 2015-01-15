@@ -6,23 +6,23 @@ ol {
 
   &%default-ul {
     list-style-type: disc;
-    margin-bottom: $base-spacing / 2;
+    margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
 
   &%default-ol {
     list-style-type: decimal;
-    margin-bottom: $base-spacing / 2;
+    margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
 }
 
 dl {
-  margin-bottom: $base-spacing / 2;
+  margin-bottom: $small-spacing;
 
   dt {
     font-weight: bold;
-    margin-top: $base-spacing / 2;
+    margin-top: $small-spacing;
   }
 
   dd {
