@@ -21,7 +21,7 @@ module Bitters
     end
 
     desc 'reset', 'Reset Bitters'
-    def update
+    def reset
       if bitters_files_already_exist?
         remove_bitters_directory
         install_files
