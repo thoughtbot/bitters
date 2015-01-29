@@ -1,5 +1,5 @@
 fieldset {
-  background: lighten($base-border-color, 10);
+  background-color: lighten($base-border-color, 10%);
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
@@ -14,10 +14,10 @@ select {
 }
 
 label {
-  font-weight: bold;
-  margin-bottom: $base-spacing / 4;
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
 
-  &.required:after {
+  &.required::after {
     content: "*";
   }
 
@@ -26,23 +26,23 @@ label {
   }
 }
 
-textarea,
 #{$all-text-inputs},
-select[multiple=multiple] {
-  @include box-sizing(border-box);
-  @include transition(border-color);
-  background-color: white;
-  border-radius: $base-border-radius;
+select[multiple=multiple],
+textarea {
+  background-color: $base-background-color;
   border: $base-border;
+  border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
+  box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $base-spacing / 2;
-  padding: ($base-spacing / 3) ($base-spacing / 3);
+  padding: $base-spacing / 3;
+  transition: border-color;
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10);
+    border-color: darken($base-border-color, 10%);
   }
 
   &:focus {
@@ -63,7 +63,7 @@ input[type="search"] {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: $base-spacing / 4;
+  margin-right: $small-spacing / 2;
 }
 
 input[type="file"] {
