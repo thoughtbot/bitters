@@ -1,7 +1,7 @@
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
-  color: $base-font-color;
+  color: $base-font-color-on-background;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -24,14 +24,14 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: $action-color-on-background;
   text-decoration: none;
   transition: color 0.1s linear;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    color: darken($action-color-on-background, 15%);
   }
 
   &:active,

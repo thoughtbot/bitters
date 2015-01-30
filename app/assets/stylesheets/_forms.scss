@@ -1,5 +1,5 @@
 fieldset {
-  background-color: lighten($base-border-color, 10%);
+  background-color: $base-box-background;
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
@@ -9,8 +9,8 @@ input,
 label,
 select {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  // font-family: $base-font-family;
+  // font-size: $base-font-size;
 }
 
 label {
@@ -29,8 +29,8 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
-  border: $base-border;
+  background-color: $form-background;
+  border: $form-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
@@ -42,11 +42,11 @@ textarea {
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10%);
+    border-color: darken($form-border-color, 10%);
   }
 
   &:focus {
-    border-color: $action-color;
+    border-color: $action-color-on-box;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
