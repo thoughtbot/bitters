@@ -50,6 +50,11 @@ textarea {
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
+  
+  &:disabled {
+    background-color: darken($base-background-color, 6);
+    cursor: not-allowed;
+  }
 }
 
 textarea {
