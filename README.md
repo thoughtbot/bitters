@@ -97,7 +97,9 @@ All lists have stripped out styles. No bullets, no left padding. To add back the
 Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
 
 ### Buttons
-Basic style for `button` and `input[type="submit"]`. Base button styles can be changed by modifying the `%button` extend in `base/extends/_button.scss`.
+Basic style for `button` and `input[type="submit"]`. Base button styles can be
+changed by modifying the styles applied to `button` and `#{$all-button-inputs}`
+in `base/_button.scss`.
 
 ## The Bourbon family
 
