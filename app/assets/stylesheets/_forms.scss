@@ -52,7 +52,7 @@ textarea {
   }
   
   &:disabled {
-    background-color: darken($base-background-color, 6);
+    background-color: darken($base-background-color, 6%);
     cursor: not-allowed;
   }
 }
