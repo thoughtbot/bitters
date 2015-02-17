@@ -27,7 +27,7 @@ design and brand requirements.
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
 
-  s.add_dependency 'bourbon', '>= 3.2'
-  s.add_dependency 'sass', '>= 3.2'
+  s.add_dependency 'bourbon', '>= 4.2'
+  s.add_dependency 'sass', '>= 3.4'
   s.add_dependency 'thor'
 end

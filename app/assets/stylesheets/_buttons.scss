@@ -1,5 +1,4 @@
-#{$all-button-inputs},
-button {
+#{$all-buttons} {
   @include appearance(none);
   background-color: $action-color;
   border: none;
