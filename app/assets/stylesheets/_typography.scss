@@ -8,8 +8,10 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   
-  * {
-    -webkit-font-smoothing: antialiased;
+  #{$all-text-inputs},
+  textarea {
+    -webkit-font-smoothing: inherit;
+    font-family: inherit;
   }
 }
 
