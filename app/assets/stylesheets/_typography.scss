@@ -4,14 +4,8 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
-  
-  #{$all-text-inputs},
-  textarea {
-    font-family: inherit;
-    -webkit-font-smoothing: inherit;
-  }
+  line-height: $base-line-height;
 }
 
 h1,
