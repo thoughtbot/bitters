@@ -1,3 +1,9 @@
+#{$all-text-inputs},
+textarea {
+  font-family: inherit;
+  -webkit-font-smoothing: inherit;
+}
+
 fieldset {
   background: lighten($base-border-color, 10);
   border: $base-border;
