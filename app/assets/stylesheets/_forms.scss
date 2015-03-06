@@ -54,6 +54,10 @@ textarea {
   &:disabled {
     background-color: darken($base-background-color, 6%);
     cursor: not-allowed;
+    
+    &:hover {
+      border: $base-border;
+    }
   }
 }
 
