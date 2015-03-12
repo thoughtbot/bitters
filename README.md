@@ -12,6 +12,9 @@ Bitters is made to work alongside a CSS reset; not replace one. Our suggested re
 - **[Changelog](https://github.com/thoughtbot/bitters/releases)**
 - **[Issues & Bugs](https://github.com/thoughtbot/bitters/issues)**
 
+Follow the [@bourbonsass](https://twitter.com/bourbonsass) Twitter account
+for updates.
+
 ## Requirements
 
 - [Sass](https://github.com/sass/sass) 3.0+
@@ -108,12 +111,20 @@ in `base/_button.scss`.
 - [Bitters](https://github.com/thoughtbot/bitters): Scaffold styles, variables and structure for Bourbon projects
 - [Refills](https://github.com/thoughtbot/refills): Prepackaged patterns and components built with Bourbon, Neat and Bitters
 
-## Credits
-
-[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
-
-Bitters is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tweet your questions or suggestions to [@bourbonsass](https://twitter.com/bourbonsass) and while you’re at it follow us too.
-
 ## License
 
 Copyright © 2013–2015 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+
+## About thoughtbot
+
+![thoughtbot](https://thoughtbot.com/logo.png)
+
+Bitters is maintained and funded by thoughtbot, inc.
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+We love open source software!
+See [our other projects][community] or
+[hire us][hire] to design, develop, and grow your product.
+
+[community]: https://thoughtbot.com/community?utm_source=github
+[hire]: https://thoughtbot.com/hire-us?utm_source=github
