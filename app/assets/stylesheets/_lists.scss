@@ -1,3 +1,21 @@
+%default-sub-sublist{
+    ol{
+      list-style-type: lower-roman;
+    }
+    ul{
+      list-style-type: square;
+    }
+}
+%default-sublist{
+  ol{
+    list-style-type: lower-alpha;
+    @extend %default-sub-sublist;
+  }
+  ul{
+    list-style-type: circle;
+    @extend %default-sub-sublist;
+  }
+}
 ul,
 ol {
   list-style-type: none;
@@ -8,12 +26,14 @@ ol {
     list-style-type: disc;
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
-  }
+    @extend %default-sublist;
 
+  }
   &%default-ol {
     list-style-type: decimal;
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
+    @extend %default-sublist;
   }
 }
 
