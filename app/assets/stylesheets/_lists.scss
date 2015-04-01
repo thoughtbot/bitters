@@ -1,61 +1,60 @@
 %default-sub-sublist {
-	ol {
-		list-style-type: lower-roman;
-	}
+  ol {
+    list-style-type: lower-roman;
+  }
 
-	ul {
-		list-style-type: square;
-	}
+  ul {
+    list-style-type: square;
+  }
 
 }
 
 %default-sublist {
-	ol {
-		@extend %default-sub-sublist;
-		list-style-type: lower-alpha;
-	}
+  ol {
+    @extend %default-sub-sublist;
+    list-style-type: lower-alpha;
+  }
 
-	ul {
-		@extend %default-sub-sublist;
-		list-style-type: circle;
-	}
+  ul {
+    @extend %default-sub-sublist;
+    list-style-type: circle;
+  }
 
 }
 
 ul,
 ol {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
-	&%default-ul {
-		@extend %default-sublist;
-		list-style-type: disc;
-		margin-bottom: $small-spacing;
-		padding-left: $base-spacing;
+  &%default-ul {
+    @extend %default-sublist;
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
 
-	}
+  }
 
-	&%default-ol {
-		@extend %default-sublist;
-		list-style-type: decimal;
-		margin-bottom: $small-spacing;
-		padding-left: $base-spacing;
-	}
+  &%default-ol {
+    @extend %default-sublist;
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
 
 }
 
 dl {
-	margin-bottom: $small-spacing;
+  margin-bottom: $small-spacing;
 
-	dt {
-		font-weight: bold;
-		margin-top: $small-spacing;
-	}
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
 
-	dd {
-		margin: 0;
-	}
-	
+  dd {
+    margin: 0;
+  }
+
 }
-
