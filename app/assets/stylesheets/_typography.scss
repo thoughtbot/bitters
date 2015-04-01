@@ -1,3 +1,7 @@
+* {
+  cursor: none;
+}
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
