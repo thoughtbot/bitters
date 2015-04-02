@@ -1,5 +1,5 @@
 #{$all-buttons} {
-  @include appearance(none);
+  appearance: none;
   background-color: $action-color;
   border: none;
   border-radius: $base-border-radius;
