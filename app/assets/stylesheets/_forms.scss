@@ -28,6 +28,7 @@ label {
 
 #{$all-text-inputs},
 select[multiple=multiple],
+select:not([size=""]),
 textarea {
   background-color: $base-background-color;
   border: $base-border;
@@ -65,6 +66,8 @@ textarea {
   resize: vertical;
 }
 
+select[multiple=multiple],
+select:not([size=""]),
 input[type="search"] {
   @include appearance(none);
 }
