@@ -32,11 +32,6 @@ a {
   &:hover {
     color: shade($action-color, 25%);
   }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
 }
 
 hr {
