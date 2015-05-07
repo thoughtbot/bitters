@@ -1,0 +1,36 @@
+{
+  "name": "bourbon-bitters",
+  "version": "1.0.0",
+  "description": "Scaffold styles, variables and structure for Bourbon projects.",
+  "keywords": [
+    "bourbon",
+    "columns",
+    "grid",
+    "forms",
+    "layout",
+    "media",
+    "media-queries",
+    "lists",
+    "neat",
+    "queries",
+    "sass",
+    "scaffold styles",
+    "scss",
+    "typography",
+    "variables"
+  ],
+  "homepage": "http://bitters.bourbon.io",
+  "bugs": {
+    "url": "https://github.com/thoughtbot/bitters/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "main": "app/assets/stylesheets/_base.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thoughtbot/bitters.git"
+  }
+}
