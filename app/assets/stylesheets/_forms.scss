@@ -41,7 +41,7 @@ select[multiple=multiple] {
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10%);
+    border-color: shade($base-border-color, 20%);
   }
 
   &:focus {
@@ -51,7 +51,7 @@ select[multiple=multiple] {
   }
 
   &:disabled {
-    background-color: darken($base-background-color, 6%);
+    background-color: shade($base-background-color, 5%);
     cursor: not-allowed;
 
     &:hover {

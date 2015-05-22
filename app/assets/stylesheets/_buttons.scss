@@ -20,7 +20,7 @@
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: shade($action-color, 20%);
     color: #fff;
   }
 

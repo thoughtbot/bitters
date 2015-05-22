@@ -30,7 +30,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    color: shade($action-color, 25%);
   }
 
   &:active,
