@@ -25,7 +25,7 @@ p {
 a {
   color: $action-color;
   text-decoration: none;
-  transition: color 0.1s linear;
+  transition: color 150ms ease;
 
   &:active,
   &:focus,
