@@ -1,7 +1,5 @@
 scss_files: "app/assets/stylesheets/**/*.scss"
 linters:
-  BorderZero:
-    enabled: false
   ColorVariable:
     enabled: false
   LeadingZero:
