@@ -8,6 +8,7 @@ fieldset {
 input,
 label,
 select {
+  display: block;
   font-family: $base-font-family;
   font-size: $base-font-size;
 }
@@ -32,7 +33,6 @@ select[multiple=multiple] {
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
-  display: block;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
