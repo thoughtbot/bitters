@@ -37,7 +37,7 @@ select[multiple=multiple] {
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
-  transition: border-color 150ms ease;
+  transition: border-color $base-duration $base-timing;
   width: 100%;
 
   &:hover {
