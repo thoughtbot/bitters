@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: ($small-spacing / 1.2) ($base-spacing / 1.2);
+  padding: $small-spacing $base-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
