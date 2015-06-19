@@ -1,0 +1,184 @@
+---
+title: Welcome to Bitters by thoughtbot
+---
+.wrapper
+  %h1#main
+    Bitters example page
+  %p
+    The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.
+  %hr
+  %h1#headings
+    Headings
+  %h1
+    h1. Heading
+  %h2
+    h2. Heading
+  %h3
+    h3. Heading
+  %h4
+    h4. Heading
+  %h5
+    h5. Heading
+  %h6
+    h6. Heading
+  %hr
+  %h1#paragraph
+    Paragraph
+  %p
+    Lorem ipsum dolor sit amet,
+    %a{ href: "#", title: "test link" }
+    test link
+    adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+  %p
+    Lorem ipsum dolor sit amet,
+    %em
+      emphasis
+    consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+  %hr
+  %h1#list_types
+    List Types
+  %h3
+    Definition List
+  %dl
+    %dt
+      Definition List Title
+    %dd
+      This is a definition list division.
+  %h3
+    Ordered List
+  %ol
+    %li
+      List Item 1
+    %li
+      List Item 2
+    %li
+      List Item 3
+  %h3
+    Unordered List
+  %ul
+    %li
+      List Item 1
+    %li
+      List Item 2
+    %li
+      List Item 3
+  %h3
+    \%default-ol Ordered List
+  %ol.default
+    %li
+      List Item 1
+    %li
+      List Item 2
+    %li
+      List Item 3
+  %h3
+    \%default-ul Unordered List
+  %ul.default
+    %li
+      List Item 1
+    %li
+      List Item 2
+    %li
+      List Item 3
+  %hr
+  %h1#form_elements
+    Fieldsets and Form Elements
+  %fieldset
+    %p
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+    %form
+      %h2
+        Form Element
+      %p
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.
+      %p
+        %label{ for: "text_field" }
+          Text Field:
+        %input#text_field{ type: "text" }
+      %p
+        %label{ for: "text_area" }
+          Text Area:
+        %textarea#text_area
+      %p
+        %label{ for: "select_element" }
+          Select Element:
+        %select{ name: "select_element" }
+          %optgroup{ label: "Option Group 1" }
+            %option{ value: "1" }
+              Option 1
+            %option{ value: "2" }
+              Option 2
+            %option{ value: "3" }
+              Option 3
+          %optgroup{ label: "Option Group 2" }
+            %option{ value: "1" }
+              Option 1
+            %option{ value: "2" }
+              Option 2
+            %option{ value: "3" }
+              Option 3
+      %p
+        %label{ for: "radio_buttons" }
+          Radio Buttons:
+        %label
+          %input.radio{ name: "radio_button", type: "radio", value: "radio_1" }
+          Radio 1
+        %label
+          %input.radio{ name: "radio_button", type: "radio", value: "radio_2" }
+          Radio 2
+        %label
+          %input.radio{ name: "radio_button", type: "radio", value: "radio_3" }
+          Radio 3
+      %p
+        %label{ for: "checkboxes" } Checkboxes:
+        %label
+          %input.checkbox{ name: "checkboxes", type: "checkbox", value: "check_1" }
+          Checkbox 1
+        %label
+          %input.checkbox{ name: "checkboxes", type: "checkbox", value: "check_2" }
+          Checkbox 2
+        %label
+          %input.checkbox{ name: "checkboxes", type: "checkbox", value: "check_3" }
+          Checkbox 3
+      %p
+        %label{ for: "password" }
+          Password:
+        %input.password{ name: "password", type: "password" }
+      %p
+        %label{ for: "file" }
+          File Input:
+        %input.file{ name: "file", type: "file" }
+      %p
+        %input{ type: "submit", value: "Submit" }
+  %hr
+  %h1#tables
+    Tables
+  %table{ cellpadding: "0", cellspacing: "0" }
+    %tr
+      %th
+        Table Header 1
+      %th
+        Table Header 2
+      %th
+        Table Header 3
+    %tr
+      %td
+        Division 1
+      %td
+        Division 2
+      %td
+        Division 3
+    %tr.even
+      %td
+        Division 1
+      %td
+        Division 2
+      %td
+        Division 3
+    %tr
+      %td
+        Division 1
+      %td
+        Division 2
+      %td
+        Division 3
