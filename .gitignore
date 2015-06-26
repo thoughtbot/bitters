@@ -4,3 +4,5 @@ _site
 *gem
 *swp
 Gemfile.lock
+contrib/*.css
+node_modules

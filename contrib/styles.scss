@@ -1,0 +1,14 @@
+@import "bourbon";
+
+@import "../app/assets/stylesheets/base";
+
+body {
+  margin: auto;
+  max-width: 50em;
+  padding: 1em;
+}
+
+header,
+footer {
+  text-align: center;
+}

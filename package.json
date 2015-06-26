@@ -1,0 +1,34 @@
+{
+  "name": "Bitters",
+  "version": "1.0.0",
+  "description": "Scaffold styles, variables and structure for Bourbon projects.",
+  "main": "Gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thoughtbot/bitters.git"
+  },
+  "keywords": [
+    "bourbon",
+    "css",
+    "sass",
+    "scss"
+  ],
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thoughtbot/bitters/issues"
+  },
+  "homepage": "http://bitters.bourbon.io",
+  "dependencies": {
+    "bourbon": "^4.2.3",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.2",
+    "node-bourbon": "^4.2.3"
+  }
+}
