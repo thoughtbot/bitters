@@ -11,7 +11,8 @@
     "bourbon",
     "css",
     "sass",
-    "scss"
+    "scss",
+    "scaffold"
   ],
   "author": {
     "name": "thoughtbot",
@@ -23,7 +24,6 @@
   },
   "homepage": "http://bitters.bourbon.io",
   "dependencies": {
-    "bourbon": "^4.2.3",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-concat": "^2.6.0",

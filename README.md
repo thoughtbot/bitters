@@ -28,7 +28,7 @@ For command line help, visit our wiki page on Bitters’ [command line interface
 1. Install the Bitters gem using the [RubyGems](https://rubygems.org) package manager:
 
   ```bash
-  gem install bitters
+  $ gem install bitters
   ```
 
   *If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.*
@@ -38,14 +38,14 @@ For command line help, visit our wiki page on Bitters’ [command line interface
 3. Install the Bitters library into the current directory by running the following command at the command-line. If you’re using Ruby on Rails, run the command in `app/assets/stylesheets`:
 
   ```bash
-  bitters install
+  $ bitters install
   ```
 
   A `base` directory will be generated which contains all of the Bitters files.
 
 4. Import Bitters after Bourbon in your `application.css.scss` or main manifest file. All additional stylesheets should be imported below Bitters.
 
-  ```bash
+  ```scss
   @import "bourbon";
   @import "base/base";
   ```
@@ -104,6 +104,11 @@ Basic style for `button` and `input[type="submit"]`. Base button styles can be
 changed by modifying the styles applied to `button` and `#{$all-button-inputs}`
 in `base/_button.scss`.
 
+## Contributing
+
+For more information on contributing to bitters, check out our
+[contributing documentaion](https://github.com/thoughtbot/bitters/blob/master/CONTRIBUTING.md).
+
 ## The Bourbon family
 
 - [Bourbon](https://github.com/thoughtbot/bourbon): A simple and lightweight mixin library for Sass
@@ -114,6 +119,7 @@ in `base/_button.scss`.
 ## License
 
 Copyright © 2013–2015 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+
 
 ## About thoughtbot
 
