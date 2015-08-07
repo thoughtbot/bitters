@@ -106,8 +106,8 @@ in `base/_button.scss`.
 
 ## Contributing
 
-For more information on contributing to bitters, check out our
-[contributing documentaion](https://github.com/thoughtbot/bitters/blob/master/CONTRIBUTING.md).
+For more information on contributing to Bitters, check out our
+[contributing guide](https://github.com/thoughtbot/bitters/blob/master/CONTRIBUTING.md).
 
 ## The Bourbon family
 
@@ -119,7 +119,6 @@ For more information on contributing to bitters, check out our
 ## License
 
 Copyright © 2013–2015 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
-
 
 ## About thoughtbot
 
