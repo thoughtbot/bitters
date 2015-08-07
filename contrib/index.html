@@ -81,82 +81,105 @@
         <li>List Item 3</li>
       </ul>
       <hr>
-      <fieldset>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam
-          dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis
-          suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at,
-          tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis
-          luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget
-          metus.
-        </p>
-        <form>
-          <h2>Form Element</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam
-            dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc
-            iaculis suscipit dui.
-          </p>
-          <p><label for="text_field">Text Field:</label>
-            <input type="text" id="text_field"></p>
-          <p><label for="text_area">Text Area:</label>
-            <textarea id="text_area"></textarea></p>
-          <p>
-            <label for="select_element">Select Element:</label>
-            <select name="select_element">
-              <optgroup label="Option Group 1">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </optgroup>
-              <optgroup label="Option Group 2">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </optgroup>
-            </select>
-          </p>
-          <p><label for="radio_buttons">Radio Buttons:</label>
-            <label>
-              <input type="radio" name="radio_button" value="radio_1">
-              Radio 1
-            </label>
-            <label>
-              <input type="radio" name="radio_button" value="radio_2">
-              Radio 2
-            </label>
-            <label>
-              <input type="radio" name="radio_button" value="radio_3">
-              Radio 3
-            </label>
-          </p>
-          <p><label for="checkboxes">Checkboxes:</label>
-            <label>
-              <input type="checkbox" name="checkboxes" value="check_1">
-              Checkbox 1
-            </label>
-            <label>
-              <input type="checkbox" name="checkboxes" value="check_2">
-              Checkbox 2
-            </label>
-            <label>
-              <input type="checkbox" name="checkboxes" value="check_3">
-              Checkbox 3
-            </label>
-          </p>
-          <p>
-            <label for="password">Password:</label>
-            <input type="password" name="password">
-          </p>
-          <p>
-            <label for="file">File Input:</label>
-            <input type="file" name="file">
-          </p>
-          <p>
-            <input type="submit" value="Submit">
-          </p>
-        </form>
-      </fieldset>
+
+      <form>
+
+        <label for="text_field">Text Field</label>
+        <input id="text_field" type="text">
+
+        <label for="text_field">Disabled Text Field</label>
+        <input id="text_field" type="text" disabled>
+
+        <label for="text_area">Text Area</label>
+        <textarea id="text_area"></textarea>
+
+        <label for="password">Password</label>
+        <input id="password" type="password">
+
+        <label for="search">Search</label>
+        <input id="search" type="search">
+
+        <label for="file">File Input</label>
+        <input id="file" type="file">
+
+        <label for="select">Select</label>
+        <select id="select">
+          <optgroup label="Group 1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </optgroup>
+        </select>
+
+        <label for="select_multiple">Select Multiple</label>
+        <select id="select_multiple" multiple>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+
+        <fieldset>
+          <legend>Fieldset</legend>
+
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" placeholder="Bill">
+
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" placeholder="Murray">
+        </fieldset>
+
+        <fieldset>
+          <legend>Fieldset</legend>
+
+          <label for="radio_buttons">Radio Buttons</label>
+
+          <label>
+            <input type="radio" value="radio_1">
+            Radio 1
+          </label>
+
+          <label>
+            <input type="radio" value="radio_2">
+            Radio 2
+          </label>
+
+          <label>
+            <input type="radio" value="radio_3">
+            Radio 3
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Fieldset</legend>
+
+          <label for="checkboxes">Checkboxes</label>
+
+          <label>
+            <input type="checkbox" value="check_1" checked>
+            Checkbox 1
+          </label>
+
+          <label>
+            <input type="checkbox" value="check_2">
+            Checkbox 2
+          </label>
+
+          <label>
+            <input type="checkbox" value="check_3">
+            Checkbox 3
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="submit" value="Disabled" disabled>
+
+      </form>
+
       <hr>
       <table cellspacing="0" cellpadding="0">
         <tr>
