@@ -7,3 +7,11 @@ body {
   max-width: 50em;
   padding: 1em;
 }
+
+.default-ol {
+  @extend %default-ol;
+}
+
+.default-ul {
+  @extend %default-ul;
+}
