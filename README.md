@@ -123,7 +123,7 @@ Copyright © 2013–2015 [thoughtbot, inc](http://thoughtbot.com). Bitters is fr
 
 ## About thoughtbot
 
-![thoughtbot](https://thoughtbot.com/logo.png)
+[<img src="http://thoughtbot.github.io/images/signature.svg" width="250" alt="thoughtbot logo">][hire]
 
 Bitters is maintained and funded by thoughtbot, inc.
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
