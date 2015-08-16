@@ -26,6 +26,7 @@ design and brand requirements.
   s.add_development_dependency 'bundler', '~> 1.3'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'scss_lint', '~> 0.40'
 
   s.add_dependency 'bourbon', '>= 4.2'
   s.add_dependency 'sass', '>= 3.4'
