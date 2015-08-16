@@ -16,7 +16,7 @@ module Bitters
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to #{install_path}/base"
+        puts "Bitters files installed to #{install_path}/"
       end
     end
 
