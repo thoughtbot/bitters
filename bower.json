@@ -1,0 +1,36 @@
+{
+  "name": "bitters",
+  "description": "Add a dash of pre-defined style to your Bourbon.",
+  "version": "1.0.0",
+  "main": "app/assets/stylesheets/_base.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "CONTRIBUTING.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gulpfile.js",
+    "Rakefile",
+    "bin",
+    "contrib",
+    "bitters.gemspec",
+    "lib",
+    "package.json",
+    "sache.json",
+    "spec"
+  ],
+  "keywords": [
+    "css",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "authors": [
+    "thoughtbot (http://thoughtbot.com)"
+  ],
+  "homepage": "http://bitters.bourbon.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thoughtbot/bitters.git"
+  }
+}
