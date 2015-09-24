@@ -11,14 +11,6 @@ body {
   max-width: 500px;
 }
 
-.default-ol {
-  @extend %default-ol;
-}
-
-.default-ul {
-  @extend %default-ul;
-}
-
 .welcome-message {
   @include padding($base-spacing null);
   background-color: #f2f2f2;
