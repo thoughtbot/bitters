@@ -33,7 +33,7 @@ For command line help, visit our wiki page on Bitters’ [command line interface
 
   *If you use [rbenv](https://github.com/sstephenson/rbenv), be sure to run `rbenv rehash` without any errors.*
 
-2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation) (required) and [Neat](https://github.com/thoughtbot/neat#installation) (optional).
+2. Install [Bourbon](https://github.com/thoughtbot/bourbon#installation)
 
 3. Install the Bitters library into the current directory by running the following command at the command-line. If you’re using Ruby on Rails, run the command in `app/assets/stylesheets`:
 
@@ -50,33 +50,13 @@ For command line help, visit our wiki page on Bitters’ [command line interface
   @import "base/base";
   ```
 
-5. When using Neat, uncomment the following line in `_base.scss`:
-
-  ```scss
-  @import "grid-settings";
-  ```
-
-  And import Neat after Bitters in your `application.css.scss` or main manifest file:
+5. Once Bourbon and Bitters are set up, you can begin to import your styles below them.
 
   ```scss
   @import "bourbon";
   @import "base/base";
-  @import "neat";
-
-  // All other imports
-  ```
-
-  **Note:** If you are using Bitters and Neat without Ruby on Rails, you need to change the import for `neat-helpers` inside `_grid-settings.scss` to `"../neat/neat-helpers"`.
-
-  If you want to use Neat functions in Bitters, you can `@import "grid-settings";` before Neat, remove `@import "grid-settings";` from `_base.scss` and import the rest of bitters after. For example:
-
-  ```scss
-  @import "bourbon";
-  @import "base/grid-settings";
-  @import "neat";
-  @import "base/base";
-
-  // All other imports
+  @import "my-project-styles";
+  …
   ```
 
 ## Using Bitters
@@ -86,9 +66,6 @@ The Bitters directory should contain styles for all the basic elements used thro
 
 ### Variables
 This houses all variables that are used, or will be used, in more than one file in your site. Variable names in Bitters that are used outside of the variables file start with `$base` to indicate that they are the most basic variables.
-
-### Grid settings
-Variables specifically created for [Neat](http://neat.bourbon.io) resets and breakpoints. To be used, these need to be imported separately from the rest of your base file above Neat in your main stylesheet. Otherwise just remove the file.
 
 ### Typography
 All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `0.25`.
