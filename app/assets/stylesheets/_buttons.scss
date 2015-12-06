@@ -1,13 +1,13 @@
 @mixin button-variant($action-color, $font-color: #fff) {
   background-color: $action-color;
   color: $font-color;
-  
+
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
     color: $font-color;
   }
-  
+
   &:disabled {
     &:hover {
       background-color: $action-color;
