@@ -1,9 +1,25 @@
-#{$all-buttons} {
-  appearance: none;
+@mixin button-variant($action-color, $font-color: #fff) {
   background-color: $action-color;
+  color: $font-color;
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: $font-color;
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+
+#{$all-buttons} {
+  @include button-variant($action-color);
+  appearance: none;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -18,18 +34,8 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
-  }
-
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-
-    &:hover {
-      background-color: $action-color;
-    }
   }
 }
