@@ -70,10 +70,6 @@ input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: $small-spacing / 2;
-
-  + label {
-    display: inline-block;
-  }
 }
 
 input[type="file"] {
