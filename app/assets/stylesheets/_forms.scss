@@ -25,7 +25,7 @@ select {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple] {
+select[multiple] {
   background-color: $base-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
