@@ -62,17 +62,17 @@ textarea {
   resize: vertical;
 }
 
-input[type="search"] {
+[type="search"] {
   appearance: none;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   display: inline;
   margin-right: $small-spacing / 2;
 }
 
-input[type="file"] {
+[type="file"] {
   margin-bottom: $small-spacing;
   width: 100%;
 }
