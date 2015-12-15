@@ -11,14 +11,6 @@ legend {
   padding: 0;
 }
 
-input,
-label,
-select {
-  display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-}
-
 label {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
@@ -30,6 +22,14 @@ label {
   abbr {
     display: none;
   }
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 #{$all-text-inputs},
