@@ -1,6 +1,6 @@
-# Up-to-date with SCSS-Lint v0.43.2
+scss_files: "**/*.scss"
 
-scss_files: "app/assets/stylesheets/**/*.scss"
+severity: warning
 
 linters:
   BangFormat:
