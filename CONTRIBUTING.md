@@ -34,7 +34,7 @@ preview your changes! Running `gulp` to pull in the stylesheets and serve a smal
     $ gulp
     ```
 
-  This will have gulp compile the stylesheets from `app/assets/stylesheets` and link them to a test page so
+  This will have gulp compile the stylesheets from `core/` and link them to a test page so
   you can preview your changes!!
 
 5. Squash your commits into a single one (more on that [here](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)).

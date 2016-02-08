@@ -6,7 +6,7 @@ var gulp = require("gulp"),
 
 var paths = {
   scss: [
-    "./app/assets/stylesheets/**/*.scss",
+    "./core/**/*.scss",
     "./contrib/*.scss"
   ]
 };
