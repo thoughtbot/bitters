@@ -24,7 +24,7 @@
   },
   "homepage": "http://bitters.bourbon.io",
   "devDependencies": {
-    "bourbon": "^4.2",
+    "bourbon": "^5.0.0-beta.1",
     "gulp": "^3.9",
     "gulp-autoprefixer": "^3.1",
     "gulp-connect": "^2.3",
