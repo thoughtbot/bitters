@@ -1,5 +1,7 @@
 scss_files: "**/*.scss"
 
+exclude: "node_modules/**"
+
 severity: warning
 
 linters:
