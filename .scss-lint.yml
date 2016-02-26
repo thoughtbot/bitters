@@ -109,6 +109,10 @@ linters:
   PlaceholderInExtend:
     enabled: true
 
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
+
   PropertyCount:
     enabled: false
 
@@ -175,6 +179,10 @@ linters:
 
   SpaceAfterPropertyName:
     enabled: true
+
+  SpaceAfterVariableColon:
+    enabled: true
+    style: one_space
 
   SpaceAfterVariableName:
     enabled: true
