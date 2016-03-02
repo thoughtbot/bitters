@@ -18,7 +18,7 @@ for updates.
 ## Requirements
 
 - [Sass](https://github.com/sass/sass) 3.4+ or [LibSass](https://github.com/sass/libsass) 3.1+
-- [Bourbon](https://github.com/thoughtbot/bourbon) 4.2+
+- [Bourbon](https://github.com/thoughtbot/bourbon) 5.0+
 - Ruby 1.9.3+ (required to install Bitters from the command line)
 
 ## Installation
