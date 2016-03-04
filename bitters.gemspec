@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
     extend it to meet your design and brand requirements.
   DESC
   s.email = "design+bitters@thoughtbot.com"
-  s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split($/)
   s.homepage = "http://bitters.bourbon.io"
   s.license = "MIT"
