@@ -55,6 +55,10 @@ select[multiple] {
       border: $base-border;
     }
   }
+
+  &::placeholder {
+    color: $medium-gray;
+  }
 }
 
 textarea {
