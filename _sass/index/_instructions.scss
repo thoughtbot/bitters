@@ -17,6 +17,7 @@
   ol {
     margin: 0 auto;
     max-width: em(400);
+    text-align: left;
 
     p {
       color: lighten($blue, 35);
@@ -24,7 +25,6 @@
 
     code {
       color: lighten($blue, 45);
-      display: block;
       font-weight: bold;
     }
   }
