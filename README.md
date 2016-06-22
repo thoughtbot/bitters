@@ -71,7 +71,7 @@ This houses all variables that are used, or will be used, in more than one file 
 All type is based on `$base-font-size` which is set to 1em (16px) by default. The spacing around type is based on `$base-line-height` so as to keep a semi-baseline grid. All sizes are scaled up or down by a factor of `0.25`.
 
 ### Lists
-All lists have stripped out styles. No bullets, no left padding. To add back the expected browser default styles add `@extend %default-ul;` or `@extend %default-ol;` to the `<ul>` or `<ol>` respectively.
+All lists have stripped out styles. No bullets, no left padding.
 
 ### Forms
 Adds basic styles all form elements. The variables at the top of the file all inherit from the variables file but make it really easy to be overridden.
