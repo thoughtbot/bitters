@@ -57,7 +57,7 @@ textarea {
   }
 
   &::placeholder {
-    color: $medium-gray;
+    color: tint($base-font-color, 40%);
   }
 }
 
