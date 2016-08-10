@@ -14,6 +14,11 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Added `appearance: none;` to text inputs.
 - Added `height: 100%;` to `html` and `body` elements.
 
+### Changed
+
+- Changed the text color for `::placeholder` styles to be based on
+  `$base-font-color` instead of using `$medium-gray`.
+
 ### Removed
 
 - Remove `select[multiple]` selector.
