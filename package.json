@@ -1,6 +1,6 @@
 {
   "name": "Bitters",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Scaffold styles, variables and structure for Bourbon projects.",
   "main": "Gulpfile.js",
   "repository": {

@@ -5,7 +5,9 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.3.2...HEAD
+[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.4.0...HEAD
+
+## [1.4.0] - 2016-08-10
 
 ### Added
 
@@ -21,7 +23,9 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ### Removed
 
-- Remove `select[multiple]` selector.
+- Removed `select[multiple]` selector.
+
+[1.4.0]: https://github.com/thoughtbot/bitters/compare/v1.3.2...v1.4.0
 
 ## [1.3.2] - 2016-06-21
 
