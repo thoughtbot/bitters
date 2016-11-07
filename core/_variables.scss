@@ -14,9 +14,13 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
+$space-xs: 0.5em;
+$space-s: 0.75em;
+$space-m: 1.5em;
+$space-l: 3em;
+$space-xl: 4.5em;
+
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
