@@ -5,7 +5,17 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.4.0...HEAD
+Nothing at the moment.
+
+[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.5.0...HEAD
+
+## [1.5.0] - 2016-11-08
+
+### Changed
+
+- Updated Bourbon dependency to `5.0.0.beta.7`.
+
+[1.5.0]: https://github.com/thoughtbot/bitters/compare/v1.4.0...v1.5.0
 
 ## [1.4.0] - 2016-08-10
 
