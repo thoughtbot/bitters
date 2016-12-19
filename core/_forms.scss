@@ -7,57 +7,57 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: base-get(spacing-small);
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: base-get(spacing-small);
 }
 
 input,
 select,
 textarea {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: base-get(font-family);
+  font-size: base-get(font-size);
 }
 
 #{$all-text-inputs} {
   appearance: none;
-  background-color: $base-background-color;
-  border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
-  box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
+  background-color: base-get(background-color);
+  border: base-get(border);
+  border-radius: base-get(border-radius);
+  box-shadow: base-get(form-box-shadow);
+  box-sizing: base-get(border-box);
+  margin-bottom: base-get(spacing-small);
+  padding: base-get(spacing-small);
+  transition: border-color base-get(duration) base-get(timing);
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: shade(base-get(border-color), 20%);
   }
 
   &:focus {
-    border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: base-get(color-action);
+    box-shadow: base-get(form-box-shadow-focus);
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: shade(base-get(background-color), 5%);
     cursor: not-allowed;
 
     &:hover {
-      border: $base-border;
+      border: base-get(border);
     }
   }
 
   &::placeholder {
-    color: tint($base-font-color, 40%);
+    color: tint(base-get(font-color), 40%);
   }
 }
 
@@ -68,15 +68,15 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: base-get(spacing-small) / 2;
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
+  margin-bottom: base-get(spacing-small);
   width: 100%;
 }
 
 select {
-  margin-bottom: $small-spacing;
+  margin-bottom: base-get(spacing-small);
   width: 100%;
 }
