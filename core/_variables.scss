@@ -13,10 +13,14 @@ $base-font-size: 1em;
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
+// Spacing
+@function space($factor) {
+  $factor: strip-unit(modular-scale($factor));
+  @return ($factor * $base-line-height * 1rem);
+}
+
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
