@@ -18,7 +18,13 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Base typography is now styled off of the `html` element, instead of the `body`
   element. ([#279])
 
+### Removed
+
+- Removed `$base-font-size` in favor of more specific implimentations specific
+  to the particular object being modified. ([#272])
+
 [Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.5.0...HEAD
+[#272]: https://github.com/thoughtbot/bitters/pull/272
 [#275]: https://github.com/thoughtbot/bitters/pull/275
 [#279]: https://github.com/thoughtbot/bitters/pull/279
 [#280]: https://github.com/thoughtbot/bitters/pull/280

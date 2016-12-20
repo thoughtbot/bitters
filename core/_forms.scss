@@ -25,7 +25,7 @@ select,
 textarea {
   display: block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 16px;
 }
 
 #{$all-text-inputs} {
