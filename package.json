@@ -28,6 +28,6 @@
     "gulp": "^3.9",
     "gulp-autoprefixer": "^3.1",
     "gulp-connect": "^2.3",
-    "gulp-sass": "^2.2"
+    "gulp-sass": "^3.1"
   }
 }
