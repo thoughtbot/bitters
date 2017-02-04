@@ -95,7 +95,7 @@ For more information on contributing to Bitters, check out our
 
 ## License
 
-Copyright © 2013–2015 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
+Copyright © 2013–2017 [thoughtbot, inc](http://thoughtbot.com). Bitters is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
 
 ## About thoughtbot
 
