@@ -1,5 +1,5 @@
 $_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($action-color, 0.7);
 
 fieldset {
   background-color: transparent;
