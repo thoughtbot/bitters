@@ -37,10 +37,6 @@ $base-border: 1px solid $base-border-color;
 $base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
 
-// Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;

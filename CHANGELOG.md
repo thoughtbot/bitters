@@ -5,9 +5,15 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
-Nothing at the moment.
+### Changed
+
+- Component/feature-specific variables have been moved into their respective
+  partials, rather than in the global variables partial. They have also been
+  prefixed with an underscore to indicate they are "private" to that
+  partial. ([#275])
 
 [Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.5.0...HEAD
+[#275]: https://github.com/thoughtbot/bitters/pull/275/
 
 ## [1.5.0] - 2016-11-08
 
