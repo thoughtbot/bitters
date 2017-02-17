@@ -1,28 +1,28 @@
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
+  background-color: base-get(action-color);
   border: 0;
-  border-radius: $base-border-radius;
-  color: #fff;
+  border-radius: base-get(border-radius);
+  color: cotrast-switch(base-get(action-color));
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: base-get(font-family);
+  font-size: base-get(font-size);
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: base-get(spacing-small) base-get(spacing);
   text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  transition: background-color base-get(duration) base-get(timing);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+    background-color: shade(base-get(action-color), 20%);
+    color: contrast-switch(shade(base-get(action-color), 20%));
   }
 
   &:disabled {
@@ -30,7 +30,7 @@
     opacity: 0.5;
 
     &:hover {
-      background-color: $action-color;
+      background-color: base-get(action-color);
     }
   }
 }

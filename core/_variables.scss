@@ -1,46 +1,47 @@
-// Breakpoints
-$medium-screen: 600px;
-$large-screen: 900px;
+$colors: (
+  white: #fff,
+  blue: #1565c0,
+  dark-gray: #333,
+  medium-gray: #999,
+  light-gray: #ddd,
+);
 
-// Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base: (
+  // Typography
+  font-size: 1em,
+  font-family: $font-stack-system,
+  line-height: 1.5,
 
-// Font Sizes
-$base-font-size: 1em;
+  heading-font-family: $font-stack-system,
+  heading-line-height: 1.2,
 
-// Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+  // Borders
+  border-radius: 3px,
+  border-color: map-get($colors, light-gray),
+  border: 1px solid map-get($colors, light-gray) map-get($colors, light-gray),
 
-// Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
-$base-z-index: 0;
+  // Spacing
+  spacing: 1.5em,
+  spacing-small: 0.75em,
 
-// Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+  // Font Colors
+  font-color: map-get($colors, dark-gray),
+  action-color: map-get($colors, blue),
 
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+  // Backgrounds
+  background-color: map-get($colors, white),
+  background-color-secondary: tint(map-get($colors, light-gray), 75%),
 
-// Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+  // Forms
+  form-box-shadow: inset 0 1px 3px rgba(#000, 0.06),
+  form-box-shadow-focus: inset 0 1px 3px rgba(#000, 0.06),
+    0 0 5px adjust-color(map-get($colors, blue), $lightness: -5%, $alpha: -0.3),
 
-// Background Colors
-$base-background-color: #fff;
-$secondary-background-color: tint($base-border-color, 75%);
+  // Animations
+  duration: 150ms,
+  timing: ease,
+);
 
-// Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-
-// Animations
-$base-duration: 150ms;
-$base-timing: ease;
+@function base-get($key) {
+  @return map-get($base, $key);
+}
