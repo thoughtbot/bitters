@@ -45,9 +45,9 @@ one. We like to use [Normalize].
 
 1. Install the Bitters gem using the [RubyGems] package manager:
 
-  ```bash
-  gem install bitters
-  ```
+    ```bash
+    gem install bitters
+    ```
 
 1. Install [Bourbon][bourbon-install].
 
@@ -55,29 +55,30 @@ one. We like to use [Normalize].
    following command at the command-line. If you’re using Ruby on Rails, run the
    command in `app/assets/stylesheets`:
 
-  ```bash
-  bitters install
-  ```
+    ```bash
+    bitters install
+    ```
 
-  A `base` directory will be generated which contains all of the Bitters files.
+    A `base` directory will be generated which contains all of the Bitters
+    files.
 
 1. Import Bitters after Bourbon in your `application.css.scss` or main manifest
    file. All additional stylesheets should be imported below Bitters.
 
-  ```scss
-  @import "bourbon";
-  @import "base/base";
-  ```
+    ```scss
+    @import "bourbon";
+    @import "base/base";
+    ```
 
 1. Once Bourbon and Bitters are set up, you can begin to import your styles
    below them.
 
-  ```scss
-  @import "bourbon";
-  @import "base/base";
-  @import "my-project-styles";
-  …
-  ```
+    ```scss
+    @import "bourbon";
+    @import "base/base";
+    @import "my-project-styles";
+    …
+    ```
 
 [RubyGems]: https://rubygems.org
 [bourbon-install]: https://github.com/thoughtbot/bourbon#installation
