@@ -15,10 +15,13 @@ project adheres to [Semantic Versioning](http://semver.org).
   partials, rather than in the global variables partial. They have also been
   prefixed with an underscore to indicate they are "private" to that
   partial. ([#275])
+- Base typography is now styled off of the `html` element, instead of the `body`
+  element. ([#279])
 
 [Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.5.0...HEAD
+[#275]: https://github.com/thoughtbot/bitters/pull/275
+[#279]: https://github.com/thoughtbot/bitters/pull/279
 [#280]: https://github.com/thoughtbot/bitters/pull/280
-[#275]: https://github.com/thoughtbot/bitters/pull/275/
 
 ## [1.5.0] - 2016-11-08
 
