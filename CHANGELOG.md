@@ -5,6 +5,10 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
+### Added
+
+- Set `margin` to `0` on the `body` element. ([#280])
+
 ### Changed
 
 - Component/feature-specific variables have been moved into their respective
@@ -13,6 +17,7 @@ project adheres to [Semantic Versioning](http://semver.org).
   partial. ([#275])
 
 [Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.5.0...HEAD
+[#280]: https://github.com/thoughtbot/bitters/pull/280
 [#275]: https://github.com/thoughtbot/bitters/pull/275/
 
 ## [1.5.0] - 2016-11-08
