@@ -163,10 +163,9 @@ See the [contributing] document. Thank you, [contributors]!
 
 ## License
 
-Bitters is copyright © 2013-2017 [thoughtbot, inc.] It is free software, and may
-be redistributed under the terms specified in the [license].
+Bitters is copyright © 2013-2017 [thoughtbot, inc.][thoughtbot] It is free
+software, and may be redistributed under the terms specified in the [license].
 
-[thoughtbot, inc]: http://thoughtbot.com
 [license]: LICENSE.md
 
 ## About
