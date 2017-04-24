@@ -17,6 +17,8 @@ project adheres to [Semantic Versioning](http://semver.org).
   partial. ([#275])
 - Base typography is now styled off of the `html` element, instead of the `body`
   element. ([#279])
+- `a` elements no longer have `text-decoration` set to `none`. They also now
+  have `text-decoration-skip` set to `ink`. ([#283])
 
 ### Removed
 
@@ -28,6 +30,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 [#275]: https://github.com/thoughtbot/bitters/pull/275
 [#279]: https://github.com/thoughtbot/bitters/pull/279
 [#280]: https://github.com/thoughtbot/bitters/pull/280
+[#283]: https://github.com/thoughtbot/bitters/pull/283
 
 ## [1.5.0] - 2016-11-08
 
