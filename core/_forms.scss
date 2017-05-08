@@ -83,3 +83,13 @@ select {
   margin-bottom: $small-spacing;
   width: 100%;
 }
+
+[type="checkbox"],
+[type="radio"],
+[type="file"],
+select {
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}

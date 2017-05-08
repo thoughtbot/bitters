@@ -8,6 +8,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 ### Added
 
 - Set `margin` to `0` on the `body` element. ([#280])
+- Global variables for the styling of focus outlines. ([#284])
 
 ### Changed
 
@@ -19,6 +20,9 @@ project adheres to [Semantic Versioning](http://semver.org).
   element. ([#279])
 - `a` elements no longer have `text-decoration` set to `none`. They also now
   have `text-decoration-skip` set to `ink`. ([#283])
+- The visual style of outlines on focused elements (`a`, `$all-buttons`,
+  `[type="checkbox"]`, `[type="radio"]`, `[type="file"]`, `select`) is now solid
+  and offset from the element. ([#284])
 
 ### Removed
 
@@ -31,6 +35,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 [#279]: https://github.com/thoughtbot/bitters/pull/279
 [#280]: https://github.com/thoughtbot/bitters/pull/280
 [#283]: https://github.com/thoughtbot/bitters/pull/283
+[#284]: https://github.com/thoughtbot/bitters/pull/284
 
 ## [1.5.0] - 2016-11-08
 
