@@ -1,9 +1,10 @@
 # Releasing
 
 1. Update the version number in these places:
-  - `lib/bitters/version.rb`
-  - `core/_base.scss`
-  - `package.json`
+
+    - `lib/bitters/version.rb`
+    - `core/_base.scss`
+    - `package.json`
 
 1. Update `CHANGELOG.md`. We follow the guidelines from [Keep a CHANGELOG].
 
@@ -17,7 +18,7 @@
    _automatically be sent_ on the [@bourbonsass] Twitter account via [Zapier].
    It will look like this:
 
-   > We’ve released Bitters {release_title}: {release_link}
+    > We’ve released Bitters {release_title}: {release_link}
 
 1. If needed, update the [contributing page] and [website example page].
 
