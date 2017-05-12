@@ -29,7 +29,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Removed `$base-font-size` in favor of more specific implimentations specific
   to the particular object being modified. ([#272])
 
-[1.6.0]: https://github.com/thoughtbot/bitters/compare/v1.4.0...v1.6.0
+[1.6.0]: https://github.com/thoughtbot/bitters/compare/v1.5.0...v1.6.0
 [#272]: https://github.com/thoughtbot/bitters/pull/272
 [#275]: https://github.com/thoughtbot/bitters/pull/275
 [#279]: https://github.com/thoughtbot/bitters/pull/279
