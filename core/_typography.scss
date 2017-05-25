@@ -14,11 +14,11 @@ h6 {
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 space(-2);
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 space(-2);
 }
 
 a {
@@ -41,5 +41,5 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+  margin: space(0) 0;
 }
