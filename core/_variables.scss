@@ -6,10 +6,15 @@ $heading-font-family: $base-font-family;
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
+// Spacing
+$space-x-small: 0.5em;
+$space-small: 0.75em;
+$space-medium: 1.5em;
+$space-large: 3em;
+$space-x-large: 4.5em;
+
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
