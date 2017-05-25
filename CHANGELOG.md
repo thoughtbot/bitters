@@ -5,12 +5,20 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
+### Changed
+
+- `table` styles have been improved with left text-alignment throughout the
+  whole table, bottom vertical-alignment within the `thead`, top
+  vertical-alignment within the `tbody`, right padding within each cell and
+  borders being set on the `tr`s. ([#288])
+
 ### Removed
 
 - Remove unused `$medium-screen` and `$large-screen` breakpoint
   variables. ([#285])
 
 [#285]: https://github.com/thoughtbot/bitters/pull/285
+[#288]: https://github.com/thoughtbot/bitters/pull/288
 
 ## [1.6.0] - 2017-05-12
 
