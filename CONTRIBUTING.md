@@ -6,15 +6,15 @@ agree to abide by the thoughtbot [code of conduct]. Here’s a quick guide:
 [code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
 
 While developing and contributing to Bitters you can use gulp to spin up an example site to help
-preview your changes! Running `gulp` to pull in the stylesheets and serve a small html preview page at `http://localhost:8000`.
+preview your changes! Running `gulp` to pull in the stylesheets and serve a small HTML preview page at `http://localhost:8000`.
 
-## Geting started started
+## Getting started
 
 1. Fork the repository.
 
 1. Make your changes in a topic branch.
 
-1. Make sure you have node & npm installed by running ↴.
+1. Make sure you have Node.js & npm installed:
 
     ```bash
     $ npm -v
@@ -22,21 +22,21 @@ preview your changes! Running `gulp` to pull in the stylesheets and serve a smal
 
     If you don't have it, you can download it [here](https://nodejs.org/).
 
-1. Next up, `cd` in to bitters and run `npm install`.
+1. Next up, `cd` in to Bitters and run `npm install`:
 
     ```bash
     $ cd bitters
     $ npm install
     ```
 
-    Then Run the gulp build command.
+    Then run the gulp build command:
 
     ```bash
     $ gulp
     ```
 
     This will have gulp compile the stylesheets from `core/` and link them to a test page so
-    you can preview your changes!!
+    you can preview your changes!
 
 1. Squash your commits into a single one (more on that [here](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)).
 
