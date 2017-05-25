@@ -14,13 +14,17 @@ preview your changes! Running `gulp` to pull in the stylesheets and serve a smal
 
 1. Make your changes in a topic branch.
 
-1. Make sure you have Node.js & npm installed:
+1. Make sure you have Node.js, npm & gulp installed:
 
     ```bash
     $ npm -v
+    $ gulp -v
     ```
 
-    If you don't have it, you can download it [here](https://nodejs.org/).
+    If you don't have Node.js or npm, you can download it
+    [here](https://nodejs.org/).
+
+    If you don't have gulp, you can download it [here](http://gulpjs.com/).
 
 1. Next up, `cd` in to Bitters and run `npm install`:
 
