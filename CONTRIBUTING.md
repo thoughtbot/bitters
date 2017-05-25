@@ -12,9 +12,9 @@ preview your changes! Running `gulp` to pull in the stylesheets and serve a smal
 
 1. Fork the repository.
 
-2. Make your changes in a topic branch.
+1. Make your changes in a topic branch.
 
-3. Make sure you have node & npm installed by running ↴.
+1. Make sure you have node & npm installed by running ↴.
 
     ```bash
     $ npm -v
@@ -22,26 +22,27 @@ preview your changes! Running `gulp` to pull in the stylesheets and serve a smal
 
     If you don't have it, you can download it [here](https://nodejs.org/).
 
-4. Next up, `cd` in to bitters and run `npm install`.
+1. Next up, `cd` in to bitters and run `npm install`.
 
     ```bash
     $ cd bitters
     $ npm install
     ```
-  Then Run the gulp build command.
+
+    Then Run the gulp build command.
 
     ```bash
     $ gulp
     ```
 
-  This will have gulp compile the stylesheets from `core/` and link them to a test page so
-  you can preview your changes!!
+    This will have gulp compile the stylesheets from `core/` and link them to a test page so
+    you can preview your changes!!
 
-5. Squash your commits into a single one (more on that [here](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)).
+1. Squash your commits into a single one (more on that [here](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)).
 
-6. Rebase against `origin/master`, push to your fork and submit a pull request.
+1. Rebase against `origin/master`, push to your fork and submit a pull request.
 
-7. If you are writing a new feature please add documentation for it by making another pull request to the `gh_pages` branch.
+1. If you are writing a new feature please add documentation for it by making another pull request to the `gh_pages` branch.
 
 At this point you're waiting on us. We like to at least comment on, if not
 accept, pull requests within three business days (and, typically, one business
