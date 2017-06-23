@@ -17,6 +17,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Remove unused `$medium-screen` and `$large-screen` breakpoint
   variables. ([#285])
 
+[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.6.0...HEAD
 [#285]: https://github.com/thoughtbot/bitters/pull/285
 [#288]: https://github.com/thoughtbot/bitters/pull/288
 
