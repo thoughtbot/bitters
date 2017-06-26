@@ -11,6 +11,8 @@ project adheres to [Semantic Versioning](http://semver.org).
   whole table, bottom vertical-alignment within the `thead`, top
   vertical-alignment within the `tbody`, right padding within each cell and
   borders being set on the `tr`s. ([#288])
+- The value of `$base-spacing` is no longer derived from `$base-line-height`.
+  ([#292])
 
 ### Removed
 
@@ -20,6 +22,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 [Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.6.0...HEAD
 [#285]: https://github.com/thoughtbot/bitters/pull/285
 [#288]: https://github.com/thoughtbot/bitters/pull/288
+[#292]: https://github.com/thoughtbot/bitters/pull/292
 
 ## [1.6.0] - 2017-05-12
 
