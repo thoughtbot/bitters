@@ -54,7 +54,7 @@ linters:
     enabled: true
 
   ExtendDirective:
-    enabled: false
+    enabled: true
 
   FinalNewline:
     enabled: true
@@ -92,6 +92,9 @@ linters:
     enabled: true
     style: include_zero
 
+  LengthVariable:
+    enabled: false
+
   MergeableSelector:
     enabled: true
     force_nesting: true
@@ -111,7 +114,6 @@ linters:
 
   PrivateNamingConvention:
     enabled: false
-    prefix: _
 
   PropertyCount:
     enabled: false
@@ -124,7 +126,8 @@ linters:
 
   PropertySpelling:
     enabled: true
-    extra_properties: []
+    extra_properties:
+      - text-decoration-skip
     disabled_properties: []
 
   PropertyUnits:
@@ -172,6 +175,11 @@ linters:
     enabled: true
     style: one_space
 
+  SpaceAfterComment:
+    enabled: true
+    style: at_least_one_space
+    allow_empty_comments: true
+
   SpaceAfterPropertyColon:
     enabled: true
     style: one_space
@@ -210,10 +218,10 @@ linters:
     enabled: true
 
   TrailingZero:
-    enabled: false
+    enabled: true
 
   TransitionAll:
-    enabled: false
+    enabled: true
 
   UnnecessaryMantissa:
     enabled: true
@@ -222,20 +230,17 @@ linters:
     enabled: true
 
   UrlFormat:
-    enabled: true
+    enabled: false
 
   UrlQuotes:
     enabled: true
 
   VariableForProperty:
     enabled: false
-    properties: []
 
   VendorPrefix:
     enabled: true
     identifier_list: base
-    additional_identifiers: []
-    excluded_identifiers: []
 
   ZeroUnit:
     enabled: true
