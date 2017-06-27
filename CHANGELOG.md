@@ -13,6 +13,9 @@ project adheres to [Semantic Versioning](http://semver.org).
   borders being set on the `tr`s. ([#288])
 - The value of `$base-spacing` is no longer derived from `$base-line-height`.
   ([#292])
+- The color of button text is now set using Bourbon's
+  [`contrast-switch`][contrast-switch] function, to automatically ensure
+  sufficient contrast against the button's background color. ([#294])
 
 ### Removed
 
@@ -23,6 +26,8 @@ project adheres to [Semantic Versioning](http://semver.org).
 [#285]: https://github.com/thoughtbot/bitters/pull/285
 [#288]: https://github.com/thoughtbot/bitters/pull/288
 [#292]: https://github.com/thoughtbot/bitters/pull/292
+[#294]: https://github.com/thoughtbot/bitters/pull/294
+[contrast-switch]: http://bourbon.netlify.com/docs/latest/#contrast-switch
 
 ## [1.6.0] - 2017-05-12
 

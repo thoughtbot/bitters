@@ -1,9 +1,12 @@
+$_button-background-color: $action-color;
+$_button-background-color-hover: shade($action-color, 20%);
+
 #{$all-buttons} {
   appearance: none;
-  background-color: $action-color;
+  background-color: $_button-background-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: contrast-switch($_button-background-color);
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -20,8 +23,8 @@
   white-space: nowrap;
 
   &:hover {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+    background-color: $_button-background-color-hover;
+    color: contrast-switch($_button-background-color-hover);
   }
 
   &:focus {
@@ -34,7 +37,7 @@
     opacity: 0.5;
 
     &:hover {
-      background-color: $action-color;
+      background-color: $_button-background-color;
     }
   }
 }
