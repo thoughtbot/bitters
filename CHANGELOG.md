@@ -3,7 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
-## [Unreleased]
+## [Unreleased (`master`)][unreleased]
+
+Nothing at the moment.
+
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.7.0...HEAD
+
+## [1.7.0] - 2017-06-30
 
 ### Changed
 
@@ -22,7 +28,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Remove unused `$medium-screen` and `$large-screen` breakpoint
   variables. ([#285])
 
-[Unreleased]: https://github.com/thoughtbot/bitters/compare/v1.6.0...HEAD
+[1.7.0]: https://github.com/thoughtbot/bitters/compare/v1.6.0...v1.7.0
 [#285]: https://github.com/thoughtbot/bitters/pull/285
 [#288]: https://github.com/thoughtbot/bitters/pull/288
 [#292]: https://github.com/thoughtbot/bitters/pull/292
