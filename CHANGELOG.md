@@ -5,9 +5,25 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
-Nothing at the moment.
+### Added
+
+- Added `$_form-background-color` for setting the `background-color` of text
+  inputs. ([#296])
+
+### Changed
+
+- Form text inputs now use `$_form-background-color` instead of
+  `$base-background-color` as their `background-color`. ([#296])
+- `$base-background-color` is now `$viewport-background-color` and is used to
+  set the `background-color` of the `html` element. ([#296])
+
+### Removed
+
+- `$secondary-background-color` has been removed (it was not used for setting
+  any values. ([#296])
 
 [unreleased]: https://github.com/thoughtbot/bitters/compare/v1.7.0...HEAD
+[#296]: https://github.com/thoughtbot/bitters/pull/296
 
 ## [1.7.0] - 2017-06-30
 
