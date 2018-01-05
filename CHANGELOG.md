@@ -16,6 +16,7 @@ project adheres to [Semantic Versioning](http://semver.org).
   `$base-background-color` as their `background-color`. ([#296])
 - `$base-background-color` is now `$viewport-background-color` and is used to
   set the `background-color` of the `html` element. ([#296])
+- Updated Bourbon dependency from `5.0.0.beta.7` to `5.0`. ([#299])
 
 ### Removed
 
@@ -24,6 +25,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 [unreleased]: https://github.com/thoughtbot/bitters/compare/v1.7.0...HEAD
 [#296]: https://github.com/thoughtbot/bitters/pull/296
+[#299]: https://github.com/thoughtbot/bitters/pull/299
 
 ## [1.7.0] - 2017-06-30
 
@@ -49,7 +51,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 [#288]: https://github.com/thoughtbot/bitters/pull/288
 [#292]: https://github.com/thoughtbot/bitters/pull/292
 [#294]: https://github.com/thoughtbot/bitters/pull/294
-[contrast-switch]: http://bourbon.netlify.com/docs/latest/#contrast-switch
+[contrast-switch]: https://www.bourbon.io/docs/latest/#contrast-switch
 
 ## [1.6.0] - 2017-05-12
 
