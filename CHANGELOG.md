@@ -5,6 +5,12 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
+Nothing at the moment.
+
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
+
+## [1.8.0] - 2018-02-05
+
 ### Added
 
 - Added `$_form-background-color` for setting the `background-color` of text
@@ -23,7 +29,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - `$secondary-background-color` has been removed (it was not used for setting
   any values. ([#296])
 
-[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.7.0...HEAD
+[1.8.0]: https://github.com/thoughtbot/bitters/compare/v1.7.0...v1.8.0
 [#296]: https://github.com/thoughtbot/bitters/pull/296
 [#299]: https://github.com/thoughtbot/bitters/pull/299
 
