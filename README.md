@@ -88,9 +88,8 @@ one. We like to use [Normalize].
 ### Sass structure & default style
 
 The Bitters directory (`base/`) should contain styles for all the basic elements
-used throughout the project. It also contains directories for custom mixins and
-extends for your site. Add code to the existing files or add new files to the
-directories. Customize Bitters for your site as you see fit.
+used throughout the project. Add code to the existing files or add new files.
+Customize Bitters for your site as you see fit.
 
 ### Variables
 
@@ -100,9 +99,7 @@ file start with `$base` to indicate that they are the most basic variables.
 
 ### Typography
 
-All type is based on `$base-font-size` which is set to 1em (16px) by default.
-The spacing around type is based on `$base-line-height` so as to keep a
-semi-baseline grid. All sizes are scaled up or down by a factor of `0.25`.
+All type is based on a `font-size` of `100%`, set on the `html` element.
 
 ### Lists
 
@@ -116,8 +113,8 @@ inherit from the variables file but make it really easy to be overridden.
 ### Buttons
 
 Basic style for `button` and `input[type="submit"]`. Base button styles can be
-changed by modifying the styles applied to `button` and `#{$all-button-inputs}`
-in `base/_button.scss`.
+changed by modifying the styles applied to `button` and `#{$all-buttons}`
+in `base/_buttons.scss`.
 
 ## Command Line Interface
 

@@ -82,7 +82,7 @@ Nothing at the moment.
 
 ### Removed
 
-- Removed `$base-font-size` in favor of more specific implimentations specific
+- Removed `$base-font-size` in favor of more specific implementations specific
   to the particular object being modified. ([#272])
 
 [1.6.0]: https://github.com/thoughtbot/bitters/compare/v1.5.0...v1.6.0
