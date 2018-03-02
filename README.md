@@ -145,11 +145,9 @@ bitters [options]
 
 - [Bourbon]: A Lightweight Sass Tool Set
 - [Neat]: A lightweight and flexible Sass grid
-- [Refills]: Components and patterns built with Bourbon and Neat
 
 [Bourbon]: https://github.com/thoughtbot/bourbon
 [Neat]: https://github.com/thoughtbot/neat
-[Refills]: https://github.com/thoughtbot/refills
 
 ## Contributing
 
