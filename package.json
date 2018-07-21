@@ -25,8 +25,8 @@
   "homepage": "http://bitters.bourbon.io",
   "devDependencies": {
     "bourbon": "^5.0",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9",
-    "gulp-connect": "^5.0",
     "gulp-sass": "^3.1"
   }
 }

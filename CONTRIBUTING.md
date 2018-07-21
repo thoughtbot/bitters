@@ -7,7 +7,7 @@ agree to abide by the thoughtbot [code of conduct]. Here’s a quick guide:
 
 While developing and contributing to Bitters you can use gulp to spin up an
 example site to help preview your changes! Running `gulp` to pull in the
-stylesheets and serve a small HTML preview page at `http://localhost:8000`.
+stylesheets and serve a small HTML preview page at `http://localhost:3000`.
 
 ## Getting started
 
