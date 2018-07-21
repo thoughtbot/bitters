@@ -1,5 +1,4 @@
 var bourbon    = require("bourbon").includePaths,
-    autoprefix = require("gulp-autoprefixer"),
     connect    = require("gulp-connect"),
     gulp       = require("gulp"),
     sass       = require("gulp-sass");
@@ -16,7 +15,6 @@ gulp.task("sass", function () {
     .pipe(sass({
       includePaths: ["styles"].concat(bourbon)
     }))
-    .pipe(autoprefix("last 2 versions"))
     .pipe(gulp.dest("./contrib"))
     .pipe(connect.reload());
 });
