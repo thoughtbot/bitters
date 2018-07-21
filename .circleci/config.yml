@@ -1,0 +1,26 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5.1
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - bitters-{{ arch }}-{{ checksum "bitters.gemspec" }}
+
+      - run:
+          name: Install Ruby dependencies
+          command: bundle install --path vendor/bundle
+
+      - save_cache:
+          key: bitters-{{ arch }}-{{ checksum "bitters.gemspec" }}
+          paths:
+            - vendor/bundle
+
+      - run:
+          name: Run the tests
+          command: bundle exec rake
