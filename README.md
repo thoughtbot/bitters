@@ -1,5 +1,7 @@
 [<img src="https://images.thoughtbot.com/bourbon/bitters-logo.svg" width="200" alt="Bitters">](http://bitters.bourbon.io)
 
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
 ## Scaffold styles, variables and structure for Bourbon projects.
 
 Bitters helps designers start projects faster by defining a basic set of Sass
