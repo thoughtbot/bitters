@@ -27,6 +27,6 @@
     "bourbon": "^5.1.0",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.2"
   }
 }
