@@ -1,5 +1,7 @@
 ruby:
   enabled: true
 scss:
-  config_file: .scss-lint.yml
+  enabled: false
+stylelint:
   enabled: true
+  config_file: .stylelintrc.json

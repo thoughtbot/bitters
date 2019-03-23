@@ -24,9 +24,14 @@
   },
   "homepage": "http://bitters.bourbon.io",
   "devDependencies": {
+    "@thoughtbot/stylelint-config": "^0.2.0",
     "bourbon": "^5.1.0",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "stylelint": "^9.10.1"
+  },
+  "scripts": {
+    "stylelint": "stylelint 'core/**/*.scss'"
   }
 }
