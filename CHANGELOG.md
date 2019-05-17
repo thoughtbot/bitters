@@ -5,7 +5,15 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
-Nothing at the moment.
+### Changed
+
+- Changed project Sass variables to native CSS variables
+- Added variables for all font weights
+
+### Removed
+
+- Removed unused `base-z-index` variable
+- Removed unused `medium-gray` variable
 
 [unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
 

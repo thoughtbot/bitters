@@ -1,6 +1,8 @@
-$_form-background-color: #fff;
-$_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($action-color, 0.7);
+:root {
+  --form-background-color: var(--viewport-background-color);
+  --form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+  --form-box-shadow-focus: var(--form-box-shadow), 0 0 5px var(--action-color);
+}
 
 fieldset {
   background-color: transparent;
@@ -11,57 +13,54 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: var(--small-spacing);
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: var(--small-spacing);
 }
 
 input,
 select,
 textarea {
   display: block;
-  font-family: $base-font-family;
+  font-family: var(--base-font-family);
   font-size: 16px;
 }
 
 #{$all-text-inputs} {
   appearance: none;
-  background-color: $_form-background-color;
-  border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $_form-box-shadow;
+  background-color: var(--form-background-color);
+  border: var(--base-border);
+  border-radius: var(--base-border-radius);
+  box-shadow: var(--form-box-shadow);
   box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
+  margin-bottom: var(--small-spacing);
+  padding: calc(var(--base-spacing) / 3);
+  transition: border-color var(--base-duration) var(--base-timing);
   width: 100%;
 
-  &:hover {
-    border-color: shade($base-border-color, 20%);
-  }
-
   &:focus {
-    border-color: $action-color;
-    box-shadow: $_form-box-shadow-focus;
+    border-color: var(--action-color);
+    box-shadow: var(--form-box-shadow-focus);
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($_form-background-color, 5%);
+    background-color: var(--form-background-color);
     cursor: not-allowed;
 
     &:hover {
-      border: $base-border;
+      border: var(--base-border);
     }
   }
 
   &::placeholder {
-    color: tint($base-font-color, 40%);
+    color: var(--base-font-color);
+    opacity: 0.25;
   }
 }
 
@@ -72,16 +71,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: var(--small-spacing);
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
+  margin-bottom: var(--small-spacing);
   width: 100%;
 }
 
 select {
-  margin-bottom: $small-spacing;
+  margin-bottom: var(--small-spacing);
   width: 100%;
 }
 
@@ -90,7 +89,7 @@ select {
 [type="file"],
 select {
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 }

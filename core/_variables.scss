@@ -1,40 +1,40 @@
-// Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+:root {
+  // Typography
+  --base-font-family: #{$font-stack-system};
+  --heading-font-family: var(--base-font-family);
 
-// Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+  // Line height
+  --base-line-height: 1.5;
+  --heading-line-height: 1.2;
 
-// Other Sizes
-$base-border-radius: 3px;
-$base-spacing: 1.5em;
-$small-spacing: $base-spacing / 2;
-$base-z-index: 0;
+  // Other Sizes
+  --base-border-radius: 3px;
+  --base-spacing: 1.5rem;
+  --small-spacing: 0.75rem;
 
-// Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+  // Colors
+  --blue: #1565c0;
+  --dark-gray: #333;
+  --light-gray: #ddd;
 
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+  // Font Colors
+  --base-font-color: var(--dark-gray);
+  --action-color: var(--blue);
 
-// Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+  // Border
+  --base-border-color: var(--light-gray);
+  --base-border: 1px solid var(--base-border-color);
 
-// Background Colors
-$viewport-background-color: #fff;
+  // Background Colors
+  --viewport-background-color: #fff;
 
-// Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 3px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
+  // Focus
+  --focus-outline-color: var(--action-color);
+  --focus-outline-width: 3px;
+  --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  --focus-outline-offset: 2px;
 
-// Animations
-$base-duration: 150ms;
-$base-timing: ease;
+  // Animations
+  --base-duration: 150ms;
+  --base-timing: ease;
+}
