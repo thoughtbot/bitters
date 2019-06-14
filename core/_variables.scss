@@ -4,6 +4,18 @@ $blue-light: #3b83d5;
 $gray-dark: #333;
 $gray-light: #ddd;
 
+// Font Colors
+$base-font-color: $gray-dark;
+$action-color: $blue;
+$action-color-alt: $blue-light;
+
+// Border Colors
+$base-border-color: $gray-light;
+$base-border-color-alt: $gray-dark;
+
+// Background Colors
+$viewport-background-color: #fff;
+
 :root {
   // Typography
   --base-font-family: #{$font-stack-system};
@@ -19,7 +31,7 @@ $gray-light: #ddd;
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
 
-  // Line height
+  // Line heights
   --base-line-height: 1.5;
   --heading-line-height: 1.2;
 
@@ -28,23 +40,12 @@ $gray-light: #ddd;
   --base-spacing: 1.5rem;
   --small-spacing: 0.75rem;
 
-  // Font Colors
-  --base-font-color: $gray-dark;
-  --action-color: $blue;
-  --action-color-alt: $blue-light;
-
-  // Border
-  --base-border-color: $gray-light;
-  --base-border-color-alt: $gray-dark;
-  --base-border: 1px solid var(--base-border-color);
-
-  // Background Colors
-  --viewport-background-color: #fff;
+  // Borders
+  --base-border: 1px solid #{$base-border-color};
 
   // Focus
-  --focus-outline-color: var(--action-color);
   --focus-outline-width: 3px;
-  --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  --focus-outline: var(--focus-outline-width) solid #{$action-color};
   --focus-outline-offset: 2px;
 
   // Animations

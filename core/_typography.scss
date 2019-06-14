@@ -1,5 +1,5 @@
 html {
-  color: var(--base-font-color);
+  color: $base-font-color;
   font-family: var(--base-font-family);
   font-size: 100%;
   line-height: var(--base-line-height);
@@ -22,12 +22,12 @@ p {
 }
 
 a {
-  color: var(--action-color);
+  color: $action-color;
   text-decoration-skip: ink;
   transition: color var(--base-duration) var(--base-timing);
 
   &:hover {
-    color: var(--action-color-alt);
+    color: $action-color-alt;
   }
 
   &:focus {
