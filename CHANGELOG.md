@@ -5,10 +5,12 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
+### Added
+- Added variables for all font weights
+
 ### Changed
 
 - Changed project Sass variables to native CSS variables
-- Added variables for all font weights
 
 ### Removed
 

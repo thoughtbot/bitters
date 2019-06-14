@@ -3,6 +3,16 @@
   --base-font-family: #{$font-stack-system};
   --heading-font-family: var(--base-font-family);
 
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
   // Line height
   --base-line-height: 1.5;
   --heading-line-height: 1.2;
