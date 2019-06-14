@@ -1,3 +1,9 @@
+// Colors
+$blue: #1565c0;
+$blue-light: #3b83d5;
+$gray-dark: #333;
+$gray-light: #ddd;
+
 :root {
   // Typography
   --base-font-family: #{$font-stack-system};
@@ -22,17 +28,14 @@
   --base-spacing: 1.5rem;
   --small-spacing: 0.75rem;
 
-  // Colors
-  --blue: #1565c0;
-  --dark-gray: #333;
-  --light-gray: #ddd;
-
   // Font Colors
-  --base-font-color: var(--dark-gray);
-  --action-color: var(--blue);
+  --base-font-color: $gray-dark;
+  --action-color: $blue;
+  --action-color-alt: $blue-light;
 
   // Border
-  --base-border-color: var(--light-gray);
+  --base-border-color: $gray-light;
+  --base-border-color-alt: $gray-dark;
   --base-border: 1px solid var(--base-border-color);
 
   // Background Colors

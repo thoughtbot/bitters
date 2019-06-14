@@ -19,6 +19,10 @@
   vertical-align: middle;
   white-space: nowrap;
 
+  &:hover {
+    background-color: var(--action-color-alt);
+  }
+
   &:focus {
     outline: var(--focus-outline);
     outline-offset: var(--focus-outline-offset);

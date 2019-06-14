@@ -44,7 +44,7 @@ textarea {
   width: 100%;
 
   &:focus {
-    border-color: var(--action-color);
+    border-color: var(--base-border-color-alt);
     box-shadow: var(--form-box-shadow-focus);
     outline: none;
   }

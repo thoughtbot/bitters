@@ -27,7 +27,7 @@ a {
   transition: color var(--base-duration) var(--base-timing);
 
   &:hover {
-    color: var(--action-color);
+    color: var(--action-color-alt);
   }
 
   &:focus {
