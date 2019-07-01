@@ -17,11 +17,13 @@ project adheres to [Semantic Versioning](http://semver.org).
   - Placing the modifier after the noun instead of before. Example: `--font-family--heading`
   - Separating the modifier and noun with 2 dashes. Example: `--font-weight--extra-light`
 - Changed the default border to use `currentColor`
+- Changed remaining pixel (`px`) values to `rem`s
 
 ### Removed
 
 - Removed unused `base-z-index` variable
 - Removed unused `medium-gray` variable
+- Removed unused `gray-light` variable
 
 [unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
 

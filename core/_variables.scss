@@ -1,11 +1,10 @@
 // Colors
 $blue: #1565c0;
 $blue-light: #3b83d5;
-$gray-dark: #333;
-$gray-light: #ddd;
+$gray: #333;
 
 // Font Colors
-$font-color--base: $gray-dark;
+$font-color--base: $gray;
 $action-color: $blue;
 $action-color--alt: $blue-light;
 
@@ -32,16 +31,17 @@ $viewport-background-color: #fff;
   --line-height--heading: 1.2;
 
   // Other Sizes
-  --border-radius: 3px;
+  --border-radius: 0.1875rem;
   --spacing: 1.5rem;
   --spacing--small: 0.75rem;
 
   // Borders
-  --border: 1px solid currentColor;
+  --border-width: 0.0625rem;
+  --border: var(--border-width) solid currentColor;
 
   // Focus
-  --focus-outline-width: 3px;
-  --focus-outline-offset: 2px;
+  --focus-outline-width: 0.1875rem;
+  --focus-outline-offset: 0.125rem;
   --focus-outline: var(--focus-outline-width) solid #{$action-color};
 
   // Animations
