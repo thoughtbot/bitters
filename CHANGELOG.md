@@ -6,11 +6,17 @@ project adheres to [Semantic Versioning](http://semver.org).
 ## [Unreleased (`master`)][unreleased]
 
 ### Added
+
 - Added variables for all font weights
 
 ### Changed
 
 - Changed project Sass variables to native CSS variables
+- Changed variables name structures:
+  - Remove "`base`" from CSS vars (`--base-font-family` to `--font-family`)
+  - Placing the modifier after the noun instead of before. Example: `--font-family--heading`
+  - Separating the modifier and noun with 2 dashes. Example: `--font-weight--extra-light`
+- Changed the default border to use `currentColor`
 
 ### Removed
 

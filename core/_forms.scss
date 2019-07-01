@@ -1,5 +1,3 @@
-$__form-background-color: $viewport-background-color;
-
 :root {
   --form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
   --form-box-shadow-focus: var(--form-box-shadow), 0 0 5px #{$action-color};
@@ -14,53 +12,51 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: var(--small-spacing);
+  margin-bottom: var(--spacing--small);
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: var(--small-spacing);
+  margin-bottom: var(--spacing--small);
 }
 
 input,
 select,
 textarea {
   display: block;
-  font-family: var(--base-font-family);
+  font-family: var(--font-family);
   font-size: 16px;
 }
 
 #{$all-text-inputs} {
   appearance: none;
-  background-color: $__form-background-color;
-  border: var(--base-border);
-  border-radius: var(--base-border-radius);
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
   box-shadow: var(--form-box-shadow);
   box-sizing: border-box;
-  margin-bottom: var(--small-spacing);
-  padding: calc(var(--base-spacing) / 3);
-  transition: border-color var(--base-duration) var(--base-timing);
+  margin-bottom: var(--spacing--small);
+  padding: calc(var(--spacing) / 3);
+  transition: border-color var(--duration) var(--timing);
   width: 100%;
 
   &:focus {
-    border-color: var(--base-border-color-alt);
     box-shadow: var(--form-box-shadow-focus);
     outline: none;
   }
 
   &:disabled {
-    background-color: $__form-background-color;
     cursor: not-allowed;
 
     &:hover {
-      border: var(--base-border);
+      border: var(--border);
     }
   }
 
   &::placeholder {
-    color: $base-font-color;
+    color: $font-color--base;
     opacity: 0.25;
   }
 }
@@ -72,16 +68,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: var(--small-spacing);
+  margin-right: var(--spacing--small);
 }
 
 [type="file"] {
-  margin-bottom: var(--small-spacing);
+  margin-bottom: var(--spacing--small);
   width: 100%;
 }
 
 select {
-  margin-bottom: var(--small-spacing);
+  margin-bottom: var(--spacing--small);
   width: 100%;
 }
 

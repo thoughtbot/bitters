@@ -2,18 +2,18 @@
 @import "../core/base";
 
 body {
-  margin: 0 0 calc(var(--base-spacing) * 2);
+  margin: 0 0 calc(var(--spacing) * 2);
 }
 
 .container {
   @include margin(null auto);
-  @include padding(null var(--base-spacing));
+  @include padding(null var(--spacing));
   max-width: 500px;
 }
 
 .welcome-message {
-  @include padding(var(--base-spacing) null);
+  @include padding(var(--spacing) null);
   background-color: #f2f2f2;
-  margin-bottom: var(--base-spacing);
+  margin-bottom: var(--spacing);
   text-align: center;
 }

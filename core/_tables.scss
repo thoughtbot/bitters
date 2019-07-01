@@ -1,13 +1,13 @@
 table {
   border-collapse: collapse;
-  margin: var(--base-spacing) 0;
+  margin: var(--spacing) 0;
   table-layout: fixed;
   text-align: left;
   width: 100%;
 }
 
 thead {
-  line-height: var(--heading-line-height);
+  line-height: var(--line-height--heading);
   vertical-align: bottom;
 }
 
@@ -16,7 +16,7 @@ tbody {
 }
 
 tr {
-  border-bottom: var(--base-border);
+  border-bottom: var(--border);
 }
 
 th {
@@ -25,5 +25,5 @@ th {
 
 th,
 td {
-  padding: var(--small-spacing) var(--small-spacing) var(--small-spacing) 0;
+  padding: var(--spacing--small) var(--spacing--small) var(--spacing--small) 0;
 }

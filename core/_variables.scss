@@ -5,50 +5,46 @@ $gray-dark: #333;
 $gray-light: #ddd;
 
 // Font Colors
-$base-font-color: $gray-dark;
+$font-color--base: $gray-dark;
 $action-color: $blue;
-$action-color-alt: $blue-light;
-
-// Border Colors
-$base-border-color: $gray-light;
-$base-border-color-alt: $gray-dark;
+$action-color--alt: $blue-light;
 
 // Background Colors
 $viewport-background-color: #fff;
 
 :root {
   // Typography
-  --base-font-family: #{$font-stack-system};
-  --heading-font-family: var(--base-font-family);
+  --font-family: #{$font-stack-system};
+  --font-family--heading: var(--font-family);
 
-  --font-weight-thin: 100;
-  --font-weight-extra-light: 200;
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semi-bold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extra-bold: 800;
-  --font-weight-black: 900;
+  --font-weight--thin: 100;
+  --font-weight--extra-light: 200;
+  --font-weight--light: 300;
+  --font-weight--normal: 400;
+  --font-weight--medium: 500;
+  --font-weight--semi-bold: 600;
+  --font-weight--bold: 700;
+  --font-weight--extra-bold: 800;
+  --font-weight--black: 900;
 
   // Line heights
-  --base-line-height: 1.5;
-  --heading-line-height: 1.2;
+  --line-height: 1.5;
+  --line-height--heading: 1.2;
 
   // Other Sizes
-  --base-border-radius: 3px;
-  --base-spacing: 1.5rem;
-  --small-spacing: 0.75rem;
+  --border-radius: 3px;
+  --spacing: 1.5rem;
+  --spacing--small: 0.75rem;
 
   // Borders
-  --base-border: 1px solid #{$base-border-color};
+  --border: 1px solid currentColor;
 
   // Focus
   --focus-outline-width: 3px;
-  --focus-outline: var(--focus-outline-width) solid #{$action-color};
   --focus-outline-offset: 2px;
+  --focus-outline: var(--focus-outline-width) solid #{$action-color};
 
   // Animations
-  --base-duration: 150ms;
-  --base-timing: ease;
+  --duration: 150ms;
+  --timing: ease;
 }
