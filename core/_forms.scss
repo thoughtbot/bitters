@@ -60,6 +60,10 @@ textarea {
   }
 }
 
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
 textarea {
   resize: vertical;
 }

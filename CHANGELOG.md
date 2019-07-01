@@ -8,6 +8,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 ### Added
 
 - Added variables for all font weights
+- Added CSS to make `input[type="search"]` behave as a textfield in Safari
 
 ### Changed
 
