@@ -1,8 +1,8 @@
 html {
-  color: $base-font-color;
-  font-family: $base-font-family;
+  color: $font-color--base;
+  font-family: var(--font-family);
   font-size: 100%;
-  line-height: $base-line-height;
+  line-height: var(--line-height);
 }
 
 h1,
@@ -11,35 +11,35 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: var(--font-family--heading);
   font-size: modular-scale(1);
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  line-height: var(--line-height--heading);
+  margin: 0 0 var(--spacing--small);
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 var(--spacing--small);
 }
 
 a {
   color: $action-color;
   text-decoration-skip: ink;
-  transition: color $base-duration $base-timing;
+  transition: color var(--duration) var(--timing);
 
   &:hover {
-    color: shade($action-color, 25%);
+    color: $action-color--alt;
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 }
 
 hr {
-  border-bottom: $base-border;
+  border-bottom: var(--border);
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+  margin: var(--spacing) 0;
 }

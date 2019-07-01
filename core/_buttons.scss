@@ -1,43 +1,35 @@
-$_button-background-color: $action-color;
-$_button-background-color-hover: shade($action-color, 20%);
-
 #{$all-buttons} {
   appearance: none;
-  background-color: $_button-background-color;
+  background-color: $action-color;
   border: 0;
-  border-radius: $base-border-radius;
-  color: contrast-switch($_button-background-color);
+  border-radius: var(--border-radius);
+  color: inherit;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: var(--font-family-base);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: var(--spacing--small) var(--spacing);
   text-align: center;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  transition: background-color var(--duration) var(--timing);
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover {
-    background-color: $_button-background-color-hover;
-    color: contrast-switch($_button-background-color-hover);
+    background-color: $action-color--alt;
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-
-    &:hover {
-      background-color: $_button-background-color;
-    }
   }
 }

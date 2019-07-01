@@ -73,7 +73,7 @@ Some things that will increase the chance that your pull request is accepted:
 * Two spaces, no tabs.
 * Dashes instead of underscores or camel case: `section-header` **not**
   `section_header` or `sectionHeader`
-* Names should be descriptive and written in full-words: `$base-font-color`
+* Names should be descriptive and written in full-words: `$font-color--base`
   **not** `$color` or `$txtCLR`
 * Space between property and value: `width: 20px` **not** `width:20px`
 * Declarations within a block should be ordered alphabetically.
