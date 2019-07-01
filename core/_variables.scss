@@ -13,7 +13,7 @@ $viewport-background-color: #fff;
 
 :root {
   // Typography
-  --font-family: #{$font-stack-system};
+  --font-family: system-ui, sans-serif;
   --font-family--heading: var(--font-family);
 
   --font-weight--thin: 100;

@@ -6,13 +6,13 @@ body {
 }
 
 .container {
-  @include margin(null auto);
-  @include padding(null var(--spacing));
+  margin: 0 auto;
+  padding: 0 var(--spacing);
   max-width: 500px;
 }
 
 .welcome-message {
-  @include padding(var(--spacing) null);
+  padding: var(--spacing) 0;
   background-color: #f2f2f2;
   margin-bottom: var(--spacing);
   text-align: center;

@@ -25,8 +25,10 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Removed unused `base-z-index` variable
 - Removed unused `medium-gray` variable
 - Removed unused `gray-light` variable
+- Removed [Bourbon] dependency
 
 [unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
+[Bourbon]: https://github.com/thoughtbot/bourbon
 
 ## [1.8.0] - 2018-02-05
 

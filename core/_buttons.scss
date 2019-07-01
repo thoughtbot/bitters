@@ -1,4 +1,7 @@
-#{$all-buttons} {
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
   appearance: none;
   background-color: $action-color;
   border: 0;
