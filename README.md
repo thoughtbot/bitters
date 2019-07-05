@@ -1,4 +1,4 @@
-[<img src="https://images.thoughtbot.com/bourbon/bitters-logo.svg" width="200" alt="Bitters">](http://bitters.bourbon.io)
+[<img src="https://images.thoughtbot.com/bourbon/bitters-logo-v2.svg" width="200" alt="Bitters">](http://bitters.bourbon.io)
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
@@ -36,12 +36,10 @@ one. We like to use [Normalize].
 ## Requirements
 
 - [Sass] 3.4+ or [LibSass] 3.3+
-- [Bourbon] 5.0+
 - Ruby 1.9.3+ (required to install Bitters from the command line)
 
 [Sass]: https://github.com/sass/sass
 [LibSass]: https://github.com/sass/libsass
-[Bourbon]: https://github.com/thoughtbot/bourbon
 
 ## Installation
 
@@ -50,8 +48,6 @@ one. We like to use [Normalize].
     ```bash
     gem install bitters
     ```
-
-1. Install [Bourbon][bourbon-install].
 
 1. Install the Bitters library into the current directory by running the
    following command at the command-line. If you’re using Ruby on Rails, run the
@@ -68,7 +64,6 @@ one. We like to use [Normalize].
    file. All additional stylesheets should be imported below Bitters.
 
     ```scss
-    @import "bourbon";
     @import "base/base";
     ```
 
@@ -76,14 +71,12 @@ one. We like to use [Normalize].
    below them.
 
     ```scss
-    @import "bourbon";
     @import "base/base";
     @import "my-project-styles";
     …
     ```
 
 [RubyGems]: https://rubygems.org
-[bourbon-install]: https://github.com/thoughtbot/bourbon#installation
 
 ## Using Bitters
 
