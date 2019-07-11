@@ -25,7 +25,7 @@
   "homepage": "http://bitters.bourbon.io",
   "devDependencies": {
     "@thoughtbot/stylelint-config": "^1.0.1",
-    "bourbon": "^5.1.0",
+    "bourbon": "^6.0.0",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
