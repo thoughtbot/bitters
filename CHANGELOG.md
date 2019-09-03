@@ -7,7 +7,15 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 Nothing at the moment.
 
-[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v2.0.1...HEAD
+
+## [2.0.1] - 2019-09-03
+
+### Fixed
+
+- Removed the bourbon runtime dependency
+
+[2.0.1]: https://github.com/thoughtbot/bitters/compare/v2.0.0...v2.0.1
 
 ## [2.0.0] - 2019-07-05
 
