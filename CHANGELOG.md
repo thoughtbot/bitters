@@ -5,6 +5,12 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
+Nothing at the moment.
+
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
+
+## [2.0.0] - 2019-07-05
+
 ### Added
 
 - Added variables for all font weights
@@ -27,7 +33,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Removed unused `gray-light` variable
 - Removed [Bourbon] dependency
 
-[unreleased]: https://github.com/thoughtbot/bitters/compare/v1.8.0...HEAD
+[2.0.0]: https://github.com/thoughtbot/bitters/compare/v1.8.0...v2.0.0
 [Bourbon]: https://github.com/thoughtbot/bourbon
 
 ## [1.8.0] - 2018-02-05
