@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.email = "design+bitters@thoughtbot.com"
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split($/)
-  s.homepage = "http://bitters.bourbon.io"
+  s.homepage = "https://github.com/thoughtbot/bitters"
   s.license = "MIT"
   s.name = "bitters"
   s.require_paths = ["lib"]
