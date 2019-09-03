@@ -1,4 +1,4 @@
-[<img src="https://images.thoughtbot.com/bourbon/bitters-logo-v2.svg" width="200" alt="Bitters">](http://bitters.bourbon.io)
+<img src="https://images.thoughtbot.com/bourbon/bitters-logo-v2.svg" width="200" alt="Bitters">
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
@@ -17,7 +17,6 @@ one. We like to use [Normalize].
 
 ### Helpful Links
 
-- [Demo](http://bitters.bourbon.io)
 - [Change log](CHANGELOG.md)
 - [Twitter](https://twitter.com/bourbonsass)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/bitters)
