@@ -1,6 +1,5 @@
 require 'spec_helper'
 require 'sass'
-require 'bourbon'
 
 describe Bitters do
   after do
