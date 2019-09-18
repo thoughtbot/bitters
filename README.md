@@ -2,13 +2,13 @@
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
-## Scaffold styles, variables and structure for Bourbon projects.
+## Scaffold styles, variables and structure for web projects.
 
-Bitters helps designers start projects faster by defining a basic set of Sass
+Bitters helps designers start projects faster by defining a basic set of CSS and Sass
 variables, default element style and project structure. It’s been specifically
 designed for use within web applications. Bitters should live in your project’s
 root Sass directory and we *encourage* you to modify and extend it to meet your
-design and brand requirements.
+project's needs.
 
 Bitters is made to work alongside a CSS reset or style-normalizer; not replace
 one. We like to use [Normalize].
@@ -59,14 +59,14 @@ one. We like to use [Normalize].
     A `base` directory will be generated which contains all of the Bitters
     files.
 
-1. Import Bitters after Bourbon in your `application.css.scss` or main manifest
+1. Import Bitters in your `application.css.scss` or main manifest
    file. All additional stylesheets should be imported below Bitters.
 
     ```scss
     @import "base/base";
     ```
 
-1. Once Bourbon and Bitters are set up, you can begin to import your styles
+1. Once Bitters is set up, you can begin to import your styles
    below them.
 
     ```scss
@@ -88,8 +88,7 @@ Customize Bitters for your site as you see fit.
 ### Variables
 
 This houses all variables that are used, or will be used, in more than one file
-in your site. Variable names in Bitters that are used outside of the variables
-file start with `$base` to indicate that they are the most basic variables.
+in your site.
 
 ### Typography
 
@@ -107,8 +106,8 @@ inherit from the variables file but make it really easy to be overridden.
 ### Buttons
 
 Basic style for `button` and `input[type="submit"]`. Base button styles can be
-changed by modifying the styles applied to `button` and `#{$all-buttons}`
-in `base/_buttons.scss`.
+changed by modifying the styles applied to `button` as well as `[type='button']`,
+`[type='reset']`, and `[type='submit']` in the `base/_buttons.scss` file.
 
 ## Command Line Interface
 
