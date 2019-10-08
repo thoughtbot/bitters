@@ -7,7 +7,15 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 Nothing at the moment.
 
-[unreleased]: https://github.com/thoughtbot/bitters/compare/v2.0.1...HEAD
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v2.0.2...HEAD
+
+## [2.0.2] - 2019-10-08
+
+### Removed
+
+- Removed sass runtime dependency
+
+[2.0.2]: https://github.com/thoughtbot/bitters/compare/v2.0.1...v2.0.2
 
 ## [2.0.1] - 2019-09-03
 
