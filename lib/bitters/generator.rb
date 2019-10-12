@@ -16,11 +16,12 @@ module Bitters
         puts "Bitters files already installed, doing nothing."
       else
         install_files
-        puts "Bitters files installed to #{install_path}/base"
+        puts "Bitters files installed to #{install_path}/"
       end
     end
 
     desc 'reset', 'Reset Bitters'
+    method_options path: :string
     def reset
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -32,6 +33,7 @@ module Bitters
     end
 
     desc 'remove', 'Remove Bitters'
+    method_options path: :string
     def remove
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -62,7 +64,7 @@ module Bitters
     end
 
     def remove_bitters_directory
-      FileUtils.rm_rf("base")
+      FileUtils.rm_rf(install_path)
     end
 
     def all_stylesheets
