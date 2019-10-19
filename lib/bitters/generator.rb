@@ -1,15 +1,15 @@
-require 'bitters/version'
-require 'fileutils'
-require 'pathname'
-require 'thor'
+require "bitters/version"
+require "fileutils"
+require "pathname"
+require "thor"
 
 module Bitters
   class Generator < Thor
-    map ['-v', '--version'] => :version
-    map ['scaffold'] => :install
-    map ['delete'] => :remove
+    map ["-v", "--version"] => :version
+    map ["scaffold"] => :install
+    map ["delete"] => :remove
 
-    desc 'install', 'Install Bitters into your project'
+    desc "install", "Install Bitters into your project"
     method_options path: :string
     def install
       if bitters_files_already_exist?
@@ -20,7 +20,7 @@ module Bitters
       end
     end
 
-    desc 'reset', 'Reset Bitters'
+    desc "reset", "Reset Bitters"
     def reset
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -31,7 +31,7 @@ module Bitters
       end
     end
 
-    desc 'remove', 'Remove Bitters'
+    desc "remove", "Remove Bitters"
     def remove
       if bitters_files_already_exist?
         remove_bitters_directory
@@ -41,7 +41,7 @@ module Bitters
       end
     end
 
-    desc 'version', 'Show Bitters version'
+    desc "version", "Show Bitters version"
     def version
       say "Bitters #{Bitters::VERSION}"
     end
@@ -53,7 +53,7 @@ module Bitters
     end
 
     def install_path
-      Pathname.new(options[:path].to_s).join('base')
+      Pathname.new(options[:path].to_s).join("base")
     end
 
     def install_files
