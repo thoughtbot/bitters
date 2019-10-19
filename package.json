@@ -1,14 +1,13 @@
 {
   "name": "Bitters",
   "version": "2.0.2",
-  "description": "Scaffold styles, variables and structure for Bourbon projects.",
+  "description": "Scaffold styles, variables and structure for web projects.",
   "main": "Gulpfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thoughtbot/bitters.git"
   },
   "keywords": [
-    "bourbon",
     "css",
     "sass",
     "scss",
