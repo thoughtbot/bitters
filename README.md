@@ -134,14 +134,6 @@ bitters [options]
 | `bitters help`    | Show help                                             |
 | `bitters version` | Show the version number                               |
 
-## The Bourbon Family
-
-- [Bourbon]: A Lightweight Sass Tool Set
-- [Neat]: A lightweight and flexible Sass grid
-
-[Bourbon]: https://github.com/thoughtbot/bourbon
-[Neat]: https://github.com/thoughtbot/neat
-
 ## Contributing
 
 See the [contributing] document. Thank you, [contributors]!
