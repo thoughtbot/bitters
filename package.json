@@ -30,6 +30,6 @@
     "stylelint": "^10.1.0"
   },
   "scripts": {
-    "stylelint": "stylelint 'core/**/*.scss'"
+    "stylelint": "npx stylelint 'core/**/*.scss'"
   }
 }
