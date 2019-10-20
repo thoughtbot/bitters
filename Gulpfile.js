@@ -13,7 +13,7 @@ const paths = {
       './core/**/*.scss',
     ],
     dest: './contrib/',
-  }
+  },
 };
 
 function styles() {

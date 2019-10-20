@@ -22,14 +22,17 @@
     "url": "https://github.com/thoughtbot/bitters/issues"
   },
   "devDependencies": {
+    "@thoughtbot/eslint-config": "^0.1.0",
     "@thoughtbot/stylelint-config": "^1.1.0",
     "bourbon": "^6.0.0",
     "browser-sync": "^2.26.7",
+    "eslint": "5.16.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "stylelint": "^10.1.0"
   },
   "scripts": {
+    "eslint": "npx eslint '**/*.js'",
     "stylelint": "npx stylelint 'core/**/*.scss'"
   }
 }
