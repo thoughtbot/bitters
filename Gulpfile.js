@@ -3,6 +3,8 @@ const browserSync = require('browser-sync').create();
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 
+sass.compiler = require('sass');
+
 const paths = {
   markup: {
     src: './contrib/**/*.html',
