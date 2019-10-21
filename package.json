@@ -26,7 +26,7 @@
     "@thoughtbot/stylelint-config": "^1.1.0",
     "bourbon": "^6.0.0",
     "browser-sync": "^2.26.7",
-    "eslint": "5.16.0",
+    "eslint": "6.5.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "stylelint": "^10.1.0"
