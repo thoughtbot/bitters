@@ -2,14 +2,16 @@
 $blue: #1565c0;
 $blue-light: #3b83d5;
 $gray: #333;
+$white: #fff;
 
 // Font Colors
 $font-color--base: $gray;
 $action-color: $blue;
 $action-color--alt: $blue-light;
+$action-color--contrast: $white;
 
 // Background Colors
-$viewport-background-color: #fff;
+$viewport-background-color: $white;
 
 :root {
   // Typography

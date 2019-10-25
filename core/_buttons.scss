@@ -6,7 +6,7 @@ button,
   background-color: $action-color;
   border: 0;
   border-radius: var(--border-radius);
-  color: inherit;
+  color: $action-color--contrast;
   cursor: pointer;
   display: inline-block;
   font-family: var(--font-family-base);
