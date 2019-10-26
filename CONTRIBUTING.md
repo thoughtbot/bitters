@@ -48,9 +48,6 @@ stylesheets and serve a small HTML preview page at `http://localhost:3000`.
 
 1. Rebase against `origin/master`, push to your fork and submit a pull request.
 
-1. If you are writing a new feature please add documentation for it by making
-   another pull request to the `gh_pages` branch.
-
 At this point you're waiting on us. We like to at least comment on, if not
 accept, pull requests within three business days (and, typically, one business
 day). We may suggest some changes or improvements or alternatives.
