@@ -27,7 +27,6 @@ one. We like to use [Normalize].
 - [Installation](#installation)
 - [Using Bitters](#using-bitters)
 - [Command Line Interface](#command-line-interface)
-- [The Bourbon Family](#the-bourbon-family)
 - [Contributing](#contributing)
 - [License](#license)
 - [About](#about)
