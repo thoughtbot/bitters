@@ -2,7 +2,6 @@
   "name": "Bitters",
   "version": "2.0.3",
   "description": "Scaffold styles, variables and structure for web projects.",
-  "main": "Gulpfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thoughtbot/bitters.git"
@@ -25,14 +24,13 @@
     "@thoughtbot/eslint-config": "^0.1.0",
     "@thoughtbot/stylelint-config": "^1.1.0",
     "bourbon": "^6.0.0",
-    "browser-sync": "^2.26.7",
     "eslint": "5.16.0",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0",
     "stylelint": "^10.1.0"
   },
   "scripts": {
+    "contrib": "npx parcel contrib/index.html --out-dir contrib/build",
     "eslint": "npx eslint '**/*.js'",
     "stylelint": "npx stylelint 'core/**/*.scss'"
   }

@@ -1,8 +1,9 @@
 _site
+.cache
 .DS_store
 .sass-cache
 *gem
 *swp
+contrib/build
 Gemfile.lock
-contrib/*.css
 node_modules

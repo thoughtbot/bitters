@@ -5,9 +5,12 @@ agree to abide by the thoughtbot [code of conduct]. Here’s a quick guide:
 
 [code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
 
-While developing and contributing to Bitters you can use gulp to spin up an
-example site to help preview your changes! Running `gulp` to pull in the
-stylesheets and serve a small HTML preview page at `http://localhost:3000`.
+While developing and contributing to Bitters you can use [Parcel][parcel] to
+spin up an example site to help preview your changes! Run `npm run contrib`
+to pull in the stylesheets and serve a small HTML preview page
+at `http://localhost:1234`.
+
+[parcel]: https://parceljs.org
 
 ## Getting started
 
@@ -15,17 +18,14 @@ stylesheets and serve a small HTML preview page at `http://localhost:3000`.
 
 1. Make your changes in a topic branch.
 
-1. Make sure you have Node.js, npm & gulp installed:
+1. Make sure you have Node.js & npm installed:
 
     ```bash
     $ npm -v
-    $ gulp -v
     ```
 
     If you don't have Node.js or npm, you can download it
     [here](https://nodejs.org/).
-
-    If you don't have gulp, you can download it [here](http://gulpjs.com/).
 
 1. Next up, `cd` in to Bitters and run `npm install`:
 
@@ -34,13 +34,13 @@ stylesheets and serve a small HTML preview page at `http://localhost:3000`.
     $ npm install
     ```
 
-    Then run the gulp build command:
+    Then run the Parcel build command:
 
     ```bash
-    $ gulp
+    $ npm run contrib
     ```
 
-    This will have gulp compile the stylesheets from `core/` and link them to a
+    This will have Parcel compile the stylesheets from `core/` and link them to a
     test page so you can preview your changes!
 
 1. Squash your commits into a single one (more on that
