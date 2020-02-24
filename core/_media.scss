@@ -2,8 +2,11 @@ figure {
   margin: 0;
 }
 
-img,
 picture {
   margin: 0;
+}
+
+img {
+  height: auto;
   max-width: 100%;
 }
