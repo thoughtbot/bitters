@@ -11,14 +11,14 @@ fieldset {
 }
 
 legend {
-  font-weight: 600;
+  font-weight: var(--font-weight--semi-bold);
   margin-bottom: var(--spacing--small);
   padding: 0;
 }
 
 label {
   display: block;
-  font-weight: 600;
+  font-weight: var(--font-weight--semi-bold);
   margin-bottom: var(--spacing--small);
 }
 
