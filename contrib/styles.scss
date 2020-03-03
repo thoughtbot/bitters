@@ -1,9 +1,6 @@
 @import "~node_modules/bourbon/core/bourbon";
+@import "~node_modules/normalize.css/normalize";
 @import "../core/base";
-
-body {
-  margin: 0 0 calc(var(--spacing) * 2);
-}
 
 .container {
   margin: 0 auto;

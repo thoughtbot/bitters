@@ -25,6 +25,7 @@
     "@thoughtbot/stylelint-config": "^1.1.0",
     "bourbon": "^6.0.0",
     "eslint": "5.16.0",
+    "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0",
     "stylelint": "^10.1.0"
