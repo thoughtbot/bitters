@@ -21,17 +21,14 @@
     "url": "https://github.com/thoughtbot/bitters/issues"
   },
   "devDependencies": {
-    "@thoughtbot/eslint-config": "^0.1.0",
     "@thoughtbot/stylelint-config": "^1.1.0",
     "bourbon": "^6.0.0",
-    "eslint": "5.16.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0",
     "stylelint": "^10.1.0"
   },
   "scripts": {
     "contrib": "npx parcel contrib/index.html --out-dir contrib/build",
-    "eslint": "npx eslint '**/*.js'",
     "stylelint": "npx stylelint 'core/**/*.scss'"
   }
 }

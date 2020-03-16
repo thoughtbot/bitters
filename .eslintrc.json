@@ -1,6 +1,0 @@
-{
-  "extends": "@thoughtbot/eslint-config",
-  "env": {
-    "es6": true
-  }
-}
