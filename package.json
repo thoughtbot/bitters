@@ -21,11 +21,11 @@
     "url": "https://github.com/thoughtbot/bitters/issues"
   },
   "devDependencies": {
-    "@thoughtbot/stylelint-config": "^1.1.0",
+    "@thoughtbot/stylelint-config": "1.1.0",
     "bourbon": "^6.0.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0",
-    "stylelint": "^10.1.0"
+    "stylelint": "10.1.0"
   },
   "scripts": {
     "contrib": "npx parcel contrib/index.html --out-dir contrib/build",
