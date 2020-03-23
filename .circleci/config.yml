@@ -4,6 +4,8 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.7.0
+        environment:
+          BUNDLE_PATH: vendor/bundle
 
     steps:
       - checkout
@@ -14,7 +16,7 @@ jobs:
 
       - run:
           name: Install Ruby dependencies
-          command: bundle install --path vendor/bundle
+          command: bundle install
 
       - save_cache:
           key: bitters-{{ arch }}-{{ checksum "bitters.gemspec" }}
