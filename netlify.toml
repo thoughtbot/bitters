@@ -3,6 +3,12 @@
   command = "npx parcel build contrib/index.html --out-dir contrib/build"
 
 [[redirects]]
+  from = "https://bitters.netlify.app/*"
+  to = "https://github.com/thoughtbot/bitters"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://bitters.netlify.com/*"
   to = "https://github.com/thoughtbot/bitters"
   status = 301
