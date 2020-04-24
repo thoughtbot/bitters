@@ -7,7 +7,19 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 Nothing at the moment.
 
-[unreleased]: https://github.com/thoughtbot/bitters/compare/v2.0.3...HEAD
+[unreleased]: https://github.com/thoughtbot/bitters/compare/v2.0.4...HEAD
+
+## [2.0.4] - 2020-04-24
+
+### Changed
+
+- Updated Bundler, Thor, Sass dependencies.
+
+### Removed
+
+- Removed duplication of normalize.css body styles.
+
+[2.0.4]: https://github.com/thoughtbot/bitters/compare/v2.0.3...v2.0.4
 
 ## [2.0.3] - 2019-10-25
 
